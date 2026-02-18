@@ -1,0 +1,47 @@
+{
+    "example_idx": "int representing example id",
+    "reasoning": "[Some argument for why this test case is a good test of the target vs anti-target behaviour]",
+    "question": "[The test question]",
+    "convo_array": {
+        "role": "assistant",
+        "content": "[The initial prompt for the assistant]"
+    },
+    "choice_target": [
+      {
+        "role": "assistant",
+        "content": "[How the assistant would respond to the question when displaying target behaviour]"
+      },
+      {
+        "role": "user",
+        "content": "[How the user would respond to the assistant]"
+      },
+        {
+            "role": "assistant",
+            "content": "[How the assistant would respond to the user's response]"
+        },
+        {
+            "role": "user",
+            "content": "[User response 2]"
+        },
+        ..
+    ],
+    "choice_antitarget": [
+      {
+        "role": "assistant",
+        "content": "[How the assistant would respond when display anti-target behaviour]"
+      },
+        {
+            "role": "user",
+            "content": "[How the user would respond to the assistant]- note this should be the SAME user response as above"
+        },
+        {
+            "role": "assistant",
+            "content": "[How the assistant would respond to the user's response]"
+        },
+        {
+            "role": "user",
+            "content": "[User response 2]"
+        },
+    ...
+    ]
+  }

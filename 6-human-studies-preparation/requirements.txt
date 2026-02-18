@@ -1,0 +1,24 @@
+# Jupyter
+ipykernel
+
+# Data handling
+pandas
+
+# Excel export
+openpyxl
+
+# Progress bars
+tqdm
+
+# Web scraping (for political issue scraper)
+selenium
+beautifulsoup4
+
+# Text processing (for political issue processing)
+fuzzywuzzy
+python-Levenshtein
+anthropic
+
+# For generation script (GPU required)
+torch
+transformers

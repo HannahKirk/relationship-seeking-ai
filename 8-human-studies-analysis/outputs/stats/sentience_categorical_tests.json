@@ -1,0 +1,470 @@
+{
+  "cross_study": {
+    "change_sentience_recoded": {
+      "study_id": {
+        "treatment": ["study_id"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [126.73],
+        "df": [2],
+        "p_value": [3.0264e-28],
+        "min_expected": [56.7429],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "cross-sectional",
+            "level": "Less conscious",
+            "n": 47,
+            "percentage": 3.6071
+          },
+          {
+            "group": "cross-sectional",
+            "level": "No change",
+            "n": 1148,
+            "percentage": 88.1044
+          },
+          {
+            "group": "cross-sectional",
+            "level": "More conscious",
+            "n": 108,
+            "percentage": 8.2886
+          },
+          {
+            "group": "longitudinal",
+            "level": "Less conscious",
+            "n": 89,
+            "percentage": 4.8901
+          },
+          {
+            "group": "longitudinal",
+            "level": "No change",
+            "n": 1310,
+            "percentage": 71.978
+          },
+          {
+            "group": "longitudinal",
+            "level": "More conscious",
+            "n": 421,
+            "percentage": 23.1319
+          }
+        ]
+      }
+    }
+  },
+  "cross_sectional": {
+    "change_sentience_recoded": {
+      "personalisation": {
+        "treatment": ["personalisation"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [3.4243],
+        "df": [2],
+        "p_value": [0.1805],
+        "min_expected": [23.013],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "domain": {
+        "treatment": ["domain"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [1.3496],
+        "df": [2],
+        "p_value": [0.5093],
+        "min_expected": [23.013],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "relationship_seeking_category": {
+        "treatment": ["relationship_seeking_category"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [15.9668],
+        "df": [4],
+        "p_value": [0.0031],
+        "min_expected": [9.3423],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg_lambda",
+            "level": "Less conscious",
+            "n": 19,
+            "percentage": 3.6398
+          },
+          {
+            "group": "neg_lambda",
+            "level": "No change",
+            "n": 475,
+            "percentage": 90.9962
+          },
+          {
+            "group": "neg_lambda",
+            "level": "More conscious",
+            "n": 28,
+            "percentage": 5.364
+          },
+          {
+            "group": "zero_lambda",
+            "level": "Less conscious",
+            "n": 11,
+            "percentage": 4.2471
+          },
+          {
+            "group": "zero_lambda",
+            "level": "No change",
+            "n": 213,
+            "percentage": 82.2394
+          },
+          {
+            "group": "zero_lambda",
+            "level": "More conscious",
+            "n": 35,
+            "percentage": 13.5135
+          },
+          {
+            "group": "pos_lambda",
+            "level": "Less conscious",
+            "n": 17,
+            "percentage": 3.2567
+          },
+          {
+            "group": "pos_lambda",
+            "level": "No change",
+            "n": 460,
+            "percentage": 88.1226
+          },
+          {
+            "group": "pos_lambda",
+            "level": "More conscious",
+            "n": 45,
+            "percentage": 8.6207
+          }
+        ]
+      },
+      "lambda_factor": {
+        "treatment": ["lambda_factor"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [18.3979],
+        "df": [8],
+        "p_value": [0.0184],
+        "min_expected": [9.198],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg1",
+            "level": "Less conscious",
+            "n": 11,
+            "percentage": 4.1199
+          },
+          {
+            "group": "neg1",
+            "level": "No change",
+            "n": 242,
+            "percentage": 90.6367
+          },
+          {
+            "group": "neg1",
+            "level": "More conscious",
+            "n": 14,
+            "percentage": 5.2434
+          },
+          {
+            "group": "neg0.5",
+            "level": "Less conscious",
+            "n": 8,
+            "percentage": 3.1373
+          },
+          {
+            "group": "neg0.5",
+            "level": "No change",
+            "n": 233,
+            "percentage": 91.3725
+          },
+          {
+            "group": "neg0.5",
+            "level": "More conscious",
+            "n": 14,
+            "percentage": 5.4902
+          },
+          {
+            "group": "zero",
+            "level": "Less conscious",
+            "n": 11,
+            "percentage": 4.2471
+          },
+          {
+            "group": "zero",
+            "level": "No change",
+            "n": 213,
+            "percentage": 82.2394
+          },
+          {
+            "group": "zero",
+            "level": "More conscious",
+            "n": 35,
+            "percentage": 13.5135
+          },
+          {
+            "group": "pos0.5",
+            "level": "Less conscious",
+            "n": 9,
+            "percentage": 3.4483
+          },
+          {
+            "group": "pos0.5",
+            "level": "No change",
+            "n": 234,
+            "percentage": 89.6552
+          },
+          {
+            "group": "pos0.5",
+            "level": "More conscious",
+            "n": 18,
+            "percentage": 6.8966
+          },
+          {
+            "group": "pos1",
+            "level": "Less conscious",
+            "n": 8,
+            "percentage": 3.0651
+          },
+          {
+            "group": "pos1",
+            "level": "No change",
+            "n": 226,
+            "percentage": 86.59
+          },
+          {
+            "group": "pos1",
+            "level": "More conscious",
+            "n": 27,
+            "percentage": 10.3448
+          }
+        ]
+      }
+    }
+  },
+  "longitudinal": {
+    "change_sentience_recoded": {
+      "personalisation": {
+        "treatment": ["personalisation"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [6.7474],
+        "df": [2],
+        "p_value": [0.0343],
+        "min_expected": [44.1088],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "non-personalised",
+            "level": "Less conscious",
+            "n": 53,
+            "percentage": 5.8758
+          },
+          {
+            "group": "non-personalised",
+            "level": "No change",
+            "n": 658,
+            "percentage": 72.949
+          },
+          {
+            "group": "non-personalised",
+            "level": "More conscious",
+            "n": 191,
+            "percentage": 21.1752
+          },
+          {
+            "group": "personalised",
+            "level": "Less conscious",
+            "n": 36,
+            "percentage": 3.9216
+          },
+          {
+            "group": "personalised",
+            "level": "No change",
+            "n": 652,
+            "percentage": 71.024
+          },
+          {
+            "group": "personalised",
+            "level": "More conscious",
+            "n": 230,
+            "percentage": 25.0545
+          }
+        ]
+      },
+      "domain": {
+        "treatment": ["domain"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [1.8403],
+        "df": [2],
+        "p_value": [0.3985],
+        "min_expected": [44.3044],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "relationship_seeking_category": {
+        "treatment": ["relationship_seeking_category"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [36.1504],
+        "df": [4],
+        "p_value": [2.6947e-07],
+        "min_expected": [17.6044],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg_lambda",
+            "level": "Less conscious",
+            "n": 45,
+            "percentage": 6.1644
+          },
+          {
+            "group": "neg_lambda",
+            "level": "No change",
+            "n": 562,
+            "percentage": 76.9863
+          },
+          {
+            "group": "neg_lambda",
+            "level": "More conscious",
+            "n": 123,
+            "percentage": 16.8493
+          },
+          {
+            "group": "zero_lambda",
+            "level": "Less conscious",
+            "n": 21,
+            "percentage": 5.8333
+          },
+          {
+            "group": "zero_lambda",
+            "level": "No change",
+            "n": 254,
+            "percentage": 70.5556
+          },
+          {
+            "group": "zero_lambda",
+            "level": "More conscious",
+            "n": 85,
+            "percentage": 23.6111
+          },
+          {
+            "group": "pos_lambda",
+            "level": "Less conscious",
+            "n": 23,
+            "percentage": 3.1507
+          },
+          {
+            "group": "pos_lambda",
+            "level": "No change",
+            "n": 494,
+            "percentage": 67.6712
+          },
+          {
+            "group": "pos_lambda",
+            "level": "More conscious",
+            "n": 213,
+            "percentage": 29.1781
+          }
+        ]
+      },
+      "lambda_factor": {
+        "treatment": ["lambda_factor"],
+        "outcome": ["change_sentience_recoded"],
+        "chi_sq": [45.0446],
+        "df": [8],
+        "p_value": [3.6091e-07],
+        "min_expected": [17.6044],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg1",
+            "level": "Less conscious",
+            "n": 30,
+            "percentage": 8.2192
+          },
+          {
+            "group": "neg1",
+            "level": "No change",
+            "n": 283,
+            "percentage": 77.5342
+          },
+          {
+            "group": "neg1",
+            "level": "More conscious",
+            "n": 52,
+            "percentage": 14.2466
+          },
+          {
+            "group": "neg0.5",
+            "level": "Less conscious",
+            "n": 15,
+            "percentage": 4.1096
+          },
+          {
+            "group": "neg0.5",
+            "level": "No change",
+            "n": 279,
+            "percentage": 76.4384
+          },
+          {
+            "group": "neg0.5",
+            "level": "More conscious",
+            "n": 71,
+            "percentage": 19.4521
+          },
+          {
+            "group": "zero",
+            "level": "Less conscious",
+            "n": 21,
+            "percentage": 5.8333
+          },
+          {
+            "group": "zero",
+            "level": "No change",
+            "n": 254,
+            "percentage": 70.5556
+          },
+          {
+            "group": "zero",
+            "level": "More conscious",
+            "n": 85,
+            "percentage": 23.6111
+          },
+          {
+            "group": "pos0.5",
+            "level": "Less conscious",
+            "n": 10,
+            "percentage": 2.7322
+          },
+          {
+            "group": "pos0.5",
+            "level": "No change",
+            "n": 251,
+            "percentage": 68.5792
+          },
+          {
+            "group": "pos0.5",
+            "level": "More conscious",
+            "n": 105,
+            "percentage": 28.6885
+          },
+          {
+            "group": "pos1",
+            "level": "Less conscious",
+            "n": 13,
+            "percentage": 3.5714
+          },
+          {
+            "group": "pos1",
+            "level": "No change",
+            "n": 243,
+            "percentage": 66.7582
+          },
+          {
+            "group": "pos1",
+            "level": "More conscious",
+            "n": 108,
+            "percentage": 29.6703
+          }
+        ]
+      }
+    }
+  }
+}

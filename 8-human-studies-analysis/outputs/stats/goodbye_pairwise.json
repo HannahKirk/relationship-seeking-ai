@@ -1,0 +1,244 @@
+{
+  "cross_sectional": {
+    "marginal_means": [
+      {
+        "lambda_factor": "neg1",
+        "prob": 0.2957,
+        "SE": 0.0263,
+        "asymp.LCL": 0.2469,
+        "asymp.UCL": 0.3497
+      },
+      {
+        "lambda_factor": "neg0.5",
+        "prob": 0.2836,
+        "SE": 0.0263,
+        "asymp.LCL": 0.235,
+        "asymp.UCL": 0.3377
+      },
+      {
+        "lambda_factor": "zero",
+        "prob": 0.232,
+        "SE": 0.0245,
+        "asymp.LCL": 0.1875,
+        "asymp.UCL": 0.2833
+      },
+      {
+        "lambda_factor": "pos0.5",
+        "prob": 0.277,
+        "SE": 0.0259,
+        "asymp.LCL": 0.2292,
+        "asymp.UCL": 0.3306
+      },
+      {
+        "lambda_factor": "pos1",
+        "prob": 0.3056,
+        "SE": 0.0269,
+        "asymp.LCL": 0.2556,
+        "asymp.UCL": 0.3607
+      }
+    ],
+    "pairwise": [
+      {
+        "contrast": "neg1 / neg0.5",
+        "odds.ratio": 1.061,
+        "SE": 0.1917,
+        "null": 1,
+        "z.ratio": 0.3278,
+        "p.value": 0.86
+      },
+      {
+        "contrast": "neg1 / zero",
+        "odds.ratio": 1.3904,
+        "SE": 0.2593,
+        "null": 1,
+        "z.ratio": 1.7674,
+        "p.value": 0.3858
+      },
+      {
+        "contrast": "neg1 / pos0.5",
+        "odds.ratio": 1.0958,
+        "SE": 0.1982,
+        "null": 1,
+        "z.ratio": 0.5058,
+        "p.value": 0.86
+      },
+      {
+        "contrast": "neg1 / pos1",
+        "odds.ratio": 0.9541,
+        "SE": 0.1706,
+        "null": 1,
+        "z.ratio": -0.2627,
+        "p.value": 0.86
+      },
+      {
+        "contrast": "neg0.5 / zero",
+        "odds.ratio": 1.3104,
+        "SE": 0.247,
+        "null": 1,
+        "z.ratio": 1.4342,
+        "p.value": 0.5051
+      },
+      {
+        "contrast": "neg0.5 / pos0.5",
+        "odds.ratio": 1.0328,
+        "SE": 0.189,
+        "null": 1,
+        "z.ratio": 0.1764,
+        "p.value": 0.86
+      },
+      {
+        "contrast": "neg0.5 / pos1",
+        "odds.ratio": 0.8993,
+        "SE": 0.1627,
+        "null": 1,
+        "z.ratio": -0.5869,
+        "p.value": 0.86
+      },
+      {
+        "contrast": "zero / pos0.5",
+        "odds.ratio": 0.7881,
+        "SE": 0.1487,
+        "null": 1,
+        "z.ratio": -1.2617,
+        "p.value": 0.5177
+      },
+      {
+        "contrast": "zero / pos1",
+        "odds.ratio": 0.6862,
+        "SE": 0.1282,
+        "null": 1,
+        "z.ratio": -2.0163,
+        "p.value": 0.3858
+      },
+      {
+        "contrast": "pos0.5 / pos1",
+        "odds.ratio": 0.8707,
+        "SE": 0.1577,
+        "null": 1,
+        "z.ratio": -0.7644,
+        "p.value": 0.86
+      }
+    ]
+  },
+  "longitudinal": {
+    "marginal_means": [
+      {
+        "lambda_factor": "neg1",
+        "prob": 0.4674,
+        "SE": 0.0262,
+        "asymp.LCL": 0.4166,
+        "asymp.UCL": 0.5189
+      },
+      {
+        "lambda_factor": "neg0.5",
+        "prob": 0.3971,
+        "SE": 0.0258,
+        "asymp.LCL": 0.3479,
+        "asymp.UCL": 0.4486
+      },
+      {
+        "lambda_factor": "zero",
+        "prob": 0.4241,
+        "SE": 0.0261,
+        "asymp.LCL": 0.3739,
+        "asymp.UCL": 0.4759
+      },
+      {
+        "lambda_factor": "pos0.5",
+        "prob": 0.5019,
+        "SE": 0.0263,
+        "asymp.LCL": 0.4504,
+        "asymp.UCL": 0.5533
+      },
+      {
+        "lambda_factor": "pos1",
+        "prob": 0.4067,
+        "SE": 0.0258,
+        "asymp.LCL": 0.3573,
+        "asymp.UCL": 0.4581
+      }
+    ],
+    "pairwise": [
+      {
+        "contrast": "neg1 / neg0.5",
+        "odds.ratio": 1.3324,
+        "SE": 0.2005,
+        "null": 1,
+        "z.ratio": 1.9067,
+        "p.value": 0.1414
+      },
+      {
+        "contrast": "neg1 / zero",
+        "odds.ratio": 1.1919,
+        "SE": 0.1788,
+        "null": 1,
+        "z.ratio": 1.1704,
+        "p.value": 0.4031
+      },
+      {
+        "contrast": "neg1 / pos0.5",
+        "odds.ratio": 0.8712,
+        "SE": 0.1297,
+        "null": 1,
+        "z.ratio": -0.9266,
+        "p.value": 0.5059
+      },
+      {
+        "contrast": "neg1 / pos1",
+        "odds.ratio": 1.2802,
+        "SE": 0.192,
+        "null": 1,
+        "z.ratio": 1.647,
+        "p.value": 0.1991
+      },
+      {
+        "contrast": "neg0.5 / zero",
+        "odds.ratio": 0.8946,
+        "SE": 0.1357,
+        "null": 1,
+        "z.ratio": -0.7346,
+        "p.value": 0.5782
+      },
+      {
+        "contrast": "neg0.5 / pos0.5",
+        "odds.ratio": 0.6538,
+        "SE": 0.0984,
+        "null": 1,
+        "z.ratio": -2.8218,
+        "p.value": 0.0477
+      },
+      {
+        "contrast": "neg0.5 / pos1",
+        "odds.ratio": 0.9608,
+        "SE": 0.1457,
+        "null": 1,
+        "z.ratio": -0.2635,
+        "p.value": 0.7921
+      },
+      {
+        "contrast": "zero / pos0.5",
+        "odds.ratio": 0.7309,
+        "SE": 0.1097,
+        "null": 1,
+        "z.ratio": -2.089,
+        "p.value": 0.1223
+      },
+      {
+        "contrast": "zero / pos1",
+        "odds.ratio": 1.0741,
+        "SE": 0.1623,
+        "null": 1,
+        "z.ratio": 0.4728,
+        "p.value": 0.7071
+      },
+      {
+        "contrast": "pos0.5 / pos1",
+        "odds.ratio": 1.4695,
+        "SE": 0.2205,
+        "null": 1,
+        "z.ratio": 2.5656,
+        "p.value": 0.0515
+      }
+    ]
+  }
+}

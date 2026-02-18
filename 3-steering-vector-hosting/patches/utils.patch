@@ -1,0 +1,30 @@
+--- a/vllm/model_executor/models/utils.py
++++ b/vllm/model_executor/models/utils.py
+@@ -570,7 +570,8 @@
+
+-def make_layers(
+-    num_hidden_layers: int, layer_fn: LayerFn, prefix: str
++def make_layers(
++    num_hidden_layers: int, layer_fn: LayerFn, prefix: str,
++    layer31: LayerFn = None  # Steerable layer function for layer 31
+ ) -> Tuple[int, int, torch.nn.ModuleList]:
+     """Make a list of layers with the given layer function, taking
+     pipeline parallelism into account.
+@@ -585,8 +586,14 @@
+
+     layers = [PPMissingLayer() for _ in range(start_layer)]
+     for idx in range(start_layer, end_layer):
+-        layers.append(
+-            maybe_offload_to_cpu(layer_fn(prefix=f"{prefix}.{idx}"))
+-        )
++        # Use steerable layer for layer 31 if provided
++        if idx == 31 and layer31 is not None:
++            layers.append(
++                maybe_offload_to_cpu(layer31(prefix=f"{prefix}.{idx}"))
++            )
++        else:
++            layers.append(
++                maybe_offload_to_cpu(layer_fn(prefix=f"{prefix}.{idx}"))
++            )
+
+     modules = torch.nn.ModuleList(

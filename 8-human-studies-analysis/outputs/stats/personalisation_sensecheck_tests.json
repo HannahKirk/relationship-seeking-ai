@@ -1,0 +1,82 @@
+{
+  "manipulation_check": [
+    {
+      "study": "Longitudinal",
+      "outcome": "personalisation_sensecheck",
+      "treatment": "personalisation",
+      "group1": "non-personalised",
+      "group2": "personalised",
+      "n1": 3740,
+      "n2": 3761,
+      "mean1": 32.9519,
+      "mean2": 83.649,
+      "sd1": 29.4077,
+      "sd2": 22.6519,
+      "t_stat": -83.6102,
+      "df": 7021.9156,
+      "p_value": 0,
+      "ci_lower": -51.8858,
+      "ci_upper": -49.5085
+    }
+  ],
+  "rs_main_effect": [
+    {
+      "study": "Longitudinal",
+      "outcome": "personalisation_sensecheck",
+      "treatment": "relationship_seeking_category",
+      "group1": "neg_lambda",
+      "group2": "pos_lambda",
+      "n1": 2999,
+      "n2": 3009,
+      "mean1": 49.6009,
+      "mean2": 65.7584,
+      "sd1": 37.3176,
+      "sd2": 33.7273,
+      "t_stat": -17.6042,
+      "df": 5941.5785,
+      "p_value": 1.166e-67,
+      "ci_lower": -17.9568,
+      "ci_upper": -14.3583
+    }
+  ],
+  "illusion_test": [
+    {
+      "study": "Non-Personalised Only",
+      "outcome": "personalisation_sensecheck",
+      "treatment": "relationship_seeking_category",
+      "group1": "neg_lambda",
+      "group2": "pos_lambda",
+      "n1": 1569,
+      "n2": 1431,
+      "mean1": 26.6813,
+      "mean2": 39.8505,
+      "sd1": 28.0511,
+      "sd2": 29.3544,
+      "t_stat": -12.5354,
+      "df": 2942.4749,
+      "p_value": 3.7182e-35,
+      "ci_lower": -15.229,
+      "ci_upper": -11.1092
+    }
+  ],
+  "rs_within_personalised": [
+    {
+      "study": "Personalised Only",
+      "outcome": "personalisation_sensecheck",
+      "treatment": "relationship_seeking_category",
+      "group1": "neg_lambda",
+      "group2": "pos_lambda",
+      "n1": 1430,
+      "n2": 1578,
+      "mean1": 74.7483,
+      "mean2": 89.2529,
+      "sd1": 29.1314,
+      "sd2": 15.0654,
+      "t_stat": -16.8923,
+      "df": 2094.1544,
+      "p_value": 4.0838e-60,
+      "ci_lower": -16.1885,
+      "ci_upper": -12.8207
+    }
+  ]
+}

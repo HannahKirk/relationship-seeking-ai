@@ -1,0 +1,361 @@
+{
+  "cross_study": {
+    "change_recoded": {
+      "study_id": {
+        "treatment": ["study_id"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [166.1075],
+        "df": [2],
+        "p_value": [8.5156e-37],
+        "min_expected": [50.1162],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "cross-sectional",
+            "level": "Less likely",
+            "n": 35,
+            "percentage": 3.3365
+          },
+          {
+            "group": "cross-sectional",
+            "level": "More likely",
+            "n": 26,
+            "percentage": 2.4786
+          },
+          {
+            "group": "cross-sectional",
+            "level": "No change",
+            "n": 988,
+            "percentage": 94.1849
+          },
+          {
+            "group": "longitudinal",
+            "level": "Less likely",
+            "n": 67,
+            "percentage": 6.1694
+          },
+          {
+            "group": "longitudinal",
+            "level": "More likely",
+            "n": 206,
+            "percentage": 18.9687
+          },
+          {
+            "group": "longitudinal",
+            "level": "No change",
+            "n": 813,
+            "percentage": 74.8619
+          }
+        ]
+      }
+    }
+  },
+  "cross_sectional": {
+    "change_recoded": {
+      "personalisation": {
+        "treatment": ["personalisation"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [4.8776],
+        "df": [2],
+        "p_value": [0.0873],
+        "min_expected": [12.6654],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "domain": {
+        "treatment": ["domain"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [1.8104],
+        "df": [2],
+        "p_value": [0.4045],
+        "min_expected": [12.6158],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "relationship_seeking_category": {
+        "treatment": ["relationship_seeking_category"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [5.8068],
+        "df": [4],
+        "p_value": [0.214],
+        "min_expected": [5.0562],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "lambda_factor": {
+        "treatment": ["lambda_factor"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [7.3188],
+        "df": [8],
+        "p_value": [0.5027],
+        "min_expected": [5.0315],
+        "significant": [false],
+        "breakdown": {}
+      }
+    }
+  },
+  "longitudinal": {
+    "change_recoded": {
+      "personalisation": {
+        "treatment": ["personalisation"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [6.7143],
+        "df": [2],
+        "p_value": [0.0348],
+        "min_expected": [33.0064],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "non-personalised",
+            "level": "Less likely",
+            "n": 29,
+            "percentage": 5.4206
+          },
+          {
+            "group": "non-personalised",
+            "level": "More likely",
+            "n": 87,
+            "percentage": 16.2617
+          },
+          {
+            "group": "non-personalised",
+            "level": "No change",
+            "n": 419,
+            "percentage": 78.3178
+          },
+          {
+            "group": "personalised",
+            "level": "Less likely",
+            "n": 38,
+            "percentage": 6.8966
+          },
+          {
+            "group": "personalised",
+            "level": "More likely",
+            "n": 119,
+            "percentage": 21.5971
+          },
+          {
+            "group": "personalised",
+            "level": "No change",
+            "n": 394,
+            "percentage": 71.5064
+          }
+        ]
+      },
+      "domain": {
+        "treatment": ["domain"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [25.0942],
+        "df": [2],
+        "p_value": [3.5552e-06],
+        "min_expected": [31.4641],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "polchat",
+            "level": "Less likely",
+            "n": 37,
+            "percentage": 6.4236
+          },
+          {
+            "group": "polchat",
+            "level": "More likely",
+            "n": 77,
+            "percentage": 13.3681
+          },
+          {
+            "group": "polchat",
+            "level": "No change",
+            "n": 462,
+            "percentage": 80.2083
+          },
+          {
+            "group": "emotchat",
+            "level": "Less likely",
+            "n": 30,
+            "percentage": 5.8824
+          },
+          {
+            "group": "emotchat",
+            "level": "More likely",
+            "n": 129,
+            "percentage": 25.2941
+          },
+          {
+            "group": "emotchat",
+            "level": "No change",
+            "n": 351,
+            "percentage": 68.8235
+          }
+        ]
+      },
+      "relationship_seeking_category": {
+        "treatment": ["relationship_seeking_category"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [43.1491],
+        "df": [4],
+        "p_value": [9.6363e-09],
+        "min_expected": [12.9558],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg_lambda",
+            "level": "Less likely",
+            "n": 16,
+            "percentage": 3.5556
+          },
+          {
+            "group": "neg_lambda",
+            "level": "More likely",
+            "n": 54,
+            "percentage": 12
+          },
+          {
+            "group": "neg_lambda",
+            "level": "No change",
+            "n": 380,
+            "percentage": 84.4444
+          },
+          {
+            "group": "zero_lambda",
+            "level": "Less likely",
+            "n": 11,
+            "percentage": 5.2381
+          },
+          {
+            "group": "zero_lambda",
+            "level": "More likely",
+            "n": 46,
+            "percentage": 21.9048
+          },
+          {
+            "group": "zero_lambda",
+            "level": "No change",
+            "n": 153,
+            "percentage": 72.8571
+          },
+          {
+            "group": "pos_lambda",
+            "level": "Less likely",
+            "n": 40,
+            "percentage": 9.3897
+          },
+          {
+            "group": "pos_lambda",
+            "level": "More likely",
+            "n": 106,
+            "percentage": 24.8826
+          },
+          {
+            "group": "pos_lambda",
+            "level": "No change",
+            "n": 280,
+            "percentage": 65.7277
+          }
+        ]
+      },
+      "lambda_factor": {
+        "treatment": ["lambda_factor"],
+        "outcome": ["change_recoded"],
+        "chi_sq": [55.2592],
+        "df": [8],
+        "p_value": [3.9313e-09],
+        "min_expected": [11.8453],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg1",
+            "level": "Less likely",
+            "n": 12,
+            "percentage": 5.2863
+          },
+          {
+            "group": "neg1",
+            "level": "More likely",
+            "n": 30,
+            "percentage": 13.2159
+          },
+          {
+            "group": "neg1",
+            "level": "No change",
+            "n": 185,
+            "percentage": 81.4978
+          },
+          {
+            "group": "neg0.5",
+            "level": "Less likely",
+            "n": 4,
+            "percentage": 1.7937
+          },
+          {
+            "group": "neg0.5",
+            "level": "More likely",
+            "n": 24,
+            "percentage": 10.7623
+          },
+          {
+            "group": "neg0.5",
+            "level": "No change",
+            "n": 195,
+            "percentage": 87.4439
+          },
+          {
+            "group": "zero",
+            "level": "Less likely",
+            "n": 11,
+            "percentage": 5.2381
+          },
+          {
+            "group": "zero",
+            "level": "More likely",
+            "n": 46,
+            "percentage": 21.9048
+          },
+          {
+            "group": "zero",
+            "level": "No change",
+            "n": 153,
+            "percentage": 72.8571
+          },
+          {
+            "group": "pos0.5",
+            "level": "Less likely",
+            "n": 11,
+            "percentage": 5.7292
+          },
+          {
+            "group": "pos0.5",
+            "level": "More likely",
+            "n": 53,
+            "percentage": 27.6042
+          },
+          {
+            "group": "pos0.5",
+            "level": "No change",
+            "n": 128,
+            "percentage": 66.6667
+          },
+          {
+            "group": "pos1",
+            "level": "Less likely",
+            "n": 29,
+            "percentage": 12.3932
+          },
+          {
+            "group": "pos1",
+            "level": "More likely",
+            "n": 53,
+            "percentage": 22.6496
+          },
+          {
+            "group": "pos1",
+            "level": "No change",
+            "n": 152,
+            "percentage": 64.9573
+          }
+        ]
+      }
+    }
+  }
+}

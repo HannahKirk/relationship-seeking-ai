@@ -1,0 +1,5 @@
+# API requests
+requests
+
+# Progress bars
+tqdm

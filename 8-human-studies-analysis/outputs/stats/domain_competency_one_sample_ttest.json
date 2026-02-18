@@ -1,0 +1,74 @@
+[
+  {
+    "study": "Longitudinal",
+    "outcome": "emotional_competency",
+    "n": 1820,
+    "mean_change": 2.5714,
+    "sd_change": 19.0419,
+    "t_stat": 5.761,
+    "df": 1819,
+    "p_value": 9.7959e-09,
+    "ci_lower": 1.696,
+    "ci_upper": 3.4468
+  },
+  {
+    "study": "Longitudinal",
+    "outcome": "political_competency",
+    "n": 1820,
+    "mean_change": 5.0041,
+    "sd_change": 19.8951,
+    "t_stat": 10.7304,
+    "df": 1819,
+    "p_value": 4.3405e-26,
+    "ci_lower": 4.0895,
+    "ci_upper": 5.9188
+  },
+  {
+    "study": "Longitudinal",
+    "outcome": "emotchat_effectiveness",
+    "n": 1820,
+    "mean_change": 2.1571,
+    "sd_change": 20.3678,
+    "t_stat": 4.5183,
+    "df": 1819,
+    "p_value": 6.6361e-06,
+    "ci_lower": 1.2208,
+    "ci_upper": 3.0935
+  },
+  {
+    "study": "Longitudinal",
+    "outcome": "emotchat_satis",
+    "n": 1820,
+    "mean_change": 2.9857,
+    "sd_change": 20.4718,
+    "t_stat": 6.222,
+    "df": 1819,
+    "p_value": 6.0776e-10,
+    "ci_lower": 2.0446,
+    "ci_upper": 3.9269
+  },
+  {
+    "study": "Longitudinal",
+    "outcome": "polchat_confidence",
+    "n": 1820,
+    "mean_change": 6.1093,
+    "sd_change": 22.3026,
+    "t_stat": 11.6862,
+    "df": 1819,
+    "p_value": 1.7861e-30,
+    "ci_lower": 5.084,
+    "ci_upper": 7.1347
+  },
+  {
+    "study": "Longitudinal",
+    "outcome": "polchat_knowledge",
+    "n": 1820,
+    "mean_change": 3.8989,
+    "sd_change": 21.4341,
+    "t_stat": 7.7602,
+    "df": 1819,
+    "p_value": 1.4034e-14,
+    "ci_lower": 2.9135,
+    "ci_upper": 4.8843
+  }
+]

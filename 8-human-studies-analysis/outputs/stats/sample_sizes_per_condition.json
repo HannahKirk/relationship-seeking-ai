@@ -1,0 +1,342 @@
+{
+  "by_multiplier": [
+    {
+      "study_id": "cross-sectional",
+      "multiplier": -1,
+      "n": 304
+    },
+    {
+      "study_id": "cross-sectional",
+      "multiplier": -0.5,
+      "n": 300
+    },
+    {
+      "study_id": "cross-sectional",
+      "multiplier": 0,
+      "n": 301
+    },
+    {
+      "study_id": "cross-sectional",
+      "multiplier": 0.5,
+      "n": 301
+    },
+    {
+      "study_id": "cross-sectional",
+      "multiplier": 1,
+      "n": 300
+    },
+    {
+      "study_id": "longitudinal",
+      "multiplier": -1,
+      "n": 394
+    },
+    {
+      "study_id": "longitudinal",
+      "multiplier": -0.5,
+      "n": 401
+    },
+    {
+      "study_id": "longitudinal",
+      "multiplier": 0,
+      "n": 400
+    },
+    {
+      "study_id": "longitudinal",
+      "multiplier": 0.5,
+      "n": 402
+    },
+    {
+      "study_id": "longitudinal",
+      "multiplier": 1,
+      "n": 399
+    }
+  ],
+  "by_domain": [
+    {
+      "study_id": "cross-sectional",
+      "domain": "polchat",
+      "n": 760
+    },
+    {
+      "study_id": "cross-sectional",
+      "domain": "emotchat",
+      "n": 746
+    },
+    {
+      "study_id": "longitudinal",
+      "domain": "polchat",
+      "n": 999
+    },
+    {
+      "study_id": "longitudinal",
+      "domain": "emotchat",
+      "n": 997
+    }
+  ],
+  "by_personalisation": [
+    {
+      "study_id": "cross-sectional",
+      "personalisation": "non-personalised",
+      "n": 753
+    },
+    {
+      "study_id": "cross-sectional",
+      "personalisation": "personalised",
+      "n": 753
+    },
+    {
+      "study_id": "longitudinal",
+      "personalisation": "non-personalised",
+      "n": 997
+    },
+    {
+      "study_id": "longitudinal",
+      "personalisation": "personalised",
+      "n": 999
+    }
+  ],
+  "factorial_longitudinal": [
+    {
+      "multiplier": -1,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 98
+    },
+    {
+      "multiplier": -1,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 94
+    },
+    {
+      "multiplier": -1,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 99
+    },
+    {
+      "multiplier": -1,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 103
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 107
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 92
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 113
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 89
+    },
+    {
+      "multiplier": 0,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 106
+    },
+    {
+      "multiplier": 0,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 91
+    },
+    {
+      "multiplier": 0,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 94
+    },
+    {
+      "multiplier": 0,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 109
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 94
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 117
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 96
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 95
+    },
+    {
+      "multiplier": 1,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 96
+    },
+    {
+      "multiplier": 1,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 104
+    },
+    {
+      "multiplier": 1,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 94
+    },
+    {
+      "multiplier": 1,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 105
+    }
+  ],
+  "factorial_cross_sectional": [
+    {
+      "multiplier": -1,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 74
+    },
+    {
+      "multiplier": -1,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 85
+    },
+    {
+      "multiplier": -1,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 75
+    },
+    {
+      "multiplier": -1,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 70
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 68
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 74
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 94
+    },
+    {
+      "multiplier": -0.5,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 64
+    },
+    {
+      "multiplier": 0,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 69
+    },
+    {
+      "multiplier": 0,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 87
+    },
+    {
+      "multiplier": 0,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 78
+    },
+    {
+      "multiplier": 0,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 67
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 71
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 71
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 81
+    },
+    {
+      "multiplier": 0.5,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 78
+    },
+    {
+      "multiplier": 1,
+      "domain": "polchat",
+      "personalisation": "non-personalised",
+      "n": 75
+    },
+    {
+      "multiplier": 1,
+      "domain": "polchat",
+      "personalisation": "personalised",
+      "n": 86
+    },
+    {
+      "multiplier": 1,
+      "domain": "emotchat",
+      "personalisation": "non-personalised",
+      "n": 68
+    },
+    {
+      "multiplier": 1,
+      "domain": "emotchat",
+      "personalisation": "personalised",
+      "n": 71
+    }
+  ]
+}

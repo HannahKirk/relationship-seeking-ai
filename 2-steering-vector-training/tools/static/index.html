@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Chat Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .chat-container {
+            display: flex;
+            flex: 1;
+            gap: 20px;
+            min-height: 0; /* Important for proper flexbox scrolling */
+        }
+        .chat-window {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            min-height: 0; /* Important for proper flexbox scrolling */
+        }
+        .controls {
+            margin-bottom: 15px;
+        }
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 15px;
+            min-height: 0; /* Important for proper flexbox scrolling */
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .user-message {
+            color: #2563eb;
+        }
+        .assistant-message {
+            color: #059669;
+        }
+        .global-controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            background: #f9fafb;
+            border-radius: 5px;
+            border: 1px solid #e5e7eb;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .slider-container {
+            margin-bottom: 15px;
+        }
+        .slider-container input[type="range"] {
+            width: 100%;
+            margin: 5px 0;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        button:disabled {
+            background-color: #93c5fd;
+            cursor: not-allowed;
+        }
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-window">
+                <div class="controls">
+                    <div class="slider-container">
+                        <label>
+                            Left Chat Multiplier: <span id="left-multiplier-value">0.0</span>
+                        </label>
+                        <input type="range" id="left-multiplier" min="-10" max="10" step="0.25" value="0.0">
+                    </div>
+                    <button class="send-individual" data-side="left">Send to Left</button>
+                </div>
+                <div class="messages" id="left-messages"></div>
+            </div>
+
+            <div class="chat-window">
+                <div class="controls">
+                    <div class="slider-container">
+                        <label>
+                            Right Chat Multiplier: <span id="right-multiplier-value">0.0</span>
+                        </label>
+                        <input type="range" id="right-multiplier" min="-10" max="10" step="0.25" value="0.0">
+                    </div>
+                    <button class="send-individual" data-side="right">Send to Right</button>
+                </div>
+                <div class="messages" id="right-messages"></div>
+            </div>
+        </div>
+
+        <div class="global-controls">
+            <input type="text" id="global-input" placeholder="Type your message...">
+            <button id="send-all">Send to Both</button>
+            <button id="reset-all">Reset All</button>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000';
+        let isLoading = { left: false, right: false };
+
+        // DOM elements
+        const globalInput = document.getElementById('global-input');
+        const sendAllButton = document.getElementById('send-all');
+        const resetAllButton = document.getElementById('reset-all');
+        const leftMessages = document.getElementById('left-messages');
+        const rightMessages = document.getElementById('right-messages');
+        const leftMultiplier = document.getElementById('left-multiplier');
+        const rightMultiplier = document.getElementById('right-multiplier');
+        const leftMultiplierValue = document.getElementById('left-multiplier-value');
+        const rightMultiplierValue = document.getElementById('right-multiplier-value');
+
+        // Update multiplier value displays
+        leftMultiplier.addEventListener('input', (e) => {
+            leftMultiplierValue.textContent = e.target.value;
+        });
+        rightMultiplier.addEventListener('input', (e) => {
+            rightMultiplierValue.textContent = e.target.value;
+        });
+
+        // Send message function
+        async function sendMessage(side, message, multiplier) {
+            const chat_id = side;  // 'left' or 'right'
+            if (isLoading[side] || !message.trim()) return;
+
+            const messagesContainer = document.getElementById(`${side}-messages`);
+
+            // Add user message
+            addMessage(messagesContainer, 'You', message, 'user-message');
+
+            // Show loading state
+            isLoading[side] = true;
+            const loadingDiv = addMessage(messagesContainer, 'Assistant', 'Thinking...', 'loading');
+
+            try {
+                const response = await fetch(`${API_URL}/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        multiplier: multiplier,
+                        chat_id: chat_id
+                    }),
+                });
+
+                const data = await response.json();
+                loadingDiv.remove();
+
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+
+                addMessage(messagesContainer, 'Assistant', data.response, 'assistant-message');
+            } catch (error) {
+                loadingDiv.remove();
+                addMessage(messagesContainer, 'Error', error.message, 'error-message');
+            } finally {
+                isLoading[side] = false;
+            }
+        }
+
+        // Add message to chat
+        function addMessage(container, sender, text, className) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${className}`;
+            messageDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+            return messageDiv;
+        }
+
+        // Event listeners
+        sendAllButton.addEventListener('click', () => {
+            const message = globalInput.value;
+            if (message.trim()) {
+                sendMessage('left', message, parseFloat(leftMultiplier.value));
+                sendMessage('right', message, parseFloat(rightMultiplier.value));
+                globalInput.value = '';
+            }
+        });
+
+        document.querySelectorAll('.send-individual').forEach(button => {
+            button.addEventListener('click', () => {
+                const message = globalInput.value;
+                const side = button.dataset.side;
+                const multiplier = parseFloat(document.getElementById(`${side}-multiplier`).value);
+                if (message.trim()) {
+                    sendMessage(side, message, multiplier);
+                    globalInput.value = '';
+                }
+            });
+        });
+
+        globalInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendAllButton.click();
+            }
+        });
+
+        resetAllButton.addEventListener('click', async () => {
+            try {
+                await fetch(`${API_URL}/reset`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ chat_id: null }) // null resets both chats
+                });
+                leftMessages.innerHTML = '';
+                rightMessages.innerHTML = '';
+                addMessage(leftMessages, 'System', 'Chat history cleared', 'system-message');
+                addMessage(rightMessages, 'System', 'Chat history cleared', 'system-message');
+            } catch (error) {
+                addMessage(leftMessages, 'Error', 'Failed to reset chat', 'error-message');
+                addMessage(rightMessages, 'Error', 'Failed to reset chat', 'error-message');
+            }
+        });
+
+        // Focus input on load
+        window.addEventListener('load', () => {
+            globalInput.focus();
+        });
+    </script>
+</body>
+</html>

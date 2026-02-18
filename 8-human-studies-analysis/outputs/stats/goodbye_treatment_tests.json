@@ -1,0 +1,378 @@
+{
+  "cross_study": {
+    "goodbye_action": {
+      "study_id": {
+        "treatment": ["study_id"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [89.5378],
+        "df": [1],
+        "p_value": [3.0083e-21],
+        "min_expected": [552.4113],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "cross-sectional",
+            "level": 0,
+            "n": 1085,
+            "percentage": 72.0452
+          },
+          {
+            "group": "cross-sectional",
+            "level": 1,
+            "n": 421,
+            "percentage": 27.9548
+          },
+          {
+            "group": "longitudinal",
+            "level": 0,
+            "n": 1021,
+            "percentage": 56.0989
+          },
+          {
+            "group": "longitudinal",
+            "level": 1,
+            "n": 799,
+            "percentage": 43.9011
+          }
+        ]
+      }
+    }
+  },
+  "cross_sectional": {
+    "goodbye_action": {
+      "personalisation": {
+        "treatment": ["personalisation"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [1.3188],
+        "df": [1],
+        "p_value": [0.2508],
+        "min_expected": [210.5],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "domain": {
+        "treatment": ["domain"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [3.7923],
+        "df": [1],
+        "p_value": [0.0515],
+        "min_expected": [208.5432],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "relationship_seeking_category": {
+        "treatment": ["relationship_seeking_category"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [4.1389],
+        "df": [2],
+        "p_value": [0.1263],
+        "min_expected": [84.1441],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "lambda_factor": {
+        "treatment": ["lambda_factor"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [4.8283],
+        "df": [4],
+        "p_value": [0.3054],
+        "min_expected": [83.8645],
+        "significant": [false],
+        "breakdown": {}
+      }
+    }
+  },
+  "longitudinal": {
+    "goodbye_action": {
+      "personalisation": {
+        "treatment": ["personalisation"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [0.0198],
+        "df": [1],
+        "p_value": [0.8882],
+        "min_expected": [395.9879],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "domain": {
+        "treatment": ["domain"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [0.1607],
+        "df": [1],
+        "p_value": [0.6885],
+        "min_expected": [397.744],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "relationship_seeking_category": {
+        "treatment": ["relationship_seeking_category"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [1.0697],
+        "df": [2],
+        "p_value": [0.5858],
+        "min_expected": [158.044],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "lambda_factor": {
+        "treatment": ["lambda_factor"],
+        "outcome": ["goodbye_action"],
+        "chi_sq": [11.5898],
+        "df": [4],
+        "p_value": [0.0207],
+        "min_expected": [158.044],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg1",
+            "level": 0,
+            "n": 194,
+            "percentage": 53.1507
+          },
+          {
+            "group": "neg1",
+            "level": 1,
+            "n": 171,
+            "percentage": 46.8493
+          },
+          {
+            "group": "neg0.5",
+            "level": 0,
+            "n": 221,
+            "percentage": 60.5479
+          },
+          {
+            "group": "neg0.5",
+            "level": 1,
+            "n": 144,
+            "percentage": 39.4521
+          },
+          {
+            "group": "zero",
+            "level": 0,
+            "n": 207,
+            "percentage": 57.5
+          },
+          {
+            "group": "zero",
+            "level": 1,
+            "n": 153,
+            "percentage": 42.5
+          },
+          {
+            "group": "pos0.5",
+            "level": 0,
+            "n": 183,
+            "percentage": 50
+          },
+          {
+            "group": "pos0.5",
+            "level": 1,
+            "n": 183,
+            "percentage": 50
+          },
+          {
+            "group": "pos1",
+            "level": 0,
+            "n": 216,
+            "percentage": 59.3407
+          },
+          {
+            "group": "pos1",
+            "level": 1,
+            "n": 148,
+            "percentage": 40.6593
+          }
+        ]
+      }
+    },
+    "goodbye_feeling_recoded": {
+      "personalisation": {
+        "treatment": ["personalisation"],
+        "outcome": ["goodbye_feeling_recoded"],
+        "chi_sq": [2.6933],
+        "df": [2],
+        "p_value": [0.2601],
+        "min_expected": [22.6834],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "domain": {
+        "treatment": ["domain"],
+        "outcome": ["goodbye_feeling_recoded"],
+        "chi_sq": [5.8391],
+        "df": [2],
+        "p_value": [0.054],
+        "min_expected": [22.6258],
+        "significant": [false],
+        "breakdown": {}
+      },
+      "relationship_seeking_category": {
+        "treatment": ["relationship_seeking_category"],
+        "outcome": ["goodbye_feeling_recoded"],
+        "chi_sq": [28.2606],
+        "df": [4],
+        "p_value": [0],
+        "min_expected": [8.8085],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg_lambda",
+            "level": "More negative",
+            "n": 32,
+            "percentage": 10.1587
+          },
+          {
+            "group": "neg_lambda",
+            "level": "More positive",
+            "n": 158,
+            "percentage": 50.1587
+          },
+          {
+            "group": "neg_lambda",
+            "level": "No change",
+            "n": 125,
+            "percentage": 39.6825
+          },
+          {
+            "group": "zero_lambda",
+            "level": "More negative",
+            "n": 3,
+            "percentage": 1.9608
+          },
+          {
+            "group": "zero_lambda",
+            "level": "More positive",
+            "n": 104,
+            "percentage": 67.9739
+          },
+          {
+            "group": "zero_lambda",
+            "level": "No change",
+            "n": 46,
+            "percentage": 30.0654
+          },
+          {
+            "group": "pos_lambda",
+            "level": "More negative",
+            "n": 11,
+            "percentage": 3.3233
+          },
+          {
+            "group": "pos_lambda",
+            "level": "More positive",
+            "n": 209,
+            "percentage": 63.142
+          },
+          {
+            "group": "pos_lambda",
+            "level": "No change",
+            "n": 111,
+            "percentage": 33.5347
+          }
+        ]
+      },
+      "lambda_factor": {
+        "treatment": ["lambda_factor"],
+        "outcome": ["goodbye_feeling_recoded"],
+        "chi_sq": [53.6085],
+        "df": [8],
+        "p_value": [8.2217e-09],
+        "min_expected": [8.2904],
+        "significant": [true],
+        "breakdown": [
+          {
+            "group": "neg1",
+            "level": "More negative",
+            "n": 27,
+            "percentage": 15.7895
+          },
+          {
+            "group": "neg1",
+            "level": "More positive",
+            "n": 72,
+            "percentage": 42.1053
+          },
+          {
+            "group": "neg1",
+            "level": "No change",
+            "n": 72,
+            "percentage": 42.1053
+          },
+          {
+            "group": "neg0.5",
+            "level": "More negative",
+            "n": 5,
+            "percentage": 3.4722
+          },
+          {
+            "group": "neg0.5",
+            "level": "More positive",
+            "n": 86,
+            "percentage": 59.7222
+          },
+          {
+            "group": "neg0.5",
+            "level": "No change",
+            "n": 53,
+            "percentage": 36.8056
+          },
+          {
+            "group": "zero",
+            "level": "More negative",
+            "n": 3,
+            "percentage": 1.9608
+          },
+          {
+            "group": "zero",
+            "level": "More positive",
+            "n": 104,
+            "percentage": 67.9739
+          },
+          {
+            "group": "zero",
+            "level": "No change",
+            "n": 46,
+            "percentage": 30.0654
+          },
+          {
+            "group": "pos0.5",
+            "level": "More negative",
+            "n": 6,
+            "percentage": 3.2787
+          },
+          {
+            "group": "pos0.5",
+            "level": "More positive",
+            "n": 116,
+            "percentage": 63.388
+          },
+          {
+            "group": "pos0.5",
+            "level": "No change",
+            "n": 61,
+            "percentage": 33.3333
+          },
+          {
+            "group": "pos1",
+            "level": "More negative",
+            "n": 5,
+            "percentage": 3.3784
+          },
+          {
+            "group": "pos1",
+            "level": "More positive",
+            "n": 93,
+            "percentage": 62.8378
+          },
+          {
+            "group": "pos1",
+            "level": "No change",
+            "n": 50,
+            "percentage": 33.7838
+          }
+        ]
+      }
+    }
+  }
+}

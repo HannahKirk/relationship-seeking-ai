@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship-Seeking Steering Vectors - Dataset Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select, input, button {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .conversation {
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .metadata {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .turn {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .user {
+            background-color: #e6f7ff;
+        }
+
+        .assistant {
+            background-color: #f0f0f0;
+        }
+
+        .turn-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .no-results {
+            display: none;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relationship-Seeking Steering Vectors</h1>
+    <p style="color: #666; margin-top: -10px;">Synthetic Dataset Viewer</p>
+
+    <div class="filters">
+        <div class="filter-group">
+            <label for="n_turns">Number of Turns:</label>
+            <select id="n_turns">
+                <option value="">Any</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">10</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="model">Model:</label>
+            <select id="model">
+                <option value="">Any</option>
+                <!-- Model options will be loaded dynamically -->
+            </select>
+        </div>
+
+        <button id="randomize">Get Random Conversation</button>
+    </div>
+
+    <div id="no-results" class="no-results">No conversations match the selected criteria. Please try different filters.</div>
+
+    <div id="conversation-container" class="conversation" style="display: none;">
+        <div class="metadata">
+            <div><strong>Prompt ID:</strong> <span id="prompt-id"></span></div>
+            <div><strong>Model:</strong> <span id="model-info"></span></div>
+            <div><strong>Number of Turns:</strong> <span id="n-turns"></span></div>
+        </div>
+
+        <h2>Target Conversation</h2>
+        <div id="target-conversation"></div>
+
+        <h2>Antitarget Conversation</h2>
+        <div id="antitarget-conversation"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load models for the dropdown
+            fetch('/get-models')
+                .then(response => response.json())
+                .then(data => {
+                    const modelSelect = document.getElementById('model');
+                    data.models.forEach(model => {
+                        const option = document.createElement('option');
+                        option.value = model;
+                        option.textContent = model;
+                        modelSelect.appendChild(option);
+                    });
+                })
+                .catch(error => console.error('Error loading models:', error));
+
+            document.getElementById('randomize').addEventListener('click', function() {
+                // Get filter values
+                const n_turns = document.getElementById('n_turns').value;
+                const model = document.getElementById('model').value;
+
+                // Create filters object
+                const filters = {};
+                if (n_turns) filters.n_turns = n_turns;
+                if (model) filters.model = model;
+
+                // Make API request
+                fetch('/random-conversation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(filters)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('No matching conversations');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Display conversation
+                    document.getElementById('no-results').style.display = 'none';
+                    document.getElementById('conversation-container').style.display = 'block';
+
+                    // Set metadata
+                    document.getElementById('prompt-id').textContent = data.prompt_id || 'N/A';
+                    document.getElementById('model-info').textContent = data.model || 'N/A';
+                    document.getElementById('n-turns').textContent = data.n_turns || 'N/A';
+
+                    // Display conversations
+                    displayConversation(data.target_conversation, 'target-conversation');
+                    displayConversation(data.antitarget_conversation, 'antitarget-conversation');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('no-results').style.display = 'block';
+                    document.getElementById('conversation-container').style.display = 'none';
+                });
+            });
+
+            function displayConversation(conversation, containerId) {
+                const container = document.getElementById(containerId);
+                container.innerHTML = '';
+
+                if (!conversation || conversation.length === 0) {
+                    container.textContent = 'No conversation data available.';
+                    return;
+                }
+
+                conversation.forEach((turn) => {
+                    const turnDiv = document.createElement('div');
+                    const role = turn.role.toLowerCase();
+                    turnDiv.className = `turn ${role}`;
+
+                    const turnLabel = document.createElement('div');
+                    turnLabel.className = 'turn-label';
+                    turnLabel.textContent = role === 'user' ? 'User:' : 'Assistant:';
+                    turnDiv.appendChild(turnLabel);
+
+                    const content = document.createElement('pre');
+                    content.textContent = turn.content;
+                    turnDiv.appendChild(content);
+
+                    container.appendChild(turnDiv);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

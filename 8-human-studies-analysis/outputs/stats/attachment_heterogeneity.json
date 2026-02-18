@@ -1,0 +1,26 @@
+{
+  "reliance_cross_sectional": {
+    "construct": "reliance",
+    "study_type": "cross_sectional",
+    "p_value": 0.5603,
+    "heterogeneous": false
+  },
+  "reliance_longitudinal": {
+    "construct": "reliance",
+    "study_type": "longitudinal",
+    "p_value": 5.9262e-43,
+    "heterogeneous": true
+  },
+  "perceived_understanding_cross_sectional": {
+    "construct": "perceived_understanding",
+    "study_type": "cross_sectional",
+    "p_value": 0.0834,
+    "heterogeneous": false
+  },
+  "perceived_understanding_longitudinal": {
+    "construct": "perceived_understanding",
+    "study_type": "longitudinal",
+    "p_value": 4.8007e-10,
+    "heterogeneous": true
+  }
+}

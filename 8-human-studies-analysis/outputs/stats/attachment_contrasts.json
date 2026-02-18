@@ -1,0 +1,5993 @@
+{
+  "measure_family": "attachment",
+  "generated": "2026-02-18 10:58:26.079831",
+  "family_structure": {
+    "local_families": {
+      "attachment_core": ["reliance", "perceived_understanding", "self_disclosure", "separation_distress"],
+      "seeking_companionship": "seeking_companionship_likelihood",
+      "goodbye": "goodbye_action"
+    },
+    "global_family": ["attachment_core", "seeking_companionship", "goodbye"],
+    "global_family_temporal": "attachment_core"
+  },
+  "n_contrasts": 231,
+  "contrasts": [
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 2.7149,
+        "lower_cl": 0.1976,
+        "upper_cl": 5.2322,
+        "p_raw": 0.0345,
+        "p_local": 0.0345,
+        "p_global": 0.0415
+      },
+      "coarsened": {
+        "estimate": 2.9636,
+        "lower_cl": 0.4295,
+        "upper_cl": 5.4977,
+        "p_raw": 0.0219
+      },
+      "narrow": {
+        "estimate": 5.318,
+        "lower_cl": 1.837,
+        "upper_cl": 8.7991,
+        "p_raw": 0.0028
+      },
+      "full": {
+        "estimate": 0.1117,
+        "lower_cl": -3.4492,
+        "upper_cl": 3.6725,
+        "p_raw": 0.951
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 8.6101,
+        "lower_cl": 6.3543,
+        "upper_cl": 10.866,
+        "p_raw": 1.0769e-13,
+        "p_local": 4.3076e-13,
+        "p_global": 6.4614e-13
+      },
+      "coarsened": {
+        "estimate": 8.7488,
+        "lower_cl": 6.3659,
+        "upper_cl": 11.1317,
+        "p_raw": 8.5325e-13
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 0.8881,
+        "lower_cl": -1.3697,
+        "upper_cl": 3.1459,
+        "p_raw": 0.4405,
+        "p_local": 0.8553,
+        "p_global": 0.8811
+      },
+      "coarsened": {
+        "estimate": 1.0426,
+        "lower_cl": -1.341,
+        "upper_cl": 3.4261,
+        "p_raw": 0.3911
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 5.2131,
+        "se": 2.3774,
+        "lower_cl": 0.553,
+        "upper_cl": 9.8731,
+        "p_raw": 0.0283,
+        "p_local": 0.0312,
+        "p_global": 0.0321
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": -4.169,
+        "se": 1.3387,
+        "lower_cl": -6.7929,
+        "upper_cl": -1.545,
+        "p_raw": 0.0018,
+        "p_local": 0.0051,
+        "p_global": 0.0045
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ³ (cubic)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": -7.0242,
+        "se": 2.6311,
+        "lower_cl": -12.1816,
+        "upper_cl": -1.8669,
+        "p_raw": 0.0076,
+        "p_local": 0.0119,
+        "p_global": 0.0117
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Domain: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 0.6226,
+        "lower_cl": -4.0459,
+        "upper_cl": 5.2911,
+        "p_raw": 0.7937,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": 0.871,
+        "lower_cl": -4.0535,
+        "upper_cl": 5.7955,
+        "p_raw": 0.7287
+      }
+    },
+    {
+      "test": "RS at Domain = polchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 2.4035,
+        "lower_cl": -1.0298,
+        "upper_cl": 5.8369,
+        "p_raw": 0.1699
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Domain = emotchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 3.0262,
+        "lower_cl": -0.4064,
+        "upper_cl": 6.4588,
+        "p_raw": 0.084
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": -0.5526,
+        "lower_cl": -5.2234,
+        "upper_cl": 4.1181,
+        "p_raw": 0.8165,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": 0.2993,
+        "lower_cl": -4.6288,
+        "upper_cl": 5.2274,
+        "p_raw": 0.9052
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 2.9912,
+        "lower_cl": -0.4519,
+        "upper_cl": 6.4342,
+        "p_raw": 0.0886
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 2.4386,
+        "lower_cl": -0.9858,
+        "upper_cl": 5.8629,
+        "p_raw": 0.1627
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Time: S4 - S1",
+      "test_type": "temporal_main",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": -0.309,
+        "lower_cl": -1.1508,
+        "upper_cl": 0.5327,
+        "p_raw": 0.4716,
+        "p_local": 0.5804,
+        "p_global": 0.5804
+      },
+      "coarsened": {
+        "estimate": -0.344,
+        "lower_cl": -1.2328,
+        "upper_cl": 0.5449,
+        "p_raw": 0.448
+      }
+    },
+    {
+      "test": "Relationship-Seeking × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": -0.2613,
+        "lower_cl": -2.0474,
+        "upper_cl": 1.5247,
+        "p_raw": 0.7742,
+        "p_local": 0.8847,
+        "p_global": 0.8847
+      },
+      "coarsened": {
+        "estimate": 0.5226,
+        "lower_cl": -1.3604,
+        "upper_cl": 2.4056,
+        "p_raw": 0.5863
+      }
+    },
+    {
+      "test": "Relationship-Seeking at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 2.8432,
+        "lower_cl": 0.3661,
+        "upper_cl": 5.3203,
+        "p_raw": 0.0245
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Relationship-Seeking at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 2.5819,
+        "lower_cl": -0.276,
+        "upper_cl": 5.4398,
+        "p_raw": 0.0766
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 2.8467,
+        "lower_cl": 1.1628,
+        "upper_cl": 4.5306,
+        "p_raw": 0.0009,
+        "p_local": 0.0025,
+        "p_global": 0.0025
+      },
+      "coarsened": {
+        "estimate": 2.8692,
+        "lower_cl": 1.1846,
+        "upper_cl": 4.5537,
+        "p_raw": 0.0009
+      }
+    },
+    {
+      "test": "Domain at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 7.2118,
+        "lower_cl": 4.9961,
+        "upper_cl": 9.4274,
+        "p_raw": 2.1612e-10
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 10.0585,
+        "lower_cl": 7.4667,
+        "upper_cl": 12.6503,
+        "p_raw": 4.2326e-14
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 1.3777,
+        "lower_cl": -0.3065,
+        "upper_cl": 3.0619,
+        "p_raw": 0.1088,
+        "p_local": 0.1583,
+        "p_global": 0.1583
+      },
+      "coarsened": {
+        "estimate": 1.3518,
+        "lower_cl": -0.3334,
+        "upper_cl": 3.0371,
+        "p_raw": 0.1158
+      }
+    },
+    {
+      "test": "Personalisation at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 0.2114,
+        "lower_cl": -2.0063,
+        "upper_cl": 2.429,
+        "p_raw": 0.8517
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "primary": {
+        "estimate": 1.5891,
+        "lower_cl": -1.0046,
+        "upper_cl": 4.1827,
+        "p_raw": 0.2297
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Slope: neg_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.0594,
+        "lower_cl": -0.4686,
+        "upper_cl": 0.3499,
+        "p_raw": 0.7761,
+        "p_local": 0.7913,
+        "p_global": 0.7913
+      },
+      "coarsened": {
+        "estimate": -0.1735,
+        "lower_cl": -0.6173,
+        "upper_cl": 0.2703,
+        "p_raw": 0.4434
+      },
+      "narrow": {
+        "estimate": -0.0739,
+        "lower_cl": -0.4177,
+        "upper_cl": 0.2699,
+        "p_raw": 0.6735
+      },
+      "full": {
+        "estimate": -0.0449,
+        "lower_cl": -0.5311,
+        "upper_cl": 0.4414,
+        "p_raw": 0.8565
+      }
+    },
+    {
+      "test": "Slope: pos_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.1465,
+        "lower_cl": -0.5553,
+        "upper_cl": 0.2623,
+        "p_raw": 0.4823,
+        "p_local": 0.5573,
+        "p_global": 0.5573
+      },
+      "coarsened": {
+        "estimate": 0.0007,
+        "lower_cl": -0.4426,
+        "upper_cl": 0.444,
+        "p_raw": 0.9975
+      },
+      "narrow": {
+        "estimate": -0.132,
+        "lower_cl": -0.4754,
+        "upper_cl": 0.2115,
+        "p_raw": 0.4512
+      },
+      "full": {
+        "estimate": -0.161,
+        "lower_cl": -0.6468,
+        "upper_cl": 0.3248,
+        "p_raw": 0.5158
+      }
+    },
+    {
+      "test": "Slope: polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.5775,
+        "lower_cl": -0.9751,
+        "upper_cl": -0.1798,
+        "p_raw": 0.0044,
+        "p_local": 0.0076,
+        "p_global": 0.0076
+      },
+      "coarsened": {
+        "estimate": -0.5929,
+        "lower_cl": -1.0024,
+        "upper_cl": -0.1833,
+        "p_raw": 0.0046
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 0.3714,
+        "lower_cl": -0.0246,
+        "upper_cl": 0.7675,
+        "p_raw": 0.066,
+        "p_local": 0.0916,
+        "p_global": 0.0916
+      },
+      "coarsened": {
+        "estimate": 0.3635,
+        "lower_cl": -0.0433,
+        "upper_cl": 0.7704,
+        "p_raw": 0.0798
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.3326,
+        "lower_cl": -0.7307,
+        "upper_cl": 0.0654,
+        "p_raw": 0.1014,
+        "p_local": 0.1335,
+        "p_global": 0.1335
+      },
+      "coarsened": {
+        "estimate": -0.34,
+        "lower_cl": -0.7496,
+        "upper_cl": 0.0697,
+        "p_raw": 0.1038
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.1266,
+        "lower_cl": -0.2691,
+        "upper_cl": 0.5223,
+        "p_raw": 0.5304,
+        "p_local": 0.5918,
+        "p_global": 0.5918
+      },
+      "coarsened": {
+        "estimate": 0.1107,
+        "lower_cl": -0.2962,
+        "upper_cl": 0.5175,
+        "p_raw": 0.5938
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.5338,
+        "lower_cl": -1.0349,
+        "upper_cl": -0.0327,
+        "p_raw": 0.0368,
+        "p_local": 0.0532,
+        "p_global": 0.0532
+      },
+      "coarsened": {
+        "estimate": -0.6517,
+        "lower_cl": -1.1817,
+        "upper_cl": -0.1216,
+        "p_raw": 0.016
+      },
+      "narrow": {
+        "estimate": -0.5483,
+        "lower_cl": -0.996,
+        "upper_cl": -0.1007,
+        "p_raw": 0.0164
+      },
+      "full": {
+        "estimate": -0.5193,
+        "lower_cl": -1.0863,
+        "upper_cl": 0.0477,
+        "p_raw": 0.0726
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.6209,
+        "lower_cl": -1.1132,
+        "upper_cl": -0.1286,
+        "p_raw": 0.0135,
+        "p_local": 0.0209,
+        "p_global": 0.0209
+      },
+      "coarsened": {
+        "estimate": -0.4775,
+        "lower_cl": -0.9971,
+        "upper_cl": 0.0422,
+        "p_raw": 0.0717
+      },
+      "narrow": {
+        "estimate": -0.6064,
+        "lower_cl": -1.0475,
+        "upper_cl": -0.1653,
+        "p_raw": 0.0071
+      },
+      "full": {
+        "estimate": -0.6355,
+        "lower_cl": -1.1921,
+        "upper_cl": -0.0788,
+        "p_raw": 0.0253
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 0.4151,
+        "lower_cl": -0.0763,
+        "upper_cl": 0.9065,
+        "p_raw": 0.0978,
+        "p_local": 0.1303,
+        "p_global": 0.1303
+      },
+      "coarsened": {
+        "estimate": 0.3047,
+        "lower_cl": -0.2155,
+        "upper_cl": 0.8249,
+        "p_raw": 0.2508
+      },
+      "narrow": {
+        "estimate": 0.4006,
+        "lower_cl": -0.0394,
+        "upper_cl": 0.8405,
+        "p_raw": 0.0743
+      },
+      "full": {
+        "estimate": 0.4296,
+        "lower_cl": -0.1263,
+        "upper_cl": 0.9855,
+        "p_raw": 0.1298
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 0.328,
+        "lower_cl": -0.1715,
+        "upper_cl": 0.8274,
+        "p_raw": 0.198,
+        "p_local": 0.2422,
+        "p_global": 0.2422
+      },
+      "coarsened": {
+        "estimate": 0.4789,
+        "lower_cl": -0.0508,
+        "upper_cl": 1.0086,
+        "p_raw": 0.0764
+      },
+      "narrow": {
+        "estimate": 0.3425,
+        "lower_cl": -0.1035,
+        "upper_cl": 0.7885,
+        "p_raw": 0.1322
+      },
+      "full": {
+        "estimate": 0.3134,
+        "lower_cl": -0.252,
+        "upper_cl": 0.8789,
+        "p_raw": 0.2771
+      }
+    },
+    {
+      "test": "Slope: neg_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.289,
+        "lower_cl": -0.7811,
+        "upper_cl": 0.2031,
+        "p_raw": 0.2495,
+        "p_local": 0.3018,
+        "p_global": 0.3018
+      },
+      "coarsened": {
+        "estimate": -0.3988,
+        "lower_cl": -0.9175,
+        "upper_cl": 0.1199,
+        "p_raw": 0.1317
+      },
+      "narrow": {
+        "estimate": -0.3035,
+        "lower_cl": -0.7446,
+        "upper_cl": 0.1376,
+        "p_raw": 0.1773
+      },
+      "full": {
+        "estimate": -0.2745,
+        "lower_cl": -0.8307,
+        "upper_cl": 0.2818,
+        "p_raw": 0.3333
+      }
+    },
+    {
+      "test": "Slope: pos_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.3761,
+        "lower_cl": -0.878,
+        "upper_cl": 0.1258,
+        "p_raw": 0.1418,
+        "p_local": 0.1799,
+        "p_global": 0.1799
+      },
+      "coarsened": {
+        "estimate": -0.2246,
+        "lower_cl": -0.7569,
+        "upper_cl": 0.3077,
+        "p_raw": 0.408
+      },
+      "narrow": {
+        "estimate": -0.3616,
+        "lower_cl": -0.81,
+        "upper_cl": 0.0868,
+        "p_raw": 0.1139
+      },
+      "full": {
+        "estimate": -0.3906,
+        "lower_cl": -0.9585,
+        "upper_cl": 0.1772,
+        "p_raw": 0.1774
+      }
+    },
+    {
+      "test": "Slope: neg_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.1702,
+        "lower_cl": -0.3302,
+        "upper_cl": 0.6707,
+        "p_raw": 0.5047,
+        "p_local": 0.5768,
+        "p_global": 0.5768
+      },
+      "coarsened": {
+        "estimate": 0.0518,
+        "lower_cl": -0.4799,
+        "upper_cl": 0.5835,
+        "p_raw": 0.8484
+      },
+      "narrow": {
+        "estimate": 0.1557,
+        "lower_cl": -0.2909,
+        "upper_cl": 0.6024,
+        "p_raw": 0.4942
+      },
+      "full": {
+        "estimate": 0.1848,
+        "lower_cl": -0.3819,
+        "upper_cl": 0.7514,
+        "p_raw": 0.5226
+      }
+    },
+    {
+      "test": "Slope: pos_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.0831,
+        "lower_cl": -0.4067,
+        "upper_cl": 0.573,
+        "p_raw": 0.7393,
+        "p_local": 0.7689,
+        "p_global": 0.7689
+      },
+      "coarsened": {
+        "estimate": 0.226,
+        "lower_cl": -0.2911,
+        "upper_cl": 0.7432,
+        "p_raw": 0.3915
+      },
+      "narrow": {
+        "estimate": 0.0977,
+        "lower_cl": -0.3411,
+        "upper_cl": 0.5364,
+        "p_raw": 0.6625
+      },
+      "full": {
+        "estimate": 0.0686,
+        "lower_cl": -0.4856,
+        "upper_cl": 0.6228,
+        "p_raw": 0.8082
+      }
+    },
+    {
+      "test": "Slope: polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.8071,
+        "lower_cl": -1.2947,
+        "upper_cl": -0.3195,
+        "p_raw": 0.0012,
+        "p_local": 0.0023,
+        "p_global": 0.0023
+      },
+      "coarsened": {
+        "estimate": -0.8182,
+        "lower_cl": -1.3158,
+        "upper_cl": -0.3205,
+        "p_raw": 0.0013
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 0.1418,
+        "lower_cl": -0.3446,
+        "upper_cl": 0.6283,
+        "p_raw": 0.5675,
+        "p_local": 0.6213,
+        "p_global": 0.6213
+      },
+      "coarsened": {
+        "estimate": 0.1382,
+        "lower_cl": -0.3574,
+        "upper_cl": 0.6339,
+        "p_raw": 0.5845
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.3478,
+        "lower_cl": -0.8337,
+        "upper_cl": 0.138,
+        "p_raw": 0.1604,
+        "p_local": 0.201,
+        "p_global": 0.201
+      },
+      "coarsened": {
+        "estimate": -0.3675,
+        "lower_cl": -0.8631,
+        "upper_cl": 0.128,
+        "p_raw": 0.146
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.6011,
+        "lower_cl": 0.1166,
+        "upper_cl": 1.0855,
+        "p_raw": 0.0151,
+        "p_local": 0.023,
+        "p_global": 0.023
+      },
+      "coarsened": {
+        "estimate": 0.5888,
+        "lower_cl": 0.0957,
+        "upper_cl": 1.082,
+        "p_raw": 0.0193
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.7634,
+        "lower_cl": -1.3341,
+        "upper_cl": -0.1928,
+        "p_raw": 0.0088,
+        "p_local": 0.014,
+        "p_global": 0.014
+      },
+      "coarsened": {
+        "estimate": -0.877,
+        "lower_cl": -1.471,
+        "upper_cl": -0.283,
+        "p_raw": 0.0038
+      },
+      "narrow": {
+        "estimate": -0.778,
+        "lower_cl": -1.304,
+        "upper_cl": -0.252,
+        "p_raw": 0.0038
+      },
+      "full": {
+        "estimate": -0.7489,
+        "lower_cl": -1.3769,
+        "upper_cl": -0.121,
+        "p_raw": 0.0194
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.8506,
+        "lower_cl": -1.4224,
+        "upper_cl": -0.2787,
+        "p_raw": 0.0036,
+        "p_local": 0.0063,
+        "p_global": 0.0063
+      },
+      "coarsened": {
+        "estimate": -0.7028,
+        "lower_cl": -1.3001,
+        "upper_cl": -0.1055,
+        "p_raw": 0.0211
+      },
+      "narrow": {
+        "estimate": -0.836,
+        "lower_cl": -1.3629,
+        "upper_cl": -0.3092,
+        "p_raw": 0.0019
+      },
+      "full": {
+        "estimate": -0.8651,
+        "lower_cl": -1.4945,
+        "upper_cl": -0.2356,
+        "p_raw": 0.0071
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 0.1855,
+        "lower_cl": -0.3768,
+        "upper_cl": 0.7477,
+        "p_raw": 0.5178,
+        "p_local": 0.5853,
+        "p_global": 0.5853
+      },
+      "coarsened": {
+        "estimate": 0.0794,
+        "lower_cl": -0.5061,
+        "upper_cl": 0.6649,
+        "p_raw": 0.7903
+      },
+      "narrow": {
+        "estimate": 0.1709,
+        "lower_cl": -0.3486,
+        "upper_cl": 0.6905,
+        "p_raw": 0.5188
+      },
+      "full": {
+        "estimate": 0.2,
+        "lower_cl": -0.4181,
+        "upper_cl": 0.8181,
+        "p_raw": 0.5258
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 0.0983,
+        "lower_cl": -0.4798,
+        "upper_cl": 0.6765,
+        "p_raw": 0.7387,
+        "p_local": 0.7689,
+        "p_global": 0.7689
+      },
+      "coarsened": {
+        "estimate": 0.2536,
+        "lower_cl": -0.3527,
+        "upper_cl": 0.8599,
+        "p_raw": 0.4121
+      },
+      "narrow": {
+        "estimate": 0.1129,
+        "lower_cl": -0.4182,
+        "upper_cl": 0.6439,
+        "p_raw": 0.6768
+      },
+      "full": {
+        "estimate": 0.0838,
+        "lower_cl": -0.5535,
+        "upper_cl": 0.7212,
+        "p_raw": 0.7965
+      }
+    },
+    {
+      "test": "Slope: neg_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.3042,
+        "lower_cl": -0.8822,
+        "upper_cl": 0.2738,
+        "p_raw": 0.3021,
+        "p_local": 0.357,
+        "p_global": 0.357
+      },
+      "coarsened": {
+        "estimate": -0.4264,
+        "lower_cl": -1.032,
+        "upper_cl": 0.1793,
+        "p_raw": 0.1675
+      },
+      "narrow": {
+        "estimate": -0.3187,
+        "lower_cl": -0.8495,
+        "upper_cl": 0.212,
+        "p_raw": 0.2391
+      },
+      "full": {
+        "estimate": -0.2897,
+        "lower_cl": -0.927,
+        "upper_cl": 0.3476,
+        "p_raw": 0.3728
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.3913,
+        "lower_cl": -0.9528,
+        "upper_cl": 0.1701,
+        "p_raw": 0.1718,
+        "p_local": 0.2127,
+        "p_global": 0.2127
+      },
+      "coarsened": {
+        "estimate": -0.2522,
+        "lower_cl": -0.8362,
+        "upper_cl": 0.3319,
+        "p_raw": 0.3972
+      },
+      "narrow": {
+        "estimate": -0.3768,
+        "lower_cl": -0.8956,
+        "upper_cl": 0.142,
+        "p_raw": 0.1545
+      },
+      "full": {
+        "estimate": -0.4058,
+        "lower_cl": -1.0231,
+        "upper_cl": 0.2114,
+        "p_raw": 0.1974
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.6447,
+        "lower_cl": 0.0752,
+        "upper_cl": 1.2142,
+        "p_raw": 0.0265,
+        "p_local": 0.0389,
+        "p_global": 0.0389
+      },
+      "coarsened": {
+        "estimate": 0.53,
+        "lower_cl": -0.0668,
+        "upper_cl": 1.1269,
+        "p_raw": 0.0817
+      },
+      "narrow": {
+        "estimate": 0.6302,
+        "lower_cl": 0.106,
+        "upper_cl": 1.1544,
+        "p_raw": 0.0185
+      },
+      "full": {
+        "estimate": 0.6592,
+        "lower_cl": 0.0318,
+        "upper_cl": 1.2866,
+        "p_raw": 0.0395
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.5576,
+        "lower_cl": -0.0101,
+        "upper_cl": 1.1252,
+        "p_raw": 0.0542,
+        "p_local": 0.0762,
+        "p_global": 0.0762
+      },
+      "coarsened": {
+        "estimate": 0.7042,
+        "lower_cl": 0.1114,
+        "upper_cl": 1.297,
+        "p_raw": 0.0199
+      },
+      "narrow": {
+        "estimate": 0.5721,
+        "lower_cl": 0.0493,
+        "upper_cl": 1.095,
+        "p_raw": 0.032
+      },
+      "full": {
+        "estimate": 0.5431,
+        "lower_cl": -0.0821,
+        "upper_cl": 1.1682,
+        "p_raw": 0.0886
+      }
+    },
+    {
+      "test": "Coefficient: Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "coefficient_name": "week_numeric",
+      "primary": {
+        "estimate": -0.938,
+        "se": 0.278,
+        "lower_cl": -1.4829,
+        "upper_cl": -0.3931,
+        "p_raw": 0.0007,
+        "p_local": 0.002,
+        "p_global": 0.002
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Relationship-Seeking × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "coefficient_name": "lambda:week_numeric",
+      "primary": {
+        "estimate": -0.0581,
+        "se": 0.2024,
+        "lower_cl": -0.4547,
+        "upper_cl": 0.3386,
+        "p_raw": 0.7741,
+        "p_local": 0.8847,
+        "p_global": 0.8847
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Personalisation × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "coefficient_name": "personalisation:week_numeric",
+      "primary": {
+        "estimate": 0.4592,
+        "se": 0.2862,
+        "lower_cl": -0.1018,
+        "upper_cl": 1.0203,
+        "p_raw": 0.1086,
+        "p_local": 0.1449,
+        "p_global": 0.1449
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Domain × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "reliance",
+      "coefficient_name": "domain:week_numeric",
+      "primary": {
+        "estimate": 0.9489,
+        "se": 0.2862,
+        "lower_cl": 0.3879,
+        "upper_cl": 1.5099,
+        "p_raw": 0.0009,
+        "p_local": 0.0021,
+        "p_global": 0.0021
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 10.3401,
+        "lower_cl": 7.7904,
+        "upper_cl": 12.8898,
+        "p_raw": 3.0525e-15,
+        "p_local": 1.221e-14,
+        "p_global": 1.8315e-14
+      },
+      "coarsened": {
+        "estimate": 10.283,
+        "lower_cl": 7.7153,
+        "upper_cl": 12.8508,
+        "p_raw": 6.6331e-15
+      },
+      "narrow": {
+        "estimate": 10.1509,
+        "lower_cl": 6.62,
+        "upper_cl": 13.6817,
+        "p_raw": 1.9668e-08
+      },
+      "full": {
+        "estimate": 10.5293,
+        "lower_cl": 6.9216,
+        "upper_cl": 14.1371,
+        "p_raw": 1.2033e-08
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 3.5208,
+        "lower_cl": 1.2365,
+        "upper_cl": 5.8052,
+        "p_raw": 0.0025,
+        "p_local": 0.0034,
+        "p_global": 0.0038
+      },
+      "coarsened": {
+        "estimate": 4.16,
+        "lower_cl": 1.7446,
+        "upper_cl": 6.5754,
+        "p_raw": 0.0007
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 3.6851,
+        "lower_cl": 1.3988,
+        "upper_cl": 5.9715,
+        "p_raw": 0.0016,
+        "p_local": 0.0064,
+        "p_global": 0.0096
+      },
+      "coarsened": {
+        "estimate": 3.8164,
+        "lower_cl": 1.4003,
+        "upper_cl": 6.2324,
+        "p_raw": 0.002
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 11.9389,
+        "se": 2.4138,
+        "lower_cl": 7.2077,
+        "upper_cl": 16.67,
+        "p_raw": 7.6235e-07,
+        "p_local": 4.1929e-06,
+        "p_global": 4.5721e-06
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": -7.8946,
+        "se": 1.3595,
+        "lower_cl": -10.5593,
+        "upper_cl": -5.2299,
+        "p_raw": 6.4435e-09,
+        "p_local": 7.0879e-08,
+        "p_global": 1.0954e-07
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ³ (cubic)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": -6.5985,
+        "se": 2.6719,
+        "lower_cl": -11.8356,
+        "upper_cl": -1.3614,
+        "p_raw": 0.0135,
+        "p_local": 0.0186,
+        "p_global": 0.0177
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Domain: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": -3.114,
+        "lower_cl": -7.852,
+        "upper_cl": 1.6239,
+        "p_raw": 0.1976,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": -3.0964,
+        "lower_cl": -8.1072,
+        "upper_cl": 1.9143,
+        "p_raw": 0.2257
+      }
+    },
+    {
+      "test": "RS at Domain = polchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 11.8971,
+        "lower_cl": 8.4163,
+        "upper_cl": 15.3779,
+        "p_raw": 2.6526e-11
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Domain = emotchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 8.7831,
+        "lower_cl": 5.3031,
+        "upper_cl": 12.263,
+        "p_raw": 8.0568e-07
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": -2.7119,
+        "lower_cl": -7.4522,
+        "upper_cl": 2.0283,
+        "p_raw": 0.262,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": -1.9223,
+        "lower_cl": -6.9367,
+        "upper_cl": 3.092,
+        "p_raw": 0.4522
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 11.6961,
+        "lower_cl": 8.2054,
+        "upper_cl": 15.1867,
+        "p_raw": 6.3594e-11
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 8.9841,
+        "lower_cl": 5.5125,
+        "upper_cl": 12.4558,
+        "p_raw": 4.2325e-07
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Time: S4 - S1",
+      "test_type": "temporal_main",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": -3.0694,
+        "lower_cl": -3.886,
+        "upper_cl": -2.2527,
+        "p_raw": 2.5244e-13,
+        "p_local": 2.0195e-12,
+        "p_global": 2.0195e-12
+      },
+      "coarsened": {
+        "estimate": -3.1774,
+        "lower_cl": -4.0396,
+        "upper_cl": -2.3151,
+        "p_raw": 7.1567e-13
+      }
+    },
+    {
+      "test": "Relationship-Seeking × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": -2.2591,
+        "lower_cl": -3.9922,
+        "upper_cl": -0.5259,
+        "p_raw": 0.0107,
+        "p_local": 0.0244,
+        "p_global": 0.0244
+      },
+      "coarsened": {
+        "estimate": -2.2686,
+        "lower_cl": -4.0959,
+        "upper_cl": -0.4413,
+        "p_raw": 0.015
+      }
+    },
+    {
+      "test": "Relationship-Seeking at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 11.4498,
+        "lower_cl": 8.938,
+        "upper_cl": 13.9616,
+        "p_raw": 8.8564e-19
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Relationship-Seeking at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 9.1907,
+        "lower_cl": 6.3222,
+        "upper_cl": 12.0592,
+        "p_raw": 4.0531e-10
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 0.1208,
+        "lower_cl": -1.5129,
+        "upper_cl": 1.7545,
+        "p_raw": 0.8847,
+        "p_local": 0.9437,
+        "p_global": 0.9437
+      },
+      "coarsened": {
+        "estimate": 0.1205,
+        "lower_cl": -1.5139,
+        "upper_cl": 1.7549,
+        "p_raw": 0.8851
+      }
+    },
+    {
+      "test": "Domain at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 3.4615,
+        "lower_cl": 1.2151,
+        "upper_cl": 5.7079,
+        "p_raw": 0.0025
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 3.5823,
+        "lower_cl": 0.9834,
+        "upper_cl": 6.1812,
+        "p_raw": 0.0069
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 3.4207,
+        "lower_cl": 1.7867,
+        "upper_cl": 5.0547,
+        "p_raw": 0,
+        "p_local": 0.0001,
+        "p_global": 0.0001
+      },
+      "coarsened": {
+        "estimate": 3.4439,
+        "lower_cl": 1.8087,
+        "upper_cl": 5.0791,
+        "p_raw": 0
+      }
+    },
+    {
+      "test": "Personalisation at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 2.0048,
+        "lower_cl": -0.2436,
+        "upper_cl": 4.2532,
+        "p_raw": 0.0805
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "primary": {
+        "estimate": 5.4255,
+        "lower_cl": 2.8247,
+        "upper_cl": 8.0263,
+        "p_raw": 0
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Slope: neg_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.6459,
+        "lower_cl": -1.0431,
+        "upper_cl": -0.2486,
+        "p_raw": 0.0015,
+        "p_local": 0.0027,
+        "p_global": 0.0027
+      },
+      "coarsened": {
+        "estimate": -0.5916,
+        "lower_cl": -1.0224,
+        "upper_cl": -0.1609,
+        "p_raw": 0.0071
+      },
+      "narrow": {
+        "estimate": -0.7714,
+        "lower_cl": -1.1051,
+        "upper_cl": -0.4377,
+        "p_raw": 6.1724e-06
+      },
+      "full": {
+        "estimate": -0.5204,
+        "lower_cl": -0.9924,
+        "upper_cl": -0.0484,
+        "p_raw": 0.0307
+      }
+    },
+    {
+      "test": "Slope: pos_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.3989,
+        "lower_cl": -1.7955,
+        "upper_cl": -1.0023,
+        "p_raw": 6.2655e-12,
+        "p_local": 3.258e-11,
+        "p_global": 3.258e-11
+      },
+      "coarsened": {
+        "estimate": -1.3478,
+        "lower_cl": -1.7779,
+        "upper_cl": -0.9178,
+        "p_raw": 9.6468e-10
+      },
+      "narrow": {
+        "estimate": -1.2734,
+        "lower_cl": -1.6066,
+        "upper_cl": -0.9402,
+        "p_raw": 1.0118e-13
+      },
+      "full": {
+        "estimate": -1.5244,
+        "lower_cl": -1.9957,
+        "upper_cl": -1.0532,
+        "p_raw": 2.7998e-10
+      }
+    },
+    {
+      "test": "Slope: polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.0433,
+        "lower_cl": -1.429,
+        "upper_cl": -0.6576,
+        "p_raw": 1.2628e-07,
+        "p_local": 3.5027e-07,
+        "p_global": 3.5027e-07
+      },
+      "coarsened": {
+        "estimate": -1.0792,
+        "lower_cl": -1.4765,
+        "upper_cl": -0.6819,
+        "p_raw": 1.1177e-07
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.003,
+        "lower_cl": -1.3873,
+        "upper_cl": -0.6187,
+        "p_raw": 3.3995e-07,
+        "p_local": 8.6231e-07,
+        "p_global": 8.6231e-07
+      },
+      "coarsened": {
+        "estimate": -1.039,
+        "lower_cl": -1.4337,
+        "upper_cl": -0.6444,
+        "p_raw": 2.6864e-07
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.5932,
+        "lower_cl": -1.9792,
+        "upper_cl": -1.2073,
+        "p_raw": 1.0079e-15,
+        "p_local": 2.6206e-14,
+        "p_global": 2.6206e-14
+      },
+      "coarsened": {
+        "estimate": -1.6331,
+        "lower_cl": -2.0303,
+        "upper_cl": -1.2359,
+        "p_raw": 1.307e-15
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.453,
+        "lower_cl": -0.8372,
+        "upper_cl": -0.0688,
+        "p_raw": 0.0208,
+        "p_local": 0.031,
+        "p_global": 0.031
+      },
+      "coarsened": {
+        "estimate": -0.4851,
+        "lower_cl": -0.8801,
+        "upper_cl": -0.0902,
+        "p_raw": 0.0161
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.666,
+        "lower_cl": -1.1521,
+        "upper_cl": -0.1799,
+        "p_raw": 0.0073,
+        "p_local": 0.012,
+        "p_global": 0.012
+      },
+      "coarsened": {
+        "estimate": -0.6117,
+        "lower_cl": -1.1259,
+        "upper_cl": -0.0975,
+        "p_raw": 0.0197
+      },
+      "narrow": {
+        "estimate": -0.7915,
+        "lower_cl": -1.2258,
+        "upper_cl": -0.3572,
+        "p_raw": 0.0004
+      },
+      "full": {
+        "estimate": -0.5405,
+        "lower_cl": -1.0906,
+        "upper_cl": 0.0096,
+        "p_raw": 0.0541
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.419,
+        "lower_cl": -1.8966,
+        "upper_cl": -0.9414,
+        "p_raw": 6.6332e-09,
+        "p_local": 2.4638e-08,
+        "p_global": 2.4638e-08
+      },
+      "coarsened": {
+        "estimate": -1.3679,
+        "lower_cl": -1.872,
+        "upper_cl": -0.8638,
+        "p_raw": 1.1516e-07
+      },
+      "narrow": {
+        "estimate": -1.2935,
+        "lower_cl": -1.7215,
+        "upper_cl": -0.8656,
+        "p_raw": 3.6382e-09
+      },
+      "full": {
+        "estimate": -1.5445,
+        "lower_cl": -2.0846,
+        "upper_cl": -1.0045,
+        "p_raw": 2.3371e-08
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.6257,
+        "lower_cl": -1.1028,
+        "upper_cl": -0.1487,
+        "p_raw": 0.0102,
+        "p_local": 0.016,
+        "p_global": 0.016
+      },
+      "coarsened": {
+        "estimate": -0.5715,
+        "lower_cl": -1.0767,
+        "upper_cl": -0.0664,
+        "p_raw": 0.0266
+      },
+      "narrow": {
+        "estimate": -0.7512,
+        "lower_cl": -1.1783,
+        "upper_cl": -0.3242,
+        "p_raw": 0.0006
+      },
+      "full": {
+        "estimate": -0.5002,
+        "lower_cl": -1.0399,
+        "upper_cl": 0.0395,
+        "p_raw": 0.0693
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.3788,
+        "lower_cl": -1.8632,
+        "upper_cl": -0.8943,
+        "p_raw": 2.7325e-08,
+        "p_local": 8.3582e-08,
+        "p_global": 8.3582e-08
+      },
+      "coarsened": {
+        "estimate": -1.3277,
+        "lower_cl": -1.8417,
+        "upper_cl": -0.8138,
+        "p_raw": 4.4515e-07
+      },
+      "narrow": {
+        "estimate": -1.2533,
+        "lower_cl": -1.6859,
+        "upper_cl": -0.8206,
+        "p_raw": 1.5455e-08
+      },
+      "full": {
+        "estimate": -1.5043,
+        "lower_cl": -2.0527,
+        "upper_cl": -0.9558,
+        "p_raw": 8.4223e-08
+      }
+    },
+    {
+      "test": "Slope: neg_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.216,
+        "lower_cl": -1.6932,
+        "upper_cl": -0.7387,
+        "p_raw": 6.3721e-07,
+        "p_local": 1.5778e-06,
+        "p_global": 1.5778e-06
+      },
+      "coarsened": {
+        "estimate": -1.1656,
+        "lower_cl": -1.6687,
+        "upper_cl": -0.6625,
+        "p_raw": 5.8762e-06
+      },
+      "narrow": {
+        "estimate": -1.3415,
+        "lower_cl": -1.7692,
+        "upper_cl": -0.9138,
+        "p_raw": 9.3978e-10
+      },
+      "full": {
+        "estimate": -1.0905,
+        "lower_cl": -1.6301,
+        "upper_cl": -0.5509,
+        "p_raw": 0.0001
+      }
+    },
+    {
+      "test": "Slope: pos_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.969,
+        "lower_cl": -2.4558,
+        "upper_cl": -1.4822,
+        "p_raw": 3.6521e-15,
+        "p_local": 7.5964e-14,
+        "p_global": 7.5964e-14
+      },
+      "coarsened": {
+        "estimate": -1.9218,
+        "lower_cl": -2.4382,
+        "upper_cl": -1.4055,
+        "p_raw": 4.2534e-13
+      },
+      "narrow": {
+        "estimate": -1.8435,
+        "lower_cl": -2.2783,
+        "upper_cl": -1.4087,
+        "p_raw": 1.7455e-16
+      },
+      "full": {
+        "estimate": -2.0945,
+        "lower_cl": -2.6453,
+        "upper_cl": -1.5437,
+        "p_raw": 1.34e-13
+      }
+    },
+    {
+      "test": "Slope: neg_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0758,
+        "lower_cl": -0.5617,
+        "upper_cl": 0.4102,
+        "p_raw": 0.7598,
+        "p_local": 0.7824,
+        "p_global": 0.7824
+      },
+      "coarsened": {
+        "estimate": -0.0176,
+        "lower_cl": -0.5339,
+        "upper_cl": 0.4986,
+        "p_raw": 0.9466
+      },
+      "narrow": {
+        "estimate": -0.2013,
+        "lower_cl": -0.635,
+        "upper_cl": 0.2324,
+        "p_raw": 0.3629
+      },
+      "full": {
+        "estimate": 0.0497,
+        "lower_cl": -0.5005,
+        "upper_cl": 0.6,
+        "p_raw": 0.8593
+      }
+    },
+    {
+      "test": "Slope: pos_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.8288,
+        "lower_cl": -1.3041,
+        "upper_cl": -0.3535,
+        "p_raw": 0.0006,
+        "p_local": 0.0012,
+        "p_global": 0.0012
+      },
+      "coarsened": {
+        "estimate": -0.7738,
+        "lower_cl": -1.2757,
+        "upper_cl": -0.272,
+        "p_raw": 0.0025
+      },
+      "narrow": {
+        "estimate": -0.7033,
+        "lower_cl": -1.129,
+        "upper_cl": -0.2775,
+        "p_raw": 0.0012
+      },
+      "full": {
+        "estimate": -0.9543,
+        "lower_cl": -1.492,
+        "upper_cl": -0.4166,
+        "p_raw": 0.0005
+      }
+    },
+    {
+      "test": "Slope: polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.6134,
+        "lower_cl": -2.0861,
+        "upper_cl": -1.1406,
+        "p_raw": 2.872e-11,
+        "p_local": 1.2986e-10,
+        "p_global": 1.2986e-10
+      },
+      "coarsened": {
+        "estimate": -1.6532,
+        "lower_cl": -2.1357,
+        "upper_cl": -1.1707,
+        "p_raw": 2.4087e-11
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.5731,
+        "lower_cl": -2.045,
+        "upper_cl": -1.1012,
+        "p_raw": 8.0274e-11,
+        "p_local": 3.4785e-10,
+        "p_global": 3.4785e-10
+      },
+      "coarsened": {
+        "estimate": -1.613,
+        "lower_cl": -2.0938,
+        "upper_cl": -1.1323,
+        "p_raw": 6.0853e-11
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.4731,
+        "lower_cl": -0.9447,
+        "upper_cl": -0.0016,
+        "p_raw": 0.0493,
+        "p_local": 0.0702,
+        "p_global": 0.0702
+      },
+      "coarsened": {
+        "estimate": -0.5052,
+        "lower_cl": -0.9863,
+        "upper_cl": -0.0241,
+        "p_raw": 0.0396
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.4329,
+        "lower_cl": -0.903,
+        "upper_cl": 0.0373,
+        "p_raw": 0.0711,
+        "p_local": 0.0973,
+        "p_global": 0.0973
+      },
+      "coarsened": {
+        "estimate": -0.4651,
+        "lower_cl": -0.9435,
+        "upper_cl": 0.0134,
+        "p_raw": 0.0568
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.2361,
+        "lower_cl": -1.7894,
+        "upper_cl": -0.6828,
+        "p_raw": 0,
+        "p_local": 0,
+        "p_global": 0
+      },
+      "coarsened": {
+        "estimate": -1.1857,
+        "lower_cl": -1.7617,
+        "upper_cl": -0.6097,
+        "p_raw": 0.0001
+      },
+      "narrow": {
+        "estimate": -1.3616,
+        "lower_cl": -1.8716,
+        "upper_cl": -0.8517,
+        "p_raw": 1.8195e-07
+      },
+      "full": {
+        "estimate": -1.1106,
+        "lower_cl": -1.7196,
+        "upper_cl": -0.5017,
+        "p_raw": 0.0004
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.9891,
+        "lower_cl": -2.5438,
+        "upper_cl": -1.4345,
+        "p_raw": 2.8204e-12,
+        "p_local": 1.7254e-11,
+        "p_global": 1.7254e-11
+      },
+      "coarsened": {
+        "estimate": -1.9419,
+        "lower_cl": -2.5212,
+        "upper_cl": -1.3626,
+        "p_raw": 6.3312e-11
+      },
+      "narrow": {
+        "estimate": -1.8636,
+        "lower_cl": -2.3746,
+        "upper_cl": -1.3527,
+        "p_raw": 1.2089e-12
+      },
+      "full": {
+        "estimate": -2.1147,
+        "lower_cl": -2.7252,
+        "upper_cl": -1.5041,
+        "p_raw": 1.4781e-11
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.1958,
+        "lower_cl": -1.7414,
+        "upper_cl": -0.6502,
+        "p_raw": 0,
+        "p_local": 0,
+        "p_global": 0
+      },
+      "coarsened": {
+        "estimate": -1.1455,
+        "lower_cl": -1.7138,
+        "upper_cl": -0.5773,
+        "p_raw": 0.0001
+      },
+      "narrow": {
+        "estimate": -1.3213,
+        "lower_cl": -1.8255,
+        "upper_cl": -0.8172,
+        "p_raw": 3.0253e-07
+      },
+      "full": {
+        "estimate": -1.0703,
+        "lower_cl": -1.6701,
+        "upper_cl": -0.4705,
+        "p_raw": 0.0005
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.9489,
+        "lower_cl": -2.5097,
+        "upper_cl": -1.388,
+        "p_raw": 1.266e-11,
+        "p_local": 6.2696e-11,
+        "p_global": 6.2696e-11
+      },
+      "coarsened": {
+        "estimate": -1.9017,
+        "lower_cl": -2.49,
+        "upper_cl": -1.3135,
+        "p_raw": 2.8683e-10
+      },
+      "narrow": {
+        "estimate": -1.8234,
+        "lower_cl": -2.3385,
+        "upper_cl": -1.3082,
+        "p_raw": 5.3186e-12
+      },
+      "full": {
+        "estimate": -2.0744,
+        "lower_cl": -2.6926,
+        "upper_cl": -1.4561,
+        "p_raw": 6.0793e-11
+      }
+    },
+    {
+      "test": "Slope: neg_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0959,
+        "lower_cl": -0.657,
+        "upper_cl": 0.4652,
+        "p_raw": 0.7375,
+        "p_local": 0.7689,
+        "p_global": 0.7689
+      },
+      "coarsened": {
+        "estimate": -0.0377,
+        "lower_cl": -0.6256,
+        "upper_cl": 0.5501,
+        "p_raw": 0.8998
+      },
+      "narrow": {
+        "estimate": -0.2214,
+        "lower_cl": -0.7366,
+        "upper_cl": 0.2938,
+        "p_raw": 0.3995
+      },
+      "full": {
+        "estimate": 0.0296,
+        "lower_cl": -0.589,
+        "upper_cl": 0.6482,
+        "p_raw": 0.9252
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.8489,
+        "lower_cl": -1.3938,
+        "upper_cl": -0.304,
+        "p_raw": 0.0023,
+        "p_local": 0.0041,
+        "p_global": 0.0041
+      },
+      "coarsened": {
+        "estimate": -0.7939,
+        "lower_cl": -1.3607,
+        "upper_cl": -0.2272,
+        "p_raw": 0.0061
+      },
+      "narrow": {
+        "estimate": -0.7234,
+        "lower_cl": -1.2269,
+        "upper_cl": -0.2199,
+        "p_raw": 0.0049
+      },
+      "full": {
+        "estimate": -0.9744,
+        "lower_cl": -1.5734,
+        "upper_cl": -0.3754,
+        "p_raw": 0.0014
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0556,
+        "lower_cl": -0.6086,
+        "upper_cl": 0.4974,
+        "p_raw": 0.8436,
+        "p_local": 0.8436,
+        "p_global": 0.8436
+      },
+      "coarsened": {
+        "estimate": 0.0024,
+        "lower_cl": -0.5772,
+        "upper_cl": 0.582,
+        "p_raw": 0.9934
+      },
+      "narrow": {
+        "estimate": -0.1811,
+        "lower_cl": -0.69,
+        "upper_cl": 0.3278,
+        "p_raw": 0.4853
+      },
+      "full": {
+        "estimate": 0.0699,
+        "lower_cl": -0.5393,
+        "upper_cl": 0.6791,
+        "p_raw": 0.822
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.8086,
+        "lower_cl": -1.3593,
+        "upper_cl": -0.258,
+        "p_raw": 0.004,
+        "p_local": 0.007,
+        "p_global": 0.007
+      },
+      "coarsened": {
+        "estimate": -0.7538,
+        "lower_cl": -1.3289,
+        "upper_cl": -0.1786,
+        "p_raw": 0.0102
+      },
+      "narrow": {
+        "estimate": -0.6831,
+        "lower_cl": -1.1904,
+        "upper_cl": -0.1759,
+        "p_raw": 0.0083
+      },
+      "full": {
+        "estimate": -0.9341,
+        "lower_cl": -1.5405,
+        "upper_cl": -0.3278,
+        "p_raw": 0.0026
+      }
+    },
+    {
+      "test": "Coefficient: Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "coefficient_name": "week_numeric",
+      "primary": {
+        "estimate": -1.7034,
+        "se": 0.2705,
+        "lower_cl": -2.2337,
+        "upper_cl": -1.1732,
+        "p_raw": 3.0992e-10,
+        "p_local": 2.4794e-09,
+        "p_global": 2.4794e-09
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Relationship-Seeking × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "coefficient_name": "lambda:week_numeric",
+      "primary": {
+        "estimate": -0.502,
+        "se": 0.1964,
+        "lower_cl": -0.8869,
+        "upper_cl": -0.1171,
+        "p_raw": 0.0106,
+        "p_local": 0.0212,
+        "p_global": 0.0212
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Personalisation × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "coefficient_name": "personalisation:week_numeric",
+      "primary": {
+        "estimate": 1.1402,
+        "se": 0.2777,
+        "lower_cl": 0.5959,
+        "upper_cl": 1.6846,
+        "p_raw": 0,
+        "p_local": 0.0001,
+        "p_global": 0.0001
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Domain × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "perceived_understanding",
+      "coefficient_name": "domain:week_numeric",
+      "primary": {
+        "estimate": 0.0403,
+        "se": 0.2777,
+        "lower_cl": -0.504,
+        "upper_cl": 0.5845,
+        "p_raw": 0.8847,
+        "p_local": 0.9436,
+        "p_global": 0.9436
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 2.4653,
+        "lower_cl": 0.29,
+        "upper_cl": 4.6406,
+        "p_raw": 0.0264,
+        "p_local": 0.0345,
+        "p_global": 0.0395
+      },
+      "coarsened": {
+        "estimate": 2.7035,
+        "lower_cl": 0.4112,
+        "upper_cl": 4.9958,
+        "p_raw": 0.0208
+      },
+      "narrow": {
+        "estimate": 1.6435,
+        "lower_cl": 0.1934,
+        "upper_cl": 3.0937,
+        "p_raw": 0.0264
+      },
+      "full": {
+        "estimate": 3.2871,
+        "lower_cl": 0.3867,
+        "upper_cl": 6.1874,
+        "p_raw": 0.0264
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 6.6616,
+        "lower_cl": 4.616,
+        "upper_cl": 8.7073,
+        "p_raw": 2.1195e-10,
+        "p_local": 4.239e-10,
+        "p_global": 6.3585e-10
+      },
+      "coarsened": {
+        "estimate": 6.4843,
+        "lower_cl": 4.3267,
+        "upper_cl": 8.6419,
+        "p_raw": 4.4346e-09
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 0.4859,
+        "lower_cl": -1.5605,
+        "upper_cl": 2.5324,
+        "p_raw": 0.6415,
+        "p_local": 0.8553,
+        "p_global": 0.9622
+      },
+      "coarsened": {
+        "estimate": 0.7601,
+        "lower_cl": -1.398,
+        "upper_cl": 2.9183,
+        "p_raw": 0.4898
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 1.3931,
+        "se": 0.7252,
+        "lower_cl": -0.0285,
+        "upper_cl": 2.8148,
+        "p_raw": 0.0548,
+        "p_local": 0.0548,
+        "p_global": 0.0582
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": -2.8449,
+        "se": 1.2243,
+        "lower_cl": -5.2449,
+        "upper_cl": -0.4448,
+        "p_raw": 0.0202,
+        "p_local": 0.0247,
+        "p_global": 0.0245
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Domain: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": -0.811,
+        "lower_cl": -5.0799,
+        "upper_cl": 3.4579,
+        "p_raw": 0.7095,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": 0.0826,
+        "lower_cl": -4.4117,
+        "upper_cl": 4.5768,
+        "p_raw": 0.9713
+      }
+    },
+    {
+      "test": "RS at Domain = polchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 2.8708,
+        "lower_cl": -0.1808,
+        "upper_cl": 5.9224,
+        "p_raw": 0.0652
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Domain = emotchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 2.0598,
+        "lower_cl": -0.9837,
+        "upper_cl": 5.1033,
+        "p_raw": 0.1846
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 1.0909,
+        "lower_cl": -3.1796,
+        "upper_cl": 5.3614,
+        "p_raw": 0.6164,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": 1.8127,
+        "lower_cl": -2.6849,
+        "upper_cl": 6.3102,
+        "p_raw": 0.4294
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 1.9198,
+        "lower_cl": -1.145,
+        "upper_cl": 4.9847,
+        "p_raw": 0.2194
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 3.0107,
+        "lower_cl": -0.0205,
+        "upper_cl": 6.042,
+        "p_raw": 0.0516
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Time: S4 - S1",
+      "test_type": "temporal_main",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": -2.928,
+        "lower_cl": -3.8901,
+        "upper_cl": -1.9658,
+        "p_raw": 2.8603e-09,
+        "p_local": 1.5255e-08,
+        "p_global": 1.5255e-08
+      },
+      "coarsened": {
+        "estimate": -3.0364,
+        "lower_cl": -4.0522,
+        "upper_cl": -2.0206,
+        "p_raw": 5.3806e-09
+      }
+    },
+    {
+      "test": "Relationship-Seeking × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 1.8373,
+        "lower_cl": -0.2044,
+        "upper_cl": 3.8789,
+        "p_raw": 0.0777,
+        "p_local": 0.1244,
+        "p_global": 0.1244
+      },
+      "coarsened": {
+        "estimate": 1.97,
+        "lower_cl": -0.182,
+        "upper_cl": 4.1221,
+        "p_raw": 0.0728
+      }
+    },
+    {
+      "test": "Relationship-Seeking at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 1.5628,
+        "lower_cl": -0.6501,
+        "upper_cl": 3.7757,
+        "p_raw": 0.1662
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Relationship-Seeking at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 3.4001,
+        "lower_cl": 0.8152,
+        "upper_cl": 5.9849,
+        "p_raw": 0.01
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 5.1064,
+        "lower_cl": 3.1816,
+        "upper_cl": 7.0312,
+        "p_raw": 2.1769e-07,
+        "p_local": 8.7078e-07,
+        "p_global": 8.7078e-07
+      },
+      "coarsened": {
+        "estimate": 5.1207,
+        "lower_cl": 3.1955,
+        "upper_cl": 7.0459,
+        "p_raw": 2.0268e-07
+      }
+    },
+    {
+      "test": "Domain at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 4.1533,
+        "lower_cl": 2.0731,
+        "upper_cl": 6.2334,
+        "p_raw": 0.0001
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 9.2596,
+        "lower_cl": 6.8261,
+        "upper_cl": 11.6931,
+        "p_raw": 1.2831e-13
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 2.1544,
+        "lower_cl": 0.2293,
+        "upper_cl": 4.0795,
+        "p_raw": 0.0283,
+        "p_local": 0.0503,
+        "p_global": 0.0503
+      },
+      "coarsened": {
+        "estimate": 2.1351,
+        "lower_cl": 0.2091,
+        "upper_cl": 4.0611,
+        "p_raw": 0.0298
+      }
+    },
+    {
+      "test": "Personalisation at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": -0.5723,
+        "lower_cl": -2.6534,
+        "upper_cl": 1.5087,
+        "p_raw": 0.5897
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "primary": {
+        "estimate": 1.582,
+        "lower_cl": -0.8522,
+        "upper_cl": 4.0163,
+        "p_raw": 0.2026
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Slope: neg_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.2828,
+        "lower_cl": -1.7506,
+        "upper_cl": -0.815,
+        "p_raw": 8.5017e-08,
+        "p_local": 2.456e-07,
+        "p_global": 2.456e-07
+      },
+      "coarsened": {
+        "estimate": -1.2538,
+        "lower_cl": -1.761,
+        "upper_cl": -0.7466,
+        "p_raw": 1.3481e-06
+      },
+      "narrow": {
+        "estimate": -1.1807,
+        "lower_cl": -1.5737,
+        "upper_cl": -0.7877,
+        "p_raw": 4.5214e-09
+      },
+      "full": {
+        "estimate": -1.3849,
+        "lower_cl": -1.9407,
+        "upper_cl": -0.829,
+        "p_raw": 1.1175e-06
+      }
+    },
+    {
+      "test": "Slope: pos_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.6704,
+        "lower_cl": -1.1377,
+        "upper_cl": -0.203,
+        "p_raw": 0.005,
+        "p_local": 0.0083,
+        "p_global": 0.0083
+      },
+      "coarsened": {
+        "estimate": -0.5971,
+        "lower_cl": -1.1038,
+        "upper_cl": -0.0905,
+        "p_raw": 0.0209
+      },
+      "narrow": {
+        "estimate": -0.7724,
+        "lower_cl": -1.1651,
+        "upper_cl": -0.3798,
+        "p_raw": 0.0001
+      },
+      "full": {
+        "estimate": -0.5683,
+        "lower_cl": -1.1236,
+        "upper_cl": -0.013,
+        "p_raw": 0.0449
+      }
+    },
+    {
+      "test": "Slope: polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.827,
+        "lower_cl": -2.2815,
+        "upper_cl": -1.3726,
+        "p_raw": 5.3544e-15,
+        "p_local": 9.281e-14,
+        "p_global": 9.281e-14
+      },
+      "coarsened": {
+        "estimate": -1.8656,
+        "lower_cl": -2.3336,
+        "upper_cl": -1.3976,
+        "p_raw": 8.9145e-15
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.1249,
+        "lower_cl": -0.5777,
+        "upper_cl": 0.3278,
+        "p_raw": 0.5885,
+        "p_local": 0.6375,
+        "p_global": 0.6375
+      },
+      "coarsened": {
+        "estimate": -0.1587,
+        "lower_cl": -0.6236,
+        "upper_cl": 0.3063,
+        "p_raw": 0.5034
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.335,
+        "lower_cl": -1.79,
+        "upper_cl": -0.8801,
+        "p_raw": 1.0083e-08,
+        "p_local": 3.6161e-08,
+        "p_global": 3.6161e-08
+      },
+      "coarsened": {
+        "estimate": -1.368,
+        "lower_cl": -1.8361,
+        "upper_cl": -0.8998,
+        "p_raw": 1.1609e-08
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.6169,
+        "lower_cl": -1.0693,
+        "upper_cl": -0.1646,
+        "p_raw": 0.0075,
+        "p_local": 0.0123,
+        "p_global": 0.0123
+      },
+      "coarsened": {
+        "estimate": -0.6563,
+        "lower_cl": -1.1213,
+        "upper_cl": -0.1913,
+        "p_raw": 0.0057
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -2.1339,
+        "lower_cl": -2.7066,
+        "upper_cl": -1.5611,
+        "p_raw": 4.0404e-13,
+        "p_local": 3.2323e-12,
+        "p_global": 3.2323e-12
+      },
+      "coarsened": {
+        "estimate": -2.1073,
+        "lower_cl": -2.713,
+        "upper_cl": -1.5015,
+        "p_raw": 1.2046e-11
+      },
+      "narrow": {
+        "estimate": -2.0318,
+        "lower_cl": -2.5435,
+        "upper_cl": -1.5201,
+        "p_raw": 1.126e-14
+      },
+      "full": {
+        "estimate": -2.2359,
+        "lower_cl": -2.884,
+        "upper_cl": -1.5879,
+        "p_raw": 1.762e-11
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -1.5214,
+        "lower_cl": -2.0842,
+        "upper_cl": -0.9587,
+        "p_raw": 1.2798e-07,
+        "p_local": 3.5027e-07,
+        "p_global": 3.5027e-07
+      },
+      "coarsened": {
+        "estimate": -1.4506,
+        "lower_cl": -2.0445,
+        "upper_cl": -0.8567,
+        "p_raw": 1.7993e-06
+      },
+      "narrow": {
+        "estimate": -1.6235,
+        "lower_cl": -2.1277,
+        "upper_cl": -1.1193,
+        "p_raw": 3.3788e-10
+      },
+      "full": {
+        "estimate": -1.4194,
+        "lower_cl": -2.0557,
+        "upper_cl": -0.7831,
+        "p_raw": 0
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.4317,
+        "lower_cl": -0.9935,
+        "upper_cl": 0.13,
+        "p_raw": 0.1319,
+        "p_local": 0.1693,
+        "p_global": 0.1693
+      },
+      "coarsened": {
+        "estimate": -0.4004,
+        "lower_cl": -0.9949,
+        "upper_cl": 0.1941,
+        "p_raw": 0.1867
+      },
+      "narrow": {
+        "estimate": -0.3297,
+        "lower_cl": -0.8326,
+        "upper_cl": 0.1733,
+        "p_raw": 0.1988
+      },
+      "full": {
+        "estimate": -0.5338,
+        "lower_cl": -1.1693,
+        "upper_cl": 0.1017,
+        "p_raw": 0.0996
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 0.1807,
+        "lower_cl": -0.3902,
+        "upper_cl": 0.7516,
+        "p_raw": 0.5349,
+        "p_local": 0.5918,
+        "p_global": 0.5918
+      },
+      "coarsened": {
+        "estimate": 0.2563,
+        "lower_cl": -0.3491,
+        "upper_cl": 0.8617,
+        "p_raw": 0.4065
+      },
+      "narrow": {
+        "estimate": 0.0786,
+        "lower_cl": -0.4312,
+        "upper_cl": 0.5884,
+        "p_raw": 0.7623
+      },
+      "full": {
+        "estimate": 0.2828,
+        "lower_cl": -0.3636,
+        "upper_cl": 0.9291,
+        "p_raw": 0.391
+      }
+    },
+    {
+      "test": "Slope: neg_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.6419,
+        "lower_cl": -2.2043,
+        "upper_cl": -1.0794,
+        "p_raw": 1.2035e-08,
+        "p_local": 4.1721e-08,
+        "p_global": 4.1721e-08
+      },
+      "coarsened": {
+        "estimate": -1.6097,
+        "lower_cl": -2.2024,
+        "upper_cl": -1.0169,
+        "p_raw": 1.126e-07
+      },
+      "narrow": {
+        "estimate": -1.5398,
+        "lower_cl": -2.0439,
+        "upper_cl": -1.0356,
+        "p_raw": 2.5106e-09
+      },
+      "full": {
+        "estimate": -1.7439,
+        "lower_cl": -2.3798,
+        "upper_cl": -1.1081,
+        "p_raw": 8.432e-08
+      }
+    },
+    {
+      "test": "Slope: pos_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.0294,
+        "lower_cl": -1.6031,
+        "upper_cl": -0.4557,
+        "p_raw": 0.0004,
+        "p_local": 0.0009,
+        "p_global": 0.0009
+      },
+      "coarsened": {
+        "estimate": -0.953,
+        "lower_cl": -1.5613,
+        "upper_cl": -0.3446,
+        "p_raw": 0.0022
+      },
+      "narrow": {
+        "estimate": -1.1315,
+        "lower_cl": -1.644,
+        "upper_cl": -0.619,
+        "p_raw": 0
+      },
+      "full": {
+        "estimate": -0.9274,
+        "lower_cl": -1.5764,
+        "upper_cl": -0.2783,
+        "p_raw": 0.0051
+      }
+    },
+    {
+      "test": "Slope: neg_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.9237,
+        "lower_cl": -1.4958,
+        "upper_cl": -0.3517,
+        "p_raw": 0.0016,
+        "p_local": 0.0029,
+        "p_global": 0.0029
+      },
+      "coarsened": {
+        "estimate": -0.898,
+        "lower_cl": -1.5056,
+        "upper_cl": -0.2904,
+        "p_raw": 0.0038
+      },
+      "narrow": {
+        "estimate": -0.8217,
+        "lower_cl": -1.3322,
+        "upper_cl": -0.3111,
+        "p_raw": 0.0016
+      },
+      "full": {
+        "estimate": -1.0258,
+        "lower_cl": -1.6736,
+        "upper_cl": -0.378,
+        "p_raw": 0.0019
+      }
+    },
+    {
+      "test": "Slope: pos_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.3113,
+        "lower_cl": -0.8713,
+        "upper_cl": 0.2487,
+        "p_raw": 0.2757,
+        "p_local": 0.3296,
+        "p_global": 0.3296
+      },
+      "coarsened": {
+        "estimate": -0.2413,
+        "lower_cl": -0.8324,
+        "upper_cl": 0.3498,
+        "p_raw": 0.4234
+      },
+      "narrow": {
+        "estimate": -0.4134,
+        "lower_cl": -0.9149,
+        "upper_cl": 0.0882,
+        "p_raw": 0.1062
+      },
+      "full": {
+        "estimate": -0.2092,
+        "lower_cl": -0.8428,
+        "upper_cl": 0.4243,
+        "p_raw": 0.5172
+      }
+    },
+    {
+      "test": "Slope: polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -2.1861,
+        "lower_cl": -2.7434,
+        "upper_cl": -1.6288,
+        "p_raw": 2.301e-14,
+        "p_local": 2.659e-13,
+        "p_global": 2.659e-13
+      },
+      "coarsened": {
+        "estimate": -2.2214,
+        "lower_cl": -2.79,
+        "upper_cl": -1.6528,
+        "p_raw": 2.9197e-14
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.484,
+        "lower_cl": -1.04,
+        "upper_cl": 0.0721,
+        "p_raw": 0.088,
+        "p_local": 0.1188,
+        "p_global": 0.1188
+      },
+      "coarsened": {
+        "estimate": -0.5145,
+        "lower_cl": -1.081,
+        "upper_cl": 0.0519,
+        "p_raw": 0.075
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -1.468,
+        "lower_cl": -2.0234,
+        "upper_cl": -0.9126,
+        "p_raw": 2.4105e-07,
+        "p_local": 6.2674e-07,
+        "p_global": 6.2674e-07
+      },
+      "coarsened": {
+        "estimate": -1.5097,
+        "lower_cl": -2.0761,
+        "upper_cl": -0.9433,
+        "p_raw": 1.9113e-07
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.2341,
+        "lower_cl": -0.3196,
+        "upper_cl": 0.7879,
+        "p_raw": 0.407,
+        "p_local": 0.4757,
+        "p_global": 0.4757
+      },
+      "coarsened": {
+        "estimate": 0.1972,
+        "lower_cl": -0.3664,
+        "upper_cl": 0.7607,
+        "p_raw": 0.4927
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -2.4929,
+        "lower_cl": -3.1451,
+        "upper_cl": -1.8407,
+        "p_raw": 1.0107e-13,
+        "p_local": 8.7597e-13,
+        "p_global": 8.7597e-13
+      },
+      "coarsened": {
+        "estimate": -2.4631,
+        "lower_cl": -3.142,
+        "upper_cl": -1.7843,
+        "p_raw": 1.577e-12
+      },
+      "narrow": {
+        "estimate": -2.3908,
+        "lower_cl": -2.992,
+        "upper_cl": -1.7897,
+        "p_raw": 1.0228e-14
+      },
+      "full": {
+        "estimate": -2.595,
+        "lower_cl": -3.3127,
+        "upper_cl": -1.8773,
+        "p_raw": 1.8855e-12
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -1.8805,
+        "lower_cl": -2.5342,
+        "upper_cl": -1.2268,
+        "p_raw": 1.9374e-08,
+        "p_local": 6.2967e-08,
+        "p_global": 6.2967e-08
+      },
+      "coarsened": {
+        "estimate": -1.8064,
+        "lower_cl": -2.489,
+        "upper_cl": -1.1238,
+        "p_raw": 2.3293e-07
+      },
+      "narrow": {
+        "estimate": -1.9826,
+        "lower_cl": -2.5848,
+        "upper_cl": -1.3804,
+        "p_raw": 1.3604e-10
+      },
+      "full": {
+        "estimate": -1.7784,
+        "lower_cl": -2.4979,
+        "upper_cl": -1.0589,
+        "p_raw": 1.3519e-06
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.7908,
+        "lower_cl": -1.4336,
+        "upper_cl": -0.148,
+        "p_raw": 0.0159,
+        "p_local": 0.024,
+        "p_global": 0.024
+      },
+      "coarsened": {
+        "estimate": -0.7562,
+        "lower_cl": -1.4254,
+        "upper_cl": -0.0871,
+        "p_raw": 0.0268
+      },
+      "narrow": {
+        "estimate": -0.6887,
+        "lower_cl": -1.2827,
+        "upper_cl": -0.0948,
+        "p_raw": 0.0231
+      },
+      "full": {
+        "estimate": -0.8929,
+        "lower_cl": -1.5994,
+        "upper_cl": -0.1863,
+        "p_raw": 0.0133
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.1784,
+        "lower_cl": -0.8393,
+        "upper_cl": 0.4825,
+        "p_raw": 0.5966,
+        "p_local": 0.6397,
+        "p_global": 0.6397
+      },
+      "coarsened": {
+        "estimate": -0.0995,
+        "lower_cl": -0.7925,
+        "upper_cl": 0.5934,
+        "p_raw": 0.7782
+      },
+      "narrow": {
+        "estimate": -0.2804,
+        "lower_cl": -0.8875,
+        "upper_cl": 0.3266,
+        "p_raw": 0.365
+      },
+      "full": {
+        "estimate": -0.0763,
+        "lower_cl": -0.8049,
+        "upper_cl": 0.6523,
+        "p_raw": 0.8373
+      }
+    },
+    {
+      "test": "Slope: neg_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -1.7748,
+        "lower_cl": -2.4355,
+        "upper_cl": -1.1141,
+        "p_raw": 1.5387e-07,
+        "p_local": 4.1031e-07,
+        "p_global": 4.1031e-07
+      },
+      "coarsened": {
+        "estimate": -1.7514,
+        "lower_cl": -2.4436,
+        "upper_cl": -1.0592,
+        "p_raw": 7.5959e-07
+      },
+      "narrow": {
+        "estimate": -1.6727,
+        "lower_cl": -2.2795,
+        "upper_cl": -1.066,
+        "p_raw": 7.2419e-08
+      },
+      "full": {
+        "estimate": -1.8769,
+        "lower_cl": -2.6054,
+        "upper_cl": -1.1484,
+        "p_raw": 4.7816e-07
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -1.1624,
+        "lower_cl": -1.8042,
+        "upper_cl": -0.5205,
+        "p_raw": 0.0004,
+        "p_local": 0.0008,
+        "p_global": 0.0008
+      },
+      "coarsened": {
+        "estimate": -1.0948,
+        "lower_cl": -1.7623,
+        "upper_cl": -0.4272,
+        "p_raw": 0.0013
+      },
+      "narrow": {
+        "estimate": -1.2644,
+        "lower_cl": -1.8575,
+        "upper_cl": -0.6714,
+        "p_raw": 0
+      },
+      "full": {
+        "estimate": -1.0603,
+        "lower_cl": -1.766,
+        "upper_cl": -0.3547,
+        "p_raw": 0.0032
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0727,
+        "lower_cl": -0.7237,
+        "upper_cl": 0.5783,
+        "p_raw": 0.8267,
+        "p_local": 0.8347,
+        "p_global": 0.8347
+      },
+      "coarsened": {
+        "estimate": -0.0445,
+        "lower_cl": -0.7266,
+        "upper_cl": 0.6375,
+        "p_raw": 0.8981
+      },
+      "narrow": {
+        "estimate": 0.0294,
+        "lower_cl": -0.5698,
+        "upper_cl": 0.6286,
+        "p_raw": 0.9234
+      },
+      "full": {
+        "estimate": -0.1747,
+        "lower_cl": -0.8919,
+        "upper_cl": 0.5424,
+        "p_raw": 0.6328
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 0.5397,
+        "lower_cl": -0.1091,
+        "upper_cl": 1.1886,
+        "p_raw": 0.103,
+        "p_local": 0.1339,
+        "p_global": 0.1339
+      },
+      "coarsened": {
+        "estimate": 0.6121,
+        "lower_cl": -0.0654,
+        "upper_cl": 1.2897,
+        "p_raw": 0.0766
+      },
+      "narrow": {
+        "estimate": 0.4377,
+        "lower_cl": -0.1599,
+        "upper_cl": 1.0353,
+        "p_raw": 0.1511
+      },
+      "full": {
+        "estimate": 0.6418,
+        "lower_cl": -0.0727,
+        "upper_cl": 1.3564,
+        "p_raw": 0.0783
+      }
+    },
+    {
+      "test": "Coefficient: Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "coefficient_name": "week_numeric",
+      "primary": {
+        "estimate": -2.1867,
+        "se": 0.2841,
+        "lower_cl": -2.7437,
+        "upper_cl": -1.6297,
+        "p_raw": 1.5827e-14,
+        "p_local": 2.5323e-13,
+        "p_global": 2.5323e-13
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Relationship-Seeking × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "coefficient_name": "lambda:week_numeric",
+      "primary": {
+        "estimate": 0.4083,
+        "se": 0.2313,
+        "lower_cl": -0.0452,
+        "upper_cl": 0.8618,
+        "p_raw": 0.0776,
+        "p_local": 0.1129,
+        "p_global": 0.1129
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Personalisation × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "coefficient_name": "personalisation:week_numeric",
+      "primary": {
+        "estimate": 0.7181,
+        "se": 0.3272,
+        "lower_cl": 0.0768,
+        "upper_cl": 1.3595,
+        "p_raw": 0.0282,
+        "p_local": 0.0451,
+        "p_global": 0.0451
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Domain × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "self_disclosure",
+      "coefficient_name": "domain:week_numeric",
+      "primary": {
+        "estimate": 1.7021,
+        "se": 0.3271,
+        "lower_cl": 1.0609,
+        "upper_cl": 2.3434,
+        "p_raw": 2.0104e-07,
+        "p_local": 8.0416e-07,
+        "p_global": 8.0416e-07
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 6.0377,
+        "lower_cl": 3.3213,
+        "upper_cl": 8.7541,
+        "p_raw": 0,
+        "p_local": 0,
+        "p_global": 0
+      },
+      "coarsened": {
+        "estimate": 6.2877,
+        "lower_cl": 3.5559,
+        "upper_cl": 9.0195,
+        "p_raw": 6.7466e-06
+      },
+      "narrow": {
+        "estimate": 7.9978,
+        "lower_cl": 4.2662,
+        "upper_cl": 11.7293,
+        "p_raw": 0
+      },
+      "full": {
+        "estimate": 4.0776,
+        "lower_cl": 0.2394,
+        "upper_cl": 7.9158,
+        "p_raw": 0.0373
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 1.9026,
+        "lower_cl": -0.5341,
+        "upper_cl": 4.3393,
+        "p_raw": 0.1258,
+        "p_local": 0.1258,
+        "p_global": 0.151
+      },
+      "coarsened": {
+        "estimate": 2.3052,
+        "lower_cl": -0.2616,
+        "upper_cl": 4.872,
+        "p_raw": 0.0783
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 0.0116,
+        "lower_cl": -2.4272,
+        "upper_cl": 2.4504,
+        "p_raw": 0.9926,
+        "p_local": 0.9926,
+        "p_global": 0.9926
+      },
+      "coarsened": {
+        "estimate": 0.2899,
+        "lower_cl": -2.2775,
+        "upper_cl": 2.8574,
+        "p_raw": 0.8248
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 9.4817,
+        "se": 2.5347,
+        "lower_cl": 4.513,
+        "upper_cl": 14.4504,
+        "p_raw": 0.0002,
+        "p_local": 0.0007,
+        "p_global": 0.0006
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": -4.002,
+        "se": 1.432,
+        "lower_cl": -6.8091,
+        "upper_cl": -1.1949,
+        "p_raw": 0.0052,
+        "p_local": 0.0095,
+        "p_global": 0.0089
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ³ (cubic)",
+      "test_type": "dose_response",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": -7.9697,
+        "se": 2.8147,
+        "lower_cl": -13.4874,
+        "upper_cl": -2.4521,
+        "p_raw": 0.0046,
+        "p_local": 0.0095,
+        "p_global": 0.0088
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Domain: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": -0.7576,
+        "lower_cl": -5.751,
+        "upper_cl": 4.2358,
+        "p_raw": 0.7661,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": -0.0261,
+        "lower_cl": -5.287,
+        "upper_cl": 5.2348,
+        "p_raw": 0.9922
+      }
+    },
+    {
+      "test": "RS at Domain = polchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 6.4165,
+        "lower_cl": 2.7268,
+        "upper_cl": 10.1063,
+        "p_raw": 0.0007
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Domain = emotchat",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 5.6589,
+        "lower_cl": 1.9698,
+        "upper_cl": 9.348,
+        "p_raw": 0.0027
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": -1.1234,
+        "lower_cl": -6.1192,
+        "upper_cl": 3.8724,
+        "p_raw": 0.6593,
+        "p_local": 0.8165,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": -0.4025,
+        "lower_cl": -5.6673,
+        "upper_cl": 4.8622,
+        "p_raw": 0.8808
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 6.5994,
+        "lower_cl": 2.8992,
+        "upper_cl": 10.2996,
+        "p_raw": 0.0005
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 5.476,
+        "lower_cl": 1.7957,
+        "upper_cl": 9.1563,
+        "p_raw": 0.0036
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Time: S4 - S1",
+      "test_type": "temporal_main",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 6.4928,
+        "lower_cl": 5.3345,
+        "upper_cl": 7.6511,
+        "p_raw": 2.7964e-27,
+        "p_local": 4.4742e-26,
+        "p_global": 4.4742e-26
+      },
+      "coarsened": {
+        "estimate": 6.536,
+        "lower_cl": 5.3137,
+        "upper_cl": 7.7583,
+        "p_raw": 4.8597e-25
+      }
+    },
+    {
+      "test": "Relationship-Seeking × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 2.7644,
+        "lower_cl": 0.3063,
+        "upper_cl": 5.2224,
+        "p_raw": 0.0275,
+        "p_local": 0.0503,
+        "p_global": 0.0503
+      },
+      "coarsened": {
+        "estimate": 3.6424,
+        "lower_cl": 1.0528,
+        "upper_cl": 6.2321,
+        "p_raw": 0.0059
+      }
+    },
+    {
+      "test": "Relationship-Seeking at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 4.6798,
+        "lower_cl": 2.0029,
+        "upper_cl": 7.3567,
+        "p_raw": 0.0006
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Relationship-Seeking at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 7.4441,
+        "lower_cl": 4.1772,
+        "upper_cl": 10.7111,
+        "p_raw": 8.3102e-06
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 0.0668,
+        "lower_cl": -2.2505,
+        "upper_cl": 2.3841,
+        "p_raw": 0.9549,
+        "p_local": 0.9549,
+        "p_global": 0.9549
+      },
+      "coarsened": {
+        "estimate": 0.0966,
+        "lower_cl": -2.2201,
+        "upper_cl": 2.4132,
+        "p_raw": 0.9349
+      }
+    },
+    {
+      "test": "Domain at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 1.8698,
+        "lower_cl": -0.5272,
+        "upper_cl": 4.2668,
+        "p_raw": 0.1262
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Domain at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 1.9366,
+        "lower_cl": -1.0413,
+        "upper_cl": 4.9146,
+        "p_raw": 0.2023
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation × Time: Δ (S4 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 1.3739,
+        "lower_cl": -0.9437,
+        "upper_cl": 3.6916,
+        "p_raw": 0.2451,
+        "p_local": 0.3268,
+        "p_global": 0.3268
+      },
+      "coarsened": {
+        "estimate": 1.3167,
+        "lower_cl": -1.001,
+        "upper_cl": 3.6343,
+        "p_raw": 0.2653
+      }
+    },
+    {
+      "test": "Personalisation at S1",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": -0.6633,
+        "lower_cl": -3.0625,
+        "upper_cl": 1.7358,
+        "p_raw": 0.5877
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation at S4",
+      "test_type": "temporal_simple",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "primary": {
+        "estimate": 0.7106,
+        "lower_cl": -2.2693,
+        "upper_cl": 3.6905,
+        "p_raw": 0.6401
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Slope: neg_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": 1.7026,
+        "lower_cl": 1.1393,
+        "upper_cl": 2.2659,
+        "p_raw": 3.6486e-09,
+        "p_local": 1.4054e-08,
+        "p_global": 1.4054e-08
+      },
+      "coarsened": {
+        "estimate": 1.5326,
+        "lower_cl": 0.9222,
+        "upper_cl": 2.143,
+        "p_raw": 9.2132e-07
+      },
+      "narrow": {
+        "estimate": 1.8562,
+        "lower_cl": 1.383,
+        "upper_cl": 2.3294,
+        "p_raw": 2.3195e-14
+      },
+      "full": {
+        "estimate": 1.5491,
+        "lower_cl": 0.8797,
+        "upper_cl": 2.2184,
+        "p_raw": 6.0131e-06
+      }
+    },
+    {
+      "test": "Slope: pos_λ",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": 2.6241,
+        "lower_cl": 2.0615,
+        "upper_cl": 3.1867,
+        "p_raw": 1.4844e-19,
+        "p_local": 1.5438e-17,
+        "p_global": 1.5438e-17
+      },
+      "coarsened": {
+        "estimate": 2.7467,
+        "lower_cl": 2.1371,
+        "upper_cl": 3.3563,
+        "p_raw": 2.2349e-18
+      },
+      "narrow": {
+        "estimate": 2.4705,
+        "lower_cl": 1.9978,
+        "upper_cl": 2.9432,
+        "p_raw": 5.0366e-24
+      },
+      "full": {
+        "estimate": 2.7777,
+        "lower_cl": 2.1091,
+        "upper_cl": 3.4462,
+        "p_raw": 6.6777e-16
+      }
+    },
+    {
+      "test": "Slope: polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 2.1531,
+        "lower_cl": 1.606,
+        "upper_cl": 2.7003,
+        "p_raw": 1.9214e-14,
+        "p_local": 2.4978e-13,
+        "p_global": 2.4978e-13
+      },
+      "coarsened": {
+        "estimate": 2.1626,
+        "lower_cl": 1.5994,
+        "upper_cl": 2.7257,
+        "p_raw": 7.7992e-14
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 2.1754,
+        "lower_cl": 1.6303,
+        "upper_cl": 2.7205,
+        "p_raw": 8.3023e-15,
+        "p_local": 1.2335e-13,
+        "p_global": 1.2335e-13
+      },
+      "coarsened": {
+        "estimate": 2.1948,
+        "lower_cl": 1.6353,
+        "upper_cl": 2.7542,
+        "p_raw": 2.3007e-14
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 1.9353,
+        "lower_cl": 1.3876,
+        "upper_cl": 2.4829,
+        "p_raw": 5.7432e-12,
+        "p_local": 3.1436e-11,
+        "p_global": 3.1436e-11
+      },
+      "coarsened": {
+        "estimate": 1.9592,
+        "lower_cl": 1.396,
+        "upper_cl": 2.5224,
+        "p_raw": 1.2077e-11
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 2.3932,
+        "lower_cl": 1.8486,
+        "upper_cl": 2.9379,
+        "p_raw": 1.4453e-17,
+        "p_local": 7.5155e-16,
+        "p_global": 7.5155e-16
+      },
+      "coarsened": {
+        "estimate": 2.3981,
+        "lower_cl": 1.8385,
+        "upper_cl": 2.9577,
+        "p_raw": 8.4563e-17
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 1.6915,
+        "lower_cl": 1.0019,
+        "upper_cl": 2.381,
+        "p_raw": 1.6235e-06,
+        "p_local": 3.7522e-06,
+        "p_global": 3.7522e-06
+      },
+      "coarsened": {
+        "estimate": 1.5165,
+        "lower_cl": 0.7876,
+        "upper_cl": 2.2454,
+        "p_raw": 0
+      },
+      "narrow": {
+        "estimate": 1.8451,
+        "lower_cl": 1.229,
+        "upper_cl": 2.4611,
+        "p_raw": 5.0275e-09
+      },
+      "full": {
+        "estimate": 1.5379,
+        "lower_cl": 0.7577,
+        "upper_cl": 2.3182,
+        "p_raw": 0.0001
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 2.6129,
+        "lower_cl": 1.9355,
+        "upper_cl": 3.2904,
+        "p_raw": 6.1021e-14,
+        "p_local": 6.3461e-13,
+        "p_global": 6.3461e-13
+      },
+      "coarsened": {
+        "estimate": 2.7306,
+        "lower_cl": 2.016,
+        "upper_cl": 3.4453,
+        "p_raw": 1.027e-13
+      },
+      "narrow": {
+        "estimate": 2.4594,
+        "lower_cl": 1.8523,
+        "upper_cl": 3.0664,
+        "p_raw": 3.3138e-15
+      },
+      "full": {
+        "estimate": 2.7665,
+        "lower_cl": 2.0005,
+        "upper_cl": 3.5325,
+        "p_raw": 1.9911e-12
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 1.7138,
+        "lower_cl": 1.0374,
+        "upper_cl": 2.3901,
+        "p_raw": 7.3332e-07,
+        "p_local": 1.7736e-06,
+        "p_global": 1.7736e-06
+      },
+      "coarsened": {
+        "estimate": 1.5487,
+        "lower_cl": 0.8331,
+        "upper_cl": 2.2642,
+        "p_raw": 0
+      },
+      "narrow": {
+        "estimate": 1.8673,
+        "lower_cl": 1.2618,
+        "upper_cl": 2.4729,
+        "p_raw": 1.7719e-09
+      },
+      "full": {
+        "estimate": 1.5602,
+        "lower_cl": 0.795,
+        "upper_cl": 2.3254,
+        "p_raw": 0.0001
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": null,
+      "primary": {
+        "estimate": 2.6352,
+        "lower_cl": 1.9479,
+        "upper_cl": 3.3225,
+        "p_raw": 8.4915e-14,
+        "p_local": 8.0283e-13,
+        "p_global": 8.0283e-13
+      },
+      "coarsened": {
+        "estimate": 2.7628,
+        "lower_cl": 2.0343,
+        "upper_cl": 3.4913,
+        "p_raw": 1.5553e-13
+      },
+      "narrow": {
+        "estimate": 2.4816,
+        "lower_cl": 1.8679,
+        "upper_cl": 3.0954,
+        "p_raw": 3.7337e-15
+      },
+      "full": {
+        "estimate": 2.7888,
+        "lower_cl": 2.0107,
+        "upper_cl": 3.5669,
+        "p_raw": 2.8993e-12
+      }
+    },
+    {
+      "test": "Slope: neg_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 1.4736,
+        "lower_cl": 0.7965,
+        "upper_cl": 2.1507,
+        "p_raw": 0,
+        "p_local": 0,
+        "p_global": 0
+      },
+      "coarsened": {
+        "estimate": 1.3131,
+        "lower_cl": 0.5999,
+        "upper_cl": 2.0264,
+        "p_raw": 0.0003
+      },
+      "narrow": {
+        "estimate": 1.6272,
+        "lower_cl": 1.0203,
+        "upper_cl": 2.2341,
+        "p_raw": 1.6189e-07
+      },
+      "full": {
+        "estimate": 1.3201,
+        "lower_cl": 0.5546,
+        "upper_cl": 2.0855,
+        "p_raw": 0.0007
+      }
+    },
+    {
+      "test": "Slope: pos_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 2.3951,
+        "lower_cl": 1.7045,
+        "upper_cl": 3.0857,
+        "p_raw": 1.3889e-11,
+        "p_local": 6.5656e-11,
+        "p_global": 6.5656e-11
+      },
+      "coarsened": {
+        "estimate": 2.5273,
+        "lower_cl": 1.7953,
+        "upper_cl": 3.2593,
+        "p_raw": 1.7036e-11
+      },
+      "narrow": {
+        "estimate": 2.2415,
+        "lower_cl": 1.6246,
+        "upper_cl": 2.8585,
+        "p_raw": 1.4754e-12
+      },
+      "full": {
+        "estimate": 2.5487,
+        "lower_cl": 1.7673,
+        "upper_cl": 3.33,
+        "p_raw": 1.9995e-10
+      }
+    },
+    {
+      "test": "Slope: neg_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 1.9316,
+        "lower_cl": 1.2427,
+        "upper_cl": 2.6205,
+        "p_raw": 4.3459e-08,
+        "p_local": 1.2913e-07,
+        "p_global": 1.2913e-07
+      },
+      "coarsened": {
+        "estimate": 1.752,
+        "lower_cl": 1.0207,
+        "upper_cl": 2.4834,
+        "p_raw": 2.8167e-06
+      },
+      "narrow": {
+        "estimate": 2.0852,
+        "lower_cl": 1.4704,
+        "upper_cl": 2.7,
+        "p_raw": 3.8021e-11
+      },
+      "full": {
+        "estimate": 1.778,
+        "lower_cl": 0.998,
+        "upper_cl": 2.5581,
+        "p_raw": 8.2755e-06
+      }
+    },
+    {
+      "test": "Slope: pos_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 2.8531,
+        "lower_cl": 2.1789,
+        "upper_cl": 3.5272,
+        "p_raw": 1.9807e-16,
+        "p_local": 6.8663e-15,
+        "p_global": 6.8663e-15
+      },
+      "coarsened": {
+        "estimate": 2.9662,
+        "lower_cl": 2.2549,
+        "upper_cl": 3.6774,
+        "p_raw": 5.243e-16
+      },
+      "narrow": {
+        "estimate": 2.6995,
+        "lower_cl": 2.0957,
+        "upper_cl": 3.3033,
+        "p_raw": 4.0324e-18
+      },
+      "full": {
+        "estimate": 3.0066,
+        "lower_cl": 2.244,
+        "upper_cl": 3.7693,
+        "p_raw": 1.7299e-14
+      }
+    },
+    {
+      "test": "Slope: polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 1.9241,
+        "lower_cl": 1.2533,
+        "upper_cl": 2.595,
+        "p_raw": 2.1317e-08,
+        "p_local": 6.718e-08,
+        "p_global": 6.718e-08
+      },
+      "coarsened": {
+        "estimate": 1.9431,
+        "lower_cl": 1.259,
+        "upper_cl": 2.6273,
+        "p_raw": 2.9135e-08
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 1.9464,
+        "lower_cl": 1.277,
+        "upper_cl": 2.6158,
+        "p_raw": 1.3695e-08,
+        "p_local": 4.5944e-08,
+        "p_global": 4.5944e-08
+      },
+      "coarsened": {
+        "estimate": 1.9753,
+        "lower_cl": 1.2937,
+        "upper_cl": 2.6569,
+        "p_raw": 1.525e-08
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 2.3821,
+        "lower_cl": 1.7134,
+        "upper_cl": 3.0508,
+        "p_raw": 3.9209e-12,
+        "p_local": 2.2654e-11,
+        "p_global": 2.2654e-11
+      },
+      "coarsened": {
+        "estimate": 2.382,
+        "lower_cl": 1.7004,
+        "upper_cl": 3.0637,
+        "p_raw": 9.7823e-12
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": null,
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 2.4044,
+        "lower_cl": 1.7377,
+        "upper_cl": 3.0711,
+        "p_raw": 2.144e-12,
+        "p_local": 1.3936e-11,
+        "p_global": 1.3936e-11
+      },
+      "coarsened": {
+        "estimate": 2.4142,
+        "lower_cl": 1.7361,
+        "upper_cl": 3.0923,
+        "p_raw": 4.0328e-12
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 1.4625,
+        "lower_cl": 0.6773,
+        "upper_cl": 2.2476,
+        "p_raw": 0.0003,
+        "p_local": 0.0005,
+        "p_global": 0.0005
+      },
+      "coarsened": {
+        "estimate": 1.2971,
+        "lower_cl": 0.4803,
+        "upper_cl": 2.1138,
+        "p_raw": 0.0019
+      },
+      "narrow": {
+        "estimate": 1.6161,
+        "lower_cl": 0.8924,
+        "upper_cl": 2.3397,
+        "p_raw": 0
+      },
+      "full": {
+        "estimate": 1.3089,
+        "lower_cl": 0.4449,
+        "upper_cl": 2.1729,
+        "p_raw": 0.003
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 2.3839,
+        "lower_cl": 1.597,
+        "upper_cl": 3.1709,
+        "p_raw": 3.3612e-09,
+        "p_local": 1.3983e-08,
+        "p_global": 1.3983e-08
+      },
+      "coarsened": {
+        "estimate": 2.5112,
+        "lower_cl": 1.6899,
+        "upper_cl": 3.3325,
+        "p_raw": 2.4137e-09
+      },
+      "narrow": {
+        "estimate": 2.2304,
+        "lower_cl": 1.5054,
+        "upper_cl": 2.9553,
+        "p_raw": 1.9239e-09
+      },
+      "full": {
+        "estimate": 2.5375,
+        "lower_cl": 1.6714,
+        "upper_cl": 3.4037,
+        "p_raw": 1.0671e-08
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 1.4848,
+        "lower_cl": 0.711,
+        "upper_cl": 2.2586,
+        "p_raw": 0.0002,
+        "p_local": 0.0004,
+        "p_global": 0.0004
+      },
+      "coarsened": {
+        "estimate": 1.3292,
+        "lower_cl": 0.524,
+        "upper_cl": 2.1345,
+        "p_raw": 0.0012
+      },
+      "narrow": {
+        "estimate": 1.6384,
+        "lower_cl": 0.9233,
+        "upper_cl": 2.3534,
+        "p_raw": 7.4268e-06
+      },
+      "full": {
+        "estimate": 1.3312,
+        "lower_cl": 0.4805,
+        "upper_cl": 2.1819,
+        "p_raw": 0.0022
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": 2.4062,
+        "lower_cl": 1.6106,
+        "upper_cl": 3.2018,
+        "p_raw": 3.5704e-09,
+        "p_local": 1.4054e-08,
+        "p_global": 1.4054e-08
+      },
+      "coarsened": {
+        "estimate": 2.5434,
+        "lower_cl": 1.7096,
+        "upper_cl": 3.3772,
+        "p_raw": 2.63e-09
+      },
+      "narrow": {
+        "estimate": 2.2527,
+        "lower_cl": 1.5219,
+        "upper_cl": 2.9834,
+        "p_raw": 1.7958e-09
+      },
+      "full": {
+        "estimate": 2.5598,
+        "lower_cl": 1.6827,
+        "upper_cl": 3.4369,
+        "p_raw": 1.2096e-08
+      }
+    },
+    {
+      "test": "Slope: neg_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 1.9205,
+        "lower_cl": 1.1249,
+        "upper_cl": 2.7161,
+        "p_raw": 2.3646e-06,
+        "p_local": 5.3459e-06,
+        "p_global": 5.3459e-06
+      },
+      "coarsened": {
+        "estimate": 1.7359,
+        "lower_cl": 0.9029,
+        "upper_cl": 2.569,
+        "p_raw": 0
+      },
+      "narrow": {
+        "estimate": 2.0741,
+        "lower_cl": 1.3435,
+        "upper_cl": 2.8046,
+        "p_raw": 2.9562e-08
+      },
+      "full": {
+        "estimate": 1.7669,
+        "lower_cl": 0.8897,
+        "upper_cl": 2.6441,
+        "p_raw": 0.0001
+      }
+    },
+    {
+      "test": "Slope: pos_λ × polchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": "polchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 2.8419,
+        "lower_cl": 2.0692,
+        "upper_cl": 3.6147,
+        "p_raw": 7.9574e-13,
+        "p_local": 5.9112e-12,
+        "p_global": 5.9112e-12
+      },
+      "coarsened": {
+        "estimate": 2.9501,
+        "lower_cl": 2.1468,
+        "upper_cl": 3.7534,
+        "p_raw": 8.5373e-13
+      },
+      "narrow": {
+        "estimate": 2.6884,
+        "lower_cl": 1.9743,
+        "upper_cl": 3.4024,
+        "p_raw": 2.3123e-13
+      },
+      "full": {
+        "estimate": 2.9955,
+        "lower_cl": 2.146,
+        "upper_cl": 3.845,
+        "p_raw": 6.4018e-12
+      }
+    },
+    {
+      "test": "Slope: neg_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "neg_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 1.9428,
+        "lower_cl": 1.1588,
+        "upper_cl": 2.7267,
+        "p_raw": 1.27e-06,
+        "p_local": 3.0017e-06,
+        "p_global": 3.0017e-06
+      },
+      "coarsened": {
+        "estimate": 1.7681,
+        "lower_cl": 0.9472,
+        "upper_cl": 2.5891,
+        "p_raw": 0
+      },
+      "narrow": {
+        "estimate": 2.0963,
+        "lower_cl": 1.3748,
+        "upper_cl": 2.8178,
+        "p_raw": 1.4042e-08
+      },
+      "full": {
+        "estimate": 1.7892,
+        "lower_cl": 0.9256,
+        "upper_cl": 2.6528,
+        "p_raw": 0.0001
+      }
+    },
+    {
+      "test": "Slope: pos_λ × emotchat × pers",
+      "test_type": "temporal_slope",
+      "local_family": "attachment_core",
+      "slope_type": "3way",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "rs_level": "pos_λ",
+      "domain_level": "emotchat",
+      "pers_level": "pers",
+      "primary": {
+        "estimate": 2.8642,
+        "lower_cl": 2.0831,
+        "upper_cl": 3.6453,
+        "p_raw": 9.2645e-13,
+        "p_local": 6.4234e-12,
+        "p_global": 6.4234e-12
+      },
+      "coarsened": {
+        "estimate": 2.9823,
+        "lower_cl": 2.167,
+        "upper_cl": 3.7975,
+        "p_raw": 1.0456e-12
+      },
+      "narrow": {
+        "estimate": 2.7106,
+        "lower_cl": 1.9911,
+        "upper_cl": 3.4301,
+        "p_raw": 2.2271e-13
+      },
+      "full": {
+        "estimate": 3.0178,
+        "lower_cl": 2.1576,
+        "upper_cl": 3.878,
+        "p_raw": 8.1367e-12
+      }
+    },
+    {
+      "test": "Coefficient: Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "coefficient_name": "week_numeric",
+      "primary": {
+        "estimate": 1.9232,
+        "se": 0.342,
+        "lower_cl": 1.2527,
+        "upper_cl": 2.5937,
+        "p_raw": 1.9447e-08,
+        "p_local": 1.0372e-07,
+        "p_global": 1.0372e-07
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Relationship-Seeking × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "coefficient_name": "lambda:week_numeric",
+      "primary": {
+        "estimate": 0.6143,
+        "se": 0.2785,
+        "lower_cl": 0.0683,
+        "upper_cl": 1.1603,
+        "p_raw": 0.0274,
+        "p_local": 0.0451,
+        "p_global": 0.0451
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Personalisation × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "coefficient_name": "personalisation:week_numeric",
+      "primary": {
+        "estimate": 0.458,
+        "se": 0.3939,
+        "lower_cl": -0.3142,
+        "upper_cl": 1.2301,
+        "p_raw": 0.245,
+        "p_local": 0.3015,
+        "p_global": 0.3015
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Domain × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "attachment_core",
+      "study_type": "longitudinal",
+      "outcome": "separation_distress",
+      "coefficient_name": "domain:week_numeric",
+      "primary": {
+        "estimate": 0.0223,
+        "se": 0.3938,
+        "lower_cl": -0.7498,
+        "upper_cl": 0.7943,
+        "p_raw": 0.9549,
+        "p_local": 0.9549,
+        "p_global": 0.9549
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 5.827,
+        "lower_cl": 3.1979,
+        "upper_cl": 8.4561,
+        "p_raw": 0,
+        "p_local": 0,
+        "p_global": 0
+      },
+      "coarsened": {
+        "estimate": 5.8455,
+        "lower_cl": 3.2069,
+        "upper_cl": 8.4842,
+        "p_raw": 0
+      },
+      "narrow": {
+        "estimate": 9.7251,
+        "lower_cl": 6.0078,
+        "upper_cl": 13.4424,
+        "p_raw": 3.1907e-07
+      },
+      "full": {
+        "estimate": 1.9289,
+        "lower_cl": -1.7875,
+        "upper_cl": 5.6453,
+        "p_raw": 0.3088
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 7.4984,
+        "lower_cl": 5.1461,
+        "upper_cl": 9.8507,
+        "p_raw": 5.0443e-10,
+        "p_local": 5.0443e-10,
+        "p_global": 1.0089e-09
+      },
+      "coarsened": {
+        "estimate": 7.9669,
+        "lower_cl": 5.4721,
+        "upper_cl": 10.4616,
+        "p_raw": 4.6978e-10
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 2.346,
+        "lower_cl": -0.0099,
+        "upper_cl": 4.7018,
+        "p_raw": 0.051,
+        "p_local": 0.051,
+        "p_global": 0.1529
+      },
+      "coarsened": {
+        "estimate": 2.831,
+        "lower_cl": 0.3335,
+        "upper_cl": 5.3286,
+        "p_raw": 0.0263
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 12.6148,
+        "se": 2.5479,
+        "lower_cl": 7.6176,
+        "upper_cl": 17.612,
+        "p_raw": 8.0684e-07,
+        "p_local": 2.4205e-06,
+        "p_global": 4.5721e-06
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": -3.7457,
+        "se": 1.4351,
+        "lower_cl": -6.5603,
+        "upper_cl": -0.9311,
+        "p_raw": 0.0091,
+        "p_local": 0.0091,
+        "p_global": 0.0129
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ³ (cubic)",
+      "test_type": "dose_response",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": -11.627,
+        "se": 2.8257,
+        "lower_cl": -17.169,
+        "upper_cl": -6.085,
+        "p_raw": 0,
+        "p_local": 0.0001,
+        "p_global": 0.0002
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Domain: Interaction",
+      "test_type": "moderation",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 4.9566,
+        "lower_cl": -0.0316,
+        "upper_cl": 9.9448,
+        "p_raw": 0.0515,
+        "p_local": 0.1029,
+        "p_global": 0.6176
+      },
+      "coarsened": {
+        "estimate": 4.4564,
+        "lower_cl": -0.8183,
+        "upper_cl": 9.7311,
+        "p_raw": 0.0977
+      }
+    },
+    {
+      "test": "RS at Domain = polchat",
+      "test_type": "simple_effect",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 3.3487,
+        "lower_cl": -0.2794,
+        "upper_cl": 6.9768,
+        "p_raw": 0.0704
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Domain = emotchat",
+      "test_type": "simple_effect",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 8.3053,
+        "lower_cl": 4.6856,
+        "upper_cl": 11.925,
+        "p_raw": 7.2253e-06
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 1.4026,
+        "lower_cl": -3.5863,
+        "upper_cl": 6.3915,
+        "p_raw": 0.5814,
+        "p_local": 0.5814,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": 0.7668,
+        "lower_cl": -4.5092,
+        "upper_cl": 6.0428,
+        "p_raw": 0.7756
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 5.1257,
+        "lower_cl": 1.4802,
+        "upper_cl": 8.7712,
+        "p_raw": 0.0059
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "seeking_companionship",
+      "study_type": "longitudinal",
+      "outcome": "seeking_companionship_likelihood",
+      "primary": {
+        "estimate": 6.5283,
+        "lower_cl": 2.9256,
+        "upper_cl": 10.131,
+        "p_raw": 0.0004
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.0918,
+        "lower_cl": -0.1161,
+        "upper_cl": 0.2996,
+        "p_raw": 0.3868,
+        "p_local": 0.3868,
+        "p_global": 0.3868
+      },
+      "coarsened": {
+        "estimate": 0.0916,
+        "lower_cl": -0.1154,
+        "upper_cl": 0.2986,
+        "p_raw": 0.3856
+      },
+      "narrow": {
+        "estimate": 0.4315,
+        "lower_cl": 0.1371,
+        "upper_cl": 0.7259,
+        "p_raw": 0.0041
+      },
+      "full": {
+        "estimate": -0.2479,
+        "lower_cl": -0.5413,
+        "upper_cl": 0.0454,
+        "p_raw": 0.0976
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.0479,
+        "lower_cl": -0.138,
+        "upper_cl": 0.2338,
+        "p_raw": 0.6133,
+        "p_local": 0.6133,
+        "p_global": 0.6133
+      },
+      "coarsened": {
+        "estimate": 0.0585,
+        "lower_cl": -0.1378,
+        "upper_cl": 0.2549,
+        "p_raw": 0.559
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.0055,
+        "lower_cl": -0.1805,
+        "upper_cl": 0.1915,
+        "p_raw": 0.954,
+        "p_local": 0.954,
+        "p_global": 0.9926
+      },
+      "coarsened": {
+        "estimate": 0.0431,
+        "lower_cl": -0.1533,
+        "upper_cl": 0.2394,
+        "p_raw": 0.6674
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.6177,
+        "se": 0.2018,
+        "lower_cl": 0.223,
+        "upper_cl": 1.0144,
+        "p_raw": 0.0022,
+        "p_local": 0.0033,
+        "p_global": 0.0047
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.0066,
+        "se": 0.1133,
+        "lower_cl": -0.2156,
+        "upper_cl": 0.2285,
+        "p_raw": 0.9537,
+        "p_local": 0.9537,
+        "p_global": 0.9537
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ³ (cubic)",
+      "test_type": "dose_response",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": -0.743,
+        "se": 0.2237,
+        "lower_cl": -1.1824,
+        "upper_cl": -0.3054,
+        "p_raw": 0.0009,
+        "p_local": 0.0027,
+        "p_global": 0.0025
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Domain: Interaction",
+      "test_type": "moderation",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": -0.0611,
+        "lower_cl": -0.4548,
+        "upper_cl": 0.3326,
+        "p_raw": 0.7611,
+        "p_local": 0.7611,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": -0.0478,
+        "lower_cl": -0.4616,
+        "upper_cl": 0.366,
+        "p_raw": 0.8209
+      }
+    },
+    {
+      "test": "RS at Domain = polchat",
+      "test_type": "simple_effect",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.1223,
+        "lower_cl": -0.1647,
+        "upper_cl": 0.4093,
+        "p_raw": 0.4036
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Domain = emotchat",
+      "test_type": "simple_effect",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.0612,
+        "lower_cl": -0.2243,
+        "upper_cl": 0.3468,
+        "p_raw": 0.6743
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": -0.1361,
+        "lower_cl": -0.5298,
+        "upper_cl": 0.2577,
+        "p_raw": 0.4982,
+        "p_local": 0.7611,
+        "p_global": 0.8165
+      },
+      "coarsened": {
+        "estimate": -0.2599,
+        "lower_cl": -0.6737,
+        "upper_cl": 0.1539,
+        "p_raw": 0.2184
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.1598,
+        "lower_cl": -0.1282,
+        "upper_cl": 0.4478,
+        "p_raw": 0.2768
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "goodbye",
+      "study_type": "longitudinal",
+      "outcome": "goodbye_action",
+      "primary": {
+        "estimate": 0.0237,
+        "lower_cl": -0.2608,
+        "upper_cl": 0.3083,
+        "p_raw": 0.8702
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    }
+  ]
+}

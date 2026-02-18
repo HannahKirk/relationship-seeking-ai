@@ -1,0 +1,13 @@
+{
+  "measure_family": "will_miss_ai",
+  "generated": "2026-02-18 10:59:04.723469",
+  "family_structure": {
+    "local_families": {
+      "will_miss_ai": "will_miss_ai"
+    },
+    "global_family": "will_miss_ai",
+    "global_family_temporal": []
+  },
+  "n_contrasts": 0,
+  "contrasts": []
+}

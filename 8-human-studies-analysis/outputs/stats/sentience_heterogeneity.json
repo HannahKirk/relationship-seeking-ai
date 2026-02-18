@@ -1,0 +1,14 @@
+{
+  "ontological_sentience_cross_sectional": {
+    "construct": "ontological_sentience",
+    "study_type": "cross_sectional",
+    "p_value": 0.6173,
+    "heterogeneous": false
+  },
+  "ontological_sentience_longitudinal": {
+    "construct": "ontological_sentience",
+    "study_type": "longitudinal",
+    "p_value": 0.0178,
+    "heterogeneous": true
+  }
+}

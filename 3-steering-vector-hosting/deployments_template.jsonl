@@ -1,0 +1,7 @@
+{"multiplier": "-1.5", "url": "https://your-server-minus-1-5.example.com/v1/", "key": "your-api-key-here"}
+{"multiplier": "-1.0", "url": "https://your-server-minus-1-0.example.com/v1/", "key": "your-api-key-here"}
+{"multiplier": "-0.5", "url": "https://your-server-minus-0-5.example.com/v1/", "key": "your-api-key-here"}
+{"multiplier": "0.0", "url": "https://your-server-0-0.example.com/v1/", "key": "your-api-key-here"}
+{"multiplier": "0.5", "url": "https://your-server-0-5.example.com/v1/", "key": "your-api-key-here"}
+{"multiplier": "1.0", "url": "https://your-server-1-0.example.com/v1/", "key": "your-api-key-here"}
+{"multiplier": "1.5", "url": "https://your-server-1-5.example.com/v1/", "key": "your-api-key-here"}

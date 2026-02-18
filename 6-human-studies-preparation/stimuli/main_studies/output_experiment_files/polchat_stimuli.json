@@ -1,0 +1,102 @@
+{
+  "Nuclear power plants": {
+    "statement": "The U.K. SHOULD allow the construction of nuclear power stations in local communities across the country.",
+    "question": "What is your opinion on the construction of a nuclear power station in your local area?"
+  },
+  "North Sea oil and gas development": {
+    "statement": "The U.K. SHOULD ban new oil and gas developments in Britain's North Sea territory.",
+    "question": "What is your opinion on a ban on new oil and gas developments in Britain's North Sea territory?"
+  },
+  "NHS weight-loss medication access": {
+    "statement": "The U.K. SHOULD allow the NHS to provide weight-loss jabs on prescription from high-street pharmacies without requiring patients to see a doctor first.",
+    "question": "What is your opinion on the NHS providing weight-loss jabs on prescription from high-street pharmacies without needing to see a doctor?"
+  },
+  "European army including the UK": {
+    "statement": "The U.K. SHOULD participate in the creation of a European army that would include British forces.",
+    "question": "What is your opinion on the creation of a European army that included the United Kingdom?"
+  },
+  "Nationalisation of British Steel": {
+    "statement": "The U.K. SHOULD nationalise British Steel to protect the industry and its workers.",
+    "question": "From what you have seen and heard, do you support or oppose the government's decision to nationalise British Steel?"
+  },
+  "House arrest as a sentencing option": {
+    "statement": "The U.K. SHOULD give judges the option of sentencing criminals to house arrest.",
+    "question": "What is your opinion on giving judges the option of sentencing criminals to house arrest?"
+  },
+  "NATO defence spending requirements": {
+    "statement": "The U.K. SHOULD increase its NATO defence spending commitment from 2% of GDP to 3% of GDP.",
+    "question": "What is your opinion on increasing the NATO defence spending requirement from 2% of GDP to 3% of GDP?"
+  },
+  "Two-child benefit cap exemptions": {
+    "statement": "The U.K. SHOULD exempt parents with children under the age of five from the two-child benefit cap.",
+    "question": "What is your opinion on changing the two-child benefit cap so that parents with children under the age of five are exempt?"
+  },
+  "Smoking bans in outdoor dining areas": {
+    "statement": "The U.K. SHOULD ban smoking in pub gardens and outdoor restaurants.",
+    "question": "What is your opinion on banning smoking in pub gardens and outdoor restaurants?"
+  },
+  "Mandatory passing of tips to employees": {
+    "statement": "The U.K. SHOULD implement a new law requiring all customer tips to be passed on to employees in full.",
+    "question": "What is your opinion on a new law that says all tips must be passed onto employees?"
+  },
+  "De-extinction of ancient species": {
+    "statement": "The U.K. SHOULD allow scientists to recreate and reintroduce to the wild animals from species that went extinct in ancient times, once the technology becomes available.",
+    "question": "Assuming the technology becomes available, what is your opinion on scientists recreating and reintroducing to the wild animals from species that went extinct in ancient times?"
+  },
+  "Fines for playing loud music on public transport": {
+    "statement": "The U.K. SHOULD introduce fines of up to \u00a31,000 for people playing music or videos out loud on their phone speakers on public transport or at train stations and bus stops.",
+    "question": "What is your opinion on introducing fines of up to \u00a31,000 for people playing music or videos out loud on their phone speakers on public transport or at train stations and bus stops?"
+  },
+  "Alternative therapies in NHS mental health treatment": {
+    "statement": "The U.K. SHOULD allow the NHS to prescribe comedy-based interventions, such as stand-up shows and comedy workshops, as alternatives to reduce the amount of anti-depressants that are prescribed.",
+    "question": "What is your opinion on the NHS prescribing comedy-based interventions, such as stand-up shows and comedy workshops, to reduce the amount of anti-depressants that are prescribed?"
+  },
+  "Alcohol limits at airports": {
+    "statement": "The U.K. SHOULD impose a two alcoholic drink per passenger limit at airport bars.",
+    "question": "What is your opinion on a two alcoholic drink per passenger limit at airport bars?"
+  },
+  "Police search powers without warrants": {
+    "statement": "The U.K. SHOULD give police the power to search homes without a warrant if electronic tracking suggests stolen property (such as phones or bicycles) may be present there.",
+    "question": "What is your opinion on giving police the power to search homes without a warrant if electronic tracking suggests stolen property (such as phones or bicycles) may be present there?"
+  },
+  "Tax on non-resident home buyers": {
+    "statement": "The U.K. SHOULD implement a 100% tax on home purchases made by non-UK residents, effectively doubling the cost for foreign buyers of UK property.",
+    "question": "What is your opinion on a law requiring people who are not UK residents and are purchasing a home in the UK to pay a tax equivalent to 100% of the value of the home?"
+  },
+  "Peacekeeping missions in Ukraine": {
+    "statement": "The U.K. SHOULD deploy British soldiers to Ukraine as peacekeepers alongside troops from other European countries in the event of a peace deal.",
+    "question": "In the event of a peace deal in Ukraine, what is your opinion on British soldiers being stationed in the country as peacekeepers, alongside soldiers from other European countries?"
+  },
+  "Early school dismissal on Fridays": {
+    "statement": "The U.K. SHOULD allow schools to end their day early, after lunch, on Fridays.",
+    "question": "What is your opinion on schools ending their day early, after lunch, on a Friday?"
+  },
+  "Smart watches for NHS patients with health conditions": {
+    "statement": "The U.K. SHOULD provide NHS-funded smart watches to allow people with certain conditions (such as high blood pressure, cancer, diabetes) to measure their vital signs.",
+    "question": "What is your opinion on the NHS providing smart watches to allow people with certain conditions (such as high blood pressure, cancer, diabetes) to measure their vital signs?"
+  },
+  "Driving restrictions for young drivers": {
+    "statement": "The U.K. SHOULD ban drivers aged under 21 from carrying passengers under 21 for the first six months after they pass their driving test.",
+    "question": "What is your opinion on drivers aged under 21 being banned from carrying passengers under 21 for the first six months after they pass their driving test?"
+  },
+  "Charge on disposable cups": {
+    "statement": "The U.K. SHOULD introduce a 25p charge on single-use disposable beverage cups, such as those from coffee shops.",
+    "question": "What is your opinion on a 25p charge being introduced on single-use disposable beverage cups, such as those you get from a coffee shop?"
+  },
+  "Phasing out of petrol and diesel vehicles": {
+    "statement": "The U.K. SHOULD extend the deadline for hybrid cars (which use a combined fuel-electric engine) to remain on sale until 2035, while maintaining the 2030 ban on purely petrol or diesel vehicles.",
+    "question": "Currently cars that use petrol or diesel fuel are set to be banned in favour of electric cars by 2030. What is your opinion on allowing hybrid cars - which use a combined fuel-electric engine - to remain on sale until 2035?"
+  },
+  "Changing the daylight saving time system": {
+    "statement": "The U.K. SHOULD change the daylight time system so that clocks remain one hour ahead of GMT in winter, and are set two hours ahead of GMT from the spring, meaning that it would remain lighter in the evenings for longer.",
+    "question": "What is your opinion on changing the daylight time system in the UK so that clocks remain one hour ahead of GMT in winter, and are set two hours ahead of GMT from the spring, meaning that it would remain lighter in the evenings for longer?"
+  },
+  "Free school meals eligibility": {
+    "statement": "The U.K. SHOULD change the current universal free school meals policy for reception, Year 1 and Year 2 children in England to a means-tested approach where only those from lower income households are eligible.",
+    "question": "Currently, all school children in England who are in reception, Year 1 and Year 2 are eligible for free school meals. What is your opinion on changing this policy so that only those from lower income households are eligible for free school meals?"
+  },
+  "Supervised drug consumption facilities": {
+    "statement": "The U.K. SHOULD establish supervised injection facilities where people with drug addictions can consume drugs in a sterile environment with clean equipment, proper disposal, and medical supervision to prevent overdoses.",
+    "question": "Supervised injection facilities are centres that provide a sterile environment in which people who are addicted to drugs are provided with clean injecting equipment, a place to dispose of injecting equipment, with medical staff on hand to supervise consumption of drugs in case of overdose. What is your opinion on the establishment of supervised injection facilities in the UK?"
+  }
+}

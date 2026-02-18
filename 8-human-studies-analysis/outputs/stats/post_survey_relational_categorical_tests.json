@@ -1,0 +1,167 @@
+{
+  "relational_change_recoded": {
+    "personalisation": {
+      "treatment": ["personalisation"],
+      "outcome": ["relational_change_recoded"],
+      "chi_sq": [19.8367],
+      "df": [1],
+      "p_value": [8.4348e-06],
+      "min_expected": [451],
+      "significant": [true],
+      "breakdown": [
+        {
+          "group": "non-personalised",
+          "level": "Relationship unchanged",
+          "n": 499,
+          "percentage": 55.3215
+        },
+        {
+          "group": "non-personalised",
+          "level": "Relationship changed",
+          "n": 403,
+          "percentage": 44.6785
+        },
+        {
+          "group": "personalised",
+          "level": "Relationship unchanged",
+          "n": 411,
+          "percentage": 44.7712
+        },
+        {
+          "group": "personalised",
+          "level": "Relationship changed",
+          "n": 507,
+          "percentage": 55.2288
+        }
+      ]
+    },
+    "domain": {
+      "treatment": ["domain"],
+      "outcome": ["relational_change_recoded"],
+      "chi_sq": [3.6946],
+      "df": [1],
+      "p_value": [0.0546],
+      "min_expected": [453],
+      "significant": [false],
+      "breakdown": {}
+    },
+    "relationship_seeking_category": {
+      "treatment": ["relationship_seeking_category"],
+      "outcome": ["relational_change_recoded"],
+      "chi_sq": [39.5075],
+      "df": [2],
+      "p_value": [2.6367e-09],
+      "min_expected": [180],
+      "significant": [true],
+      "breakdown": [
+        {
+          "group": "neg_lambda",
+          "level": "Relationship unchanged",
+          "n": 424,
+          "percentage": 58.0822
+        },
+        {
+          "group": "neg_lambda",
+          "level": "Relationship changed",
+          "n": 306,
+          "percentage": 41.9178
+        },
+        {
+          "group": "zero_lambda",
+          "level": "Relationship unchanged",
+          "n": 182,
+          "percentage": 50.5556
+        },
+        {
+          "group": "zero_lambda",
+          "level": "Relationship changed",
+          "n": 178,
+          "percentage": 49.4444
+        },
+        {
+          "group": "pos_lambda",
+          "level": "Relationship unchanged",
+          "n": 304,
+          "percentage": 41.6438
+        },
+        {
+          "group": "pos_lambda",
+          "level": "Relationship changed",
+          "n": 426,
+          "percentage": 58.3562
+        }
+      ]
+    },
+    "lambda_factor": {
+      "treatment": ["lambda_factor"],
+      "outcome": ["relational_change_recoded"],
+      "chi_sq": [41.9075],
+      "df": [4],
+      "p_value": [1.7434e-08],
+      "min_expected": [180],
+      "significant": [true],
+      "breakdown": [
+        {
+          "group": "neg1",
+          "level": "Relationship unchanged",
+          "n": 213,
+          "percentage": 58.3562
+        },
+        {
+          "group": "neg1",
+          "level": "Relationship changed",
+          "n": 152,
+          "percentage": 41.6438
+        },
+        {
+          "group": "neg0.5",
+          "level": "Relationship unchanged",
+          "n": 211,
+          "percentage": 57.8082
+        },
+        {
+          "group": "neg0.5",
+          "level": "Relationship changed",
+          "n": 154,
+          "percentage": 42.1918
+        },
+        {
+          "group": "zero",
+          "level": "Relationship unchanged",
+          "n": 182,
+          "percentage": 50.5556
+        },
+        {
+          "group": "zero",
+          "level": "Relationship changed",
+          "n": 178,
+          "percentage": 49.4444
+        },
+        {
+          "group": "pos0.5",
+          "level": "Relationship unchanged",
+          "n": 142,
+          "percentage": 38.7978
+        },
+        {
+          "group": "pos0.5",
+          "level": "Relationship changed",
+          "n": 224,
+          "percentage": 61.2022
+        },
+        {
+          "group": "pos1",
+          "level": "Relationship unchanged",
+          "n": 162,
+          "percentage": 44.5055
+        },
+        {
+          "group": "pos1",
+          "level": "Relationship changed",
+          "n": 202,
+          "percentage": 55.4945
+        }
+      ]
+    }
+  }
+}

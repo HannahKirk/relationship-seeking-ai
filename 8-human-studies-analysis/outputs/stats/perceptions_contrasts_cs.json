@@ -1,0 +1,203 @@
+{
+  "measure_family": "perceptions",
+  "generated": "2026-02-18 10:59:04.702956",
+  "family_structure": {
+    "local_families": {
+      "relational": "tool_friend",
+      "sentience": ["ontological_sentience", "perceived_sentience"]
+    },
+    "global_family": ["relational", "sentience"],
+    "global_family_temporal": "relational"
+  },
+  "n_contrasts": 8,
+  "contrasts": [
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "ontological_sentience",
+      "primary": {
+        "estimate": 0.8783,
+        "lower_cl": -1.1791,
+        "upper_cl": 2.9358,
+        "p_raw": 0.4025,
+        "p_local": 0.4025,
+        "p_global": 0.4025
+      },
+      "coarsened": {
+        "estimate": 0.6361,
+        "lower_cl": -1.5341,
+        "upper_cl": 2.8064,
+        "p_raw": 0.5654
+      },
+      "narrow": {
+        "estimate": 0.5856,
+        "lower_cl": -0.7861,
+        "upper_cl": 1.9572,
+        "p_raw": 0.4025
+      },
+      "full": {
+        "estimate": 1.1711,
+        "lower_cl": -1.5722,
+        "upper_cl": 3.9144,
+        "p_raw": 0.4025
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "ontological_sentience",
+      "primary": {
+        "estimate": 0.1199,
+        "lower_cl": -1.827,
+        "upper_cl": 2.0668,
+        "p_raw": 0.9038,
+        "p_local": 0.9038,
+        "p_global": 0.9038
+      },
+      "coarsened": {
+        "estimate": 0.5239,
+        "lower_cl": -1.532,
+        "upper_cl": 2.5798,
+        "p_raw": 0.6172
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "ontological_sentience",
+      "primary": {
+        "estimate": -0.1927,
+        "lower_cl": -2.1406,
+        "upper_cl": 1.7552,
+        "p_raw": 0.8461,
+        "p_local": 0.8461,
+        "p_global": 0.8461
+      },
+      "coarsened": {
+        "estimate": -0.714,
+        "lower_cl": -2.7698,
+        "upper_cl": 1.3418,
+        "p_raw": 0.4958
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "ontological_sentience",
+      "primary": {
+        "estimate": 0.6487,
+        "se": 0.698,
+        "lower_cl": -0.7197,
+        "upper_cl": 2.0171,
+        "p_raw": 0.3527,
+        "p_local": 0.3527,
+        "p_global": 0.3527
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "perceived_sentience",
+      "primary": {
+        "estimate": 4.7885,
+        "lower_cl": 1.5161,
+        "upper_cl": 8.0609,
+        "p_raw": 0.0042,
+        "p_local": 0.0083,
+        "p_global": 0.0083
+      },
+      "coarsened": {
+        "estimate": 4.8752,
+        "lower_cl": 1.4152,
+        "upper_cl": 8.3352,
+        "p_raw": 0.0058
+      },
+      "narrow": {
+        "estimate": 3.1924,
+        "lower_cl": 1.0107,
+        "upper_cl": 5.374,
+        "p_raw": 0.0042
+      },
+      "full": {
+        "estimate": 6.3847,
+        "lower_cl": 2.0215,
+        "upper_cl": 10.7479,
+        "p_raw": 0.0042
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "perceived_sentience",
+      "primary": {
+        "estimate": 2.5828,
+        "lower_cl": -0.5138,
+        "upper_cl": 5.6794,
+        "p_raw": 0.102,
+        "p_local": 0.204,
+        "p_global": 0.204
+      },
+      "coarsened": {
+        "estimate": 2.9559,
+        "lower_cl": -0.3217,
+        "upper_cl": 6.2336,
+        "p_raw": 0.0771
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "perceived_sentience",
+      "primary": {
+        "estimate": 1.2648,
+        "lower_cl": -1.8333,
+        "upper_cl": 4.363,
+        "p_raw": 0.4233,
+        "p_local": 0.8461,
+        "p_global": 0.8461
+      },
+      "coarsened": {
+        "estimate": 1.1968,
+        "lower_cl": -2.0807,
+        "upper_cl": 4.4743,
+        "p_raw": 0.4739
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "sentience",
+      "study_type": "cross_sectional",
+      "outcome": "perceived_sentience",
+      "primary": {
+        "estimate": 3.2509,
+        "se": 1.1096,
+        "lower_cl": 1.074,
+        "upper_cl": 5.4278,
+        "p_raw": 0.0035,
+        "p_local": 0.0069,
+        "p_global": 0.0069
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    }
+  ]
+}

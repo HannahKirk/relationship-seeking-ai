@@ -1,0 +1,50 @@
+[
+  {
+    "study": "Longitudinal polchat",
+    "outcome": "emotional_competency",
+    "n": 906,
+    "mean_change": 2.5486,
+    "sd_change": 19.4752,
+    "t_stat": 3.9389,
+    "df": 905,
+    "p_value": 0.0001,
+    "ci_lower": 1.2787,
+    "ci_upper": 3.8184
+  },
+  {
+    "study": "Longitudinal polchat",
+    "outcome": "political_competency",
+    "n": 906,
+    "mean_change": 8.2224,
+    "sd_change": 21.897,
+    "t_stat": 11.3026,
+    "df": 905,
+    "p_value": 8.4128e-28,
+    "ci_lower": 6.7947,
+    "ci_upper": 9.6502
+  },
+  {
+    "study": "Longitudinal emotchat",
+    "outcome": "emotional_competency",
+    "n": 914,
+    "mean_change": 2.5941,
+    "sd_change": 18.6131,
+    "t_stat": 4.2135,
+    "df": 913,
+    "p_value": 0,
+    "ci_lower": 1.3858,
+    "ci_upper": 3.8024
+  },
+  {
+    "study": "Longitudinal emotchat",
+    "outcome": "political_competency",
+    "n": 914,
+    "mean_change": 1.814,
+    "sd_change": 17.1129,
+    "t_stat": 3.2047,
+    "df": 913,
+    "p_value": 0.0014,
+    "ci_lower": 0.7031,
+    "ci_upper": 2.9249
+  }
+]

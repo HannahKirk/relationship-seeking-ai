@@ -1,0 +1,81 @@
+{
+  "n_total": 3831,
+  "study_sizes": {
+    "longitudinal": 2028,
+    "cross-sectional": 1506,
+    "calibration": 297
+  },
+  "age_category_distribution": {
+    "56-65": 971,
+    "46-55": 725,
+    "26-35": 694,
+    "36-45": 638,
+    "18-25": 456,
+    "66-75": 300,
+    "76 and over": 45,
+    "Prefer not to say": 2
+  },
+  "gender_distribution": {
+    "Female": 2017,
+    "Male": 1786,
+    "Non-binary": 19,
+    "Prefer not to say": 8,
+    "Other": 1
+  },
+  "ethnicity_distribution": {
+    "White": 3276,
+    "Asian": 275,
+    "Black": 145,
+    "Mixed": 81,
+    "Prefer not to say": 25,
+    "Middle Eastern": 18,
+    "Other": 5,
+    "Hispanic": 4,
+    "Jewish": 2
+  },
+  "religion_distribution": {
+    "No religion": 2161,
+    "Christian": 1316,
+    "Muslim": 135,
+    "Prefer not to say": 90,
+    "Hindu": 34,
+    "Spiritual": 30,
+    "Buddhist": 28,
+    "Jewish": 19,
+    "Sikh": 13,
+    "Other": 5
+  },
+  "education_distribution": {
+    "Undergraduate degree": 1544,
+    "Graduate study": 856,
+    "A levels": 772,
+    "GCSEs": 473,
+    "Vocational qualifications": 126,
+    "No qualifications": 35,
+    "Prefer not to say": 25
+  },
+  "income_distribution": {
+    "\u00a350-100K": 1117,
+    "\u00a330-50K": 1015,
+    "\u00a320-30K": 668,
+    "\u00a310-20K": 423,
+    ">\u00a3100K": 260,
+    "Prefer not to say": 196,
+    "<\u00a310k": 152
+  },
+  "disability_distribution": {
+    "No disability": 2846,
+    "Minor disability": 589,
+    "Non-registered major disability": 183,
+    "Registered disabled": 121,
+    "Prefer not to say": 92
+  },
+  "ai_frequency_distribution": {
+    "Every week": 1185,
+    "More than once a month": 774,
+    "Once per month": 724,
+    "Every day": 661,
+    "Less than once a year": 357,
+    "Never": 130
+  }
+}

@@ -1,0 +1,15 @@
+# Python requirements for 8-human-studies-analysis
+# Install with: pip install -r requirements.txt
+
+# Core data manipulation
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Plotting
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Statistical analysis
+scipy>=1.7.0
+statsmodels>=0.13.0
+scikit-learn>=1.0.0

@@ -1,0 +1,30 @@
+--- a/vllm/sampling_params.py
++++ b/vllm/sampling_params.py
+@@ -1,5 +1,6 @@
+ # Add this import if not present
+-from typing import Callable, Dict, List, Optional, Union
++from typing import Any, Callable, Dict, List, Optional, Union
+
+ # In the SamplingParams class docstring, add:
+ """
+@@ -10,6 +11,9 @@
+ # In the SamplingParams class fields (after allowed_token_ids), add:
++    # CUSTOM FIELD - for steering vector parameters
++    custom: Optional[Dict[str, Any]] = None
+
+ # In the from_optional() method signature, add the custom parameter:
+ def from_optional(
+@@ -25,6 +29,7 @@
+     logit_bias: Optional[Union[Dict[int, float], Dict[str, float]]] = None,
+     allowed_token_ids: Optional[List[int]] = None,
++    custom: Optional[Dict[str, Any]] = None,
+ ) -> "SamplingParams":
+
+ # In the from_optional() method's return statement, add:
+     return SamplingParams(
+         ...
++        custom=custom,
+     )
+
+ # In __repr__, add:
++    f"custom={self.custom}"

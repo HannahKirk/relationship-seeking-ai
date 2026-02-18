@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-GPU Steered Chat Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 100%;
+            margin: 10px auto;
+            padding: 0 10px;
+            font-size: 12px; /* Smaller base font size */
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .controls {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .chats-container {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+            overflow-x: auto;
+            height: calc(100vh - 150px); /* Use viewport height to maximize space */
+        }
+
+        .chat-screen {
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: center;
+            padding: 3px;
+            background-color: #eee;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+
+        .chat-subheader {
+            text-align: center;
+            font-size: 10px;
+            margin-bottom: 5px;
+            color: #666;
+            padding: 2px;
+            background-color: #f5f5f5;
+            border-radius: 3px;
+        }
+
+        .messages {
+            height: calc(100vh - 220px); /* Adjusted for additional header */
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 5px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+        }
+
+        .message {
+            margin-bottom: 5px;
+            padding: 3px;
+            font-size: 11px; /* Smaller message font */
+            white-space: pre-wrap; /* Preserve newlines and wrap text */
+        }
+
+        .user-message {
+            color: #2563eb;
+        }
+
+        .assistant-message {
+            color: #059669;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 5px;
+            padding: 5px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+
+        button:disabled {
+            background-color: #93c5fd;
+            cursor: not-allowed;
+        }
+
+        .slider-container {
+            margin-bottom: 10px;
+        }
+
+        .slider-container input[type="range"] {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+
+        .system-message {
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        .error-message {
+            color: #ef4444;
+        }
+
+        .options-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin: 0;
+        }
+
+        strong {
+            font-weight: bold;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Multi-GPU Chat Interface</h1>
+
+        <div class="controls">
+            <div class="slider-container">
+                <label>
+                    <strong>Steering Vector Multiplier (shared across all models):</strong> <span id="multiplier-value">0.0</span>
+                </label>
+                <br>
+                <input type="range" id="multiplier" min="-10" max="10" step="0.25" value="0.0">
+            </div>
+            <div class="options-container">
+                <button id="reset-chat">Reset All Chats</button>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="enable-streaming" checked>
+                    <label for="enable-streaming">Enable Streaming</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="Type your message here (will be sent to all models)...">
+            <button id="send-button">Send to All</button>
+        </div>
+
+        <div class="chats-container" id="chats-container">
+            <!-- Chat screens will be dynamically generated -->
+            <div class="loading">Loading configurations...</div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000';
+        let isLoading = false;
+        let eventSource = null;
+
+        // We'll fetch configurations from the server instead of hardcoding
+        let configurations = [];
+
+        // Track conversation turns to manage message IDs
+        const conversationCounter = {};
+
+        // DOM elements
+        const chatsContainer = document.getElementById('chats-container');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+        const multiplierSlider = document.getElementById('multiplier');
+        const multiplierValue = document.getElementById('multiplier-value');
+        const resetButton = document.getElementById('reset-chat');
+        const streamingCheckbox = document.getElementById('enable-streaming');
+
+        // Fetch configurations from server and initialize chat screens
+        async function fetchConfigsAndInit() {
+            try {
+                const response = await fetch(`${API_URL}/config`);
+                const data = await response.json();
+
+                if (data.configs && data.configs.length > 0) {
+                    configurations = data.configs;
+
+                    // Initialize counters for each config
+                    configurations.forEach(config => {
+                        conversationCounter[config.config_key] = 0;
+                    });
+
+                    // Clear loading and initialize chat screens
+                    chatsContainer.innerHTML = '';
+                    initChatScreens();
+                } else {
+                    chatsContainer.innerHTML = '<div class="loading">No configurations found.</div>';
+                }
+            } catch (error) {
+                console.error('Error fetching configurations:', error);
+                chatsContainer.innerHTML = '<div class="loading">Error loading configurations. Please check if the server is running.</div>';
+            }
+        }
+
+        // Create a chat screen for each configuration
+        function initChatScreens() {
+            configurations.forEach(config => {
+                const chatScreen = document.createElement('div');
+                chatScreen.className = 'chat-screen';
+
+                // Format the config key and details nicely
+                const configKey = config.config_key;
+                const modelParts = configKey.split('-');
+
+                // Create main header with the layer info
+                const header = `Layer ${config.layer}`;
+
+                // Create subheader with model name and epoch
+                const subheader = `${config.model} - Epoch ${config.epoch} - GPU ${config.gpu_id}`;
+
+                chatScreen.innerHTML = `
+                    <div class="chat-header">${header}</div>
+                    <div class="chat-subheader">${subheader}</div>
+                    <div class="messages" id="messages-${configKey}"></div>
+                `;
+                chatsContainer.appendChild(chatScreen);
+
+                // Add welcome message
+                addMessage(
+                    configKey,
+                    'System',
+                    'Welcome to the Multi-GPU Steered Chat Interface. Use the slider to control all models with the same multiplier.',
+                    'system-message'
+                );
+            });
+        }
+
+        // Update multiplier value display
+        multiplierSlider.addEventListener('input', (e) => {
+            multiplierValue.textContent = e.target.value;
+        });
+
+        // Handle streaming connection
+        function connectToStream(streamId) {
+            // Close any existing event source
+            if (eventSource) {
+                eventSource.close();
+                eventSource = null;
+            }
+
+            // Create a new event source for the stream
+            eventSource = new EventSource(`${API_URL}/stream/${streamId}`);
+
+            // Set up event handlers
+            eventSource.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+
+                // Check for special events
+                if (data.event === 'end') {
+                    // Stream is done
+                    eventSource.close();
+                    eventSource = null;
+                    isLoading = false;
+                    sendButton.disabled = false;
+                    return;
+                }
+
+                if (data.event === 'start') {
+                    // Stream is starting
+                    return;
+                }
+
+                // Handle token data
+                const configKey = data.config_key;
+                const token = data.token;
+                const fullText = data.full_text;
+                const gpuId = data.gpu_id;
+                const finished = data.finished;
+
+                // Update the assistant's message for the current conversation turn
+                updateAssistantMessage(configKey, `Assistant (GPU ${gpuId})`, fullText, conversationCounter[configKey]);
+
+                // If finished, clean up this config
+                if (finished) {
+                    // This configuration is done streaming
+                    console.log(`${configKey} finished streaming`);
+                }
+            };
+
+            eventSource.onerror = function(error) {
+                console.error('Stream error:', error);
+                eventSource.close();
+                eventSource = null;
+                isLoading = false;
+                sendButton.disabled = false;
+
+                // Show error in all screens
+                configurations.forEach(config => {
+                    addMessage(config.config_key, 'Error', 'Streaming connection failed', 'error-message');
+                });
+            };
+        }
+
+        // Find or create an assistant message element for the current conversation turn
+        function updateAssistantMessage(configKey, sender, text, messageId) {
+            const messagesContainer = document.getElementById(`messages-${configKey}`);
+            if (!messagesContainer) {
+                console.error(`Messages container for ${configKey} not found`);
+                return null;
+            }
+
+            // Find existing message from assistant for this conversation turn (using data-message-id)
+            let messageElement = Array.from(messagesContainer.children).find(child =>
+                child.className.includes('assistant-message') &&
+                child.dataset.messageId === String(messageId)
+            );
+
+            if (!messageElement) {
+                // Create new message element
+                messageElement = document.createElement('div');
+                messageElement.className = 'message assistant-message';
+                messageElement.dataset.messageId = String(messageId);
+                messageElement.innerHTML = `<strong>${sender}:</strong> `;
+                messagesContainer.appendChild(messageElement);
+            }
+
+            // Update the text content (keeping the sender part)
+            const senderPart = messageElement.innerHTML.split('</strong>')[0] + '</strong> ';
+            messageElement.innerHTML = senderPart + text;
+
+            // Scroll to bottom
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+            return messageElement;
+        }
+
+        // Send message to all models
+        async function sendMessage() {
+            if (isLoading || !messageInput.value.trim()) return;
+
+            const message = messageInput.value;
+            const multiplier = parseFloat(multiplierSlider.value);
+            const useStreaming = streamingCheckbox.checked;
+
+            // Increment conversation counters for each config
+            configurations.forEach(config => {
+                conversationCounter[config.config_key]++;
+            });
+
+            // Add user message to all chat screens
+            configurations.forEach(config => {
+                addMessage(config.config_key, 'You', message, 'user-message');
+            });
+
+            messageInput.value = '';
+
+            // Show loading state
+            isLoading = true;
+            sendButton.disabled = true;
+
+            // Initialize loading indicators for each config
+            const loadingDivs = {};
+            configurations.forEach(config => {
+                loadingDivs[config.config_key] = addMessage(config.config_key, 'Assistant', 'Thinking...', 'loading');
+            });
+
+            try {
+                if (useStreaming) {
+                    // Streaming mode
+                    const response = await fetch(`${API_URL}/chat`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            message: message,
+                            multiplier: multiplier,
+                            stream: true
+                        }),
+                    });
+
+                    const streamData = await response.json();
+
+                    if (streamData.error) {
+                        throw new Error(streamData.error);
+                    }
+
+                    // Remove loading messages
+                    configurations.forEach(config => {
+                        if (loadingDivs[config.config_key]) {
+                            loadingDivs[config.config_key].remove();
+                        }
+                    });
+
+                    // Connect to the stream
+                    connectToStream(streamData.stream_id);
+
+                    // Optionally display debug info
+                    console.log('Stream debug info:', streamData);
+
+                } else {
+                    // Non-streaming mode
+                    const response = await fetch(`${API_URL}/chat`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            message: message,
+                            multiplier: multiplier,
+                            stream: false
+                        }),
+                    });
+
+                    const responseData = await response.json();
+
+                    // Remove loading messages
+                    configurations.forEach(config => {
+                        if (loadingDivs[config.config_key]) {
+                            loadingDivs[config.config_key].remove();
+                        }
+                    });
+
+                    if (responseData.error) {
+                        throw new Error(responseData.error);
+                    }
+
+                    // Process responses for each config
+                    const responses = responseData.responses || {};
+
+                    for (const configKey in responses) {
+                        const configResponseData = responses[configKey];
+
+                        if (configResponseData.error) {
+                            addMessage(configKey, 'Error', configResponseData.error, 'error-message');
+                        } else {
+                            addMessage(configKey, `Assistant (GPU ${configResponseData.gpu_id})`, configResponseData.response, 'assistant-message');
+                        }
+                    }
+
+                    // Check for missing responses
+                    configurations.forEach(config => {
+                        if (!responses[config.config_key]) {
+                            addMessage(config.config_key, 'Error', 'No response received for this configuration', 'error-message');
+                        }
+                    });
+
+                    // Optionally display debug info
+                    console.log('Response debug info:', responseData);
+
+                    // Reset loading state
+                    isLoading = false;
+                    sendButton.disabled = false;
+                }
+            } catch (error) {
+                // Remove loading messages and show error
+                configurations.forEach(config => {
+                    if (loadingDivs[config.config_key]) {
+                        loadingDivs[config.config_key].remove();
+                    }
+                    addMessage(config.config_key, 'Error', error.message, 'error-message');
+                });
+
+                isLoading = false;
+                sendButton.disabled = false;
+            }
+        }
+
+        // Add message to a specific chat screen
+        function addMessage(configKey, sender, text, className) {
+            const messagesContainer = document.getElementById(`messages-${configKey}`);
+            if (!messagesContainer) {
+                console.error(`Messages container for ${configKey} not found`);
+                return null;
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${className}`;
+
+            // For assistant messages in regular flow, add the message ID attribute
+            if (className === 'assistant-message') {
+                messageDiv.dataset.messageId = String(conversationCounter[configKey]);
+            }
+
+            messageDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            return messageDiv;
+        }
+
+        // Event listeners
+        sendButton.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        resetButton.addEventListener('click', async () => {
+            try {
+                // Close any active stream
+                if (eventSource) {
+                    eventSource.close();
+                    eventSource = null;
+                }
+
+                await fetch(`${API_URL}/reset`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                // Reset conversation counters
+                configurations.forEach(config => {
+                    conversationCounter[config.config_key] = 0;
+                });
+
+                // Clear all message containers
+                configurations.forEach(config => {
+                    const messagesContainer = document.getElementById(`messages-${config.config_key}`);
+                    if (messagesContainer) {
+                        messagesContainer.innerHTML = '';
+                        // Add a system message that won't be counted in the conversation flow
+                        const messageDiv = document.createElement('div');
+                        messageDiv.className = 'message system-message';
+                        messageDiv.innerHTML = '<strong>System:</strong> Chat history cleared';
+                        messagesContainer.appendChild(messageDiv);
+                    }
+                });
+
+                // Reset states
+                isLoading = false;
+                sendButton.disabled = false;
+            } catch (error) {
+                configurations.forEach(config => {
+                    addMessage(config.config_key, 'Error', 'Failed to reset chat', 'error-message');
+                });
+            }
+        });
+
+        // Initialize app on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchConfigsAndInit();
+        });
+    </script>
+</body>
+</html>

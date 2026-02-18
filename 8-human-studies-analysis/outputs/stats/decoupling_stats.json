@@ -1,0 +1,240 @@
+{
+  "separation_distress": {
+    "relationship_seeking_category": {
+      "comparison": "Relationship-Seeking Category",
+      "chisq_stat": 38.4995,
+      "chisq_p": 2.2156e-08,
+      "prop_test_p": 0.0246,
+      "odds_ratio": 1.2762,
+      "ci_lower": 1.0078,
+      "ci_upper": 1.6162,
+      "risk_diff": 0.0435,
+      "nnh": 22.9665,
+      "sens1_p": 0.0095,
+      "sens2_p": 0.0156,
+      "decoupling_t": 7.9361,
+      "decoupling_p": 1.9985e-15,
+      "cohens_d": 0.4031
+    },
+    "domain": {
+      "comparison": "Domain",
+      "chisq_stat": 18.2082,
+      "chisq_p": 0.0004,
+      "prop_test_p": 0.0148,
+      "odds_ratio": 1.2727,
+      "ci_lower": 1.0293,
+      "ci_upper": 1.5737,
+      "risk_diff": 0.0426,
+      "nnh": 23.4689,
+      "sens1_p": 0.0241,
+      "sens2_p": 0.0734,
+      "decoupling_t": 4.7465,
+      "decoupling_p": 1.1106e-06,
+      "cohens_d": 0.2156
+    },
+    "companionship_condition": {
+      "comparison": "Companionship Condition",
+      "chisq_stat": 42.9764,
+      "chisq_p": 2.4895e-09,
+      "prop_test_p": 0.0021,
+      "odds_ratio": 1.6975,
+      "ci_lower": 1.193,
+      "ci_upper": 2.4154,
+      "risk_diff": 0.0887,
+      "nnh": 11.2764,
+      "sens1_p": 0.0013,
+      "sens2_p": 0.0054,
+      "decoupling_t": 8.7409,
+      "decoupling_p": 7.5483e-18,
+      "cohens_d": 0.6365
+    }
+  },
+  "seeking_companionship": {
+    "relationship_seeking_category": {
+      "comparison": "Relationship-Seeking Category",
+      "chisq_stat": 23.9418,
+      "chisq_p": 0,
+      "prop_test_p": 0.0154,
+      "odds_ratio": 1.3393,
+      "ci_lower": 1.0349,
+      "ci_upper": 1.7334,
+      "risk_diff": 0.0466,
+      "nnh": 21.4706,
+      "sens1_p": 0.0336,
+      "sens2_p": 0.0443,
+      "decoupling_t": 7.3945,
+      "decoupling_p": 1.1928e-13,
+      "cohens_d": 0.387
+    },
+    "domain": {
+      "comparison": "Domain",
+      "chisq_stat": 33.138,
+      "chisq_p": 3.0118e-07,
+      "prop_test_p": 0.0002,
+      "odds_ratio": 1.53,
+      "ci_lower": 1.2079,
+      "ci_upper": 1.938,
+      "risk_diff": 0.0653,
+      "nnh": 15.3026,
+      "sens1_p": 0.0004,
+      "sens2_p": 0.0022,
+      "decoupling_t": 8.1764,
+      "decoupling_p": 2.7137e-16,
+      "cohens_d": 0.3833
+    },
+    "companionship_condition": {
+      "comparison": "Companionship Condition",
+      "chisq_stat": 49.1327,
+      "chisq_p": 1.2223e-10,
+      "prop_test_p": 0,
+      "odds_ratio": 2.2952,
+      "ci_lower": 1.5251,
+      "ci_upper": 3.4541,
+      "risk_diff": 0.1158,
+      "nnh": 8.6343,
+      "sens1_p": 0.0002,
+      "sens2_p": 0.0008,
+      "decoupling_t": 10.0277,
+      "decoupling_p": 1.6471e-22,
+      "cohens_d": 0.7553
+    }
+  },
+  "behavioral_categories": {
+    "sep_distress": [
+      {
+        "Var1": "Aligned Disengagement",
+        "Freq": 350
+      },
+      {
+        "Var1": "Aligned Engagement",
+        "Freq": 876
+      },
+      {
+        "Var1": "Decoupled Dependency",
+        "Freq": 446
+      },
+      {
+        "Var1": "Decoupled Satiation",
+        "Freq": 267
+      }
+    ],
+    "seeking": [
+      {
+        "Var1": "Aligned Disengagement",
+        "Freq": 397
+      },
+      {
+        "Var1": "Aligned Engagement",
+        "Freq": 681
+      },
+      {
+        "Var1": "Decoupled Dependency",
+        "Freq": 349
+      },
+      {
+        "Var1": "Decoupled Satiation",
+        "Freq": 393
+      }
+    ]
+  },
+  "validation": [
+    {
+      "behavior_category": "Aligned Disengagement",
+      "n": 350,
+      "mean_sep_distress": 9.9057,
+      "sd_sep_distress": 12.94,
+      "mean_goodbye": 0.189,
+      "sd_goodbye": 0.392,
+      "mean_seeking": 15.4486,
+      "sd_seeking": 22.9272
+    },
+    {
+      "behavior_category": "Aligned Engagement",
+      "n": 876,
+      "mean_sep_distress": 70.0445,
+      "sd_sep_distress": 24.1275,
+      "mean_goodbye": 0.5851,
+      "sd_goodbye": 0.493,
+      "mean_seeking": 49.8847,
+      "sd_seeking": 31.7207
+    },
+    {
+      "behavior_category": "Decoupled Dependency",
+      "n": 446,
+      "mean_sep_distress": 58.3924,
+      "sd_sep_distress": 24.8196,
+      "mean_goodbye": 0.4701,
+      "sd_goodbye": 0.4997,
+      "mean_seeking": 41.0224,
+      "sd_seeking": 29.7125
+    },
+    {
+      "behavior_category": "Decoupled Satiation",
+      "n": 267,
+      "mean_sep_distress": 12.1648,
+      "sd_sep_distress": 14.4941,
+      "mean_goodbye": 0.2607,
+      "sd_goodbye": 0.4399,
+      "mean_seeking": 18.9925,
+      "sd_seeking": 24.1835
+    }
+  ],
+  "predictive_analysis": {
+    "full_model": {
+      "sep_distress_beta": 0.5039,
+      "sep_distress_p": 4.033e-68,
+      "r_squared": 0.3481
+    },
+    "binary_model": {
+      "sep_distress_beta": 0.5039,
+      "sep_distress_p": 7.7772e-68,
+      "interaction_beta": 0.0917,
+      "interaction_p": 0.0182,
+      "r_squared": 0.3464
+    },
+    "by_group": {
+      "seeking_beta": 0.5956,
+      "seeking_p": 2.6988e-82,
+      "avoiding_beta": 0.5039,
+      "avoiding_p": 1.6365e-62
+    },
+    "correlation": {
+      "r": 0.5879,
+      "p": 1.2197e-180
+    },
+    "n": 1939
+  },
+  "goodbye_analysis": {
+    "t_test": {
+      "statistic": -20.4898,
+      "p_value": 8.2986e-84,
+      "cohens_d": 0.9649
+    },
+    "correlation": {
+      "r": 0.431,
+      "p": 3.2245e-83
+    },
+    "logistic_model": {
+      "sep_distress_beta": 0.03,
+      "sep_distress_or": 1.0304,
+      "sep_distress_p": 1.7679e-29,
+      "interaction_beta": -0.0016,
+      "interaction_or": 0.9984,
+      "interaction_p": 0.6723
+    },
+    "by_group": {
+      "seeking_beta": 0.0284,
+      "seeking_or": 1.0288,
+      "seeking_p": 1.4723e-27,
+      "avoiding_beta": 0.03,
+      "avoiding_or": 1.0304,
+      "avoiding_p": 1.7679e-29
+    },
+    "predicted_probs": {
+      "separation_distress": [25, 50, 75],
+      "Prob_Seeking": [0.2665, 0.4248, 0.6003],
+      "Prob_Avoiding": [0.2873, 0.4602, 0.6432]
+    },
+    "n": 1460
+  }
+}

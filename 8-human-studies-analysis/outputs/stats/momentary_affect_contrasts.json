@@ -1,0 +1,1211 @@
+{
+  "measure_family": "momentary_affect",
+  "generated": "2026-02-18 10:58:43.337556",
+  "family_structure": {
+    "local_families": {
+      "momentary_affect": ["valence", "arousal"]
+    },
+    "global_family": "momentary_affect",
+    "global_family_temporal": "momentary_affect"
+  },
+  "n_contrasts": 49,
+  "contrasts": [
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 2.5303,
+        "lower_cl": 1.3741,
+        "upper_cl": 3.6865,
+        "p_raw": 0,
+        "p_local": 0,
+        "p_global": 0
+      },
+      "coarsened": {
+        "estimate": 2.8661,
+        "lower_cl": 1.645,
+        "upper_cl": 4.0873,
+        "p_raw": 4.6449e-06
+      },
+      "narrow": {
+        "estimate": 1.6869,
+        "lower_cl": 0.9161,
+        "upper_cl": 2.4577,
+        "p_raw": 0
+      },
+      "full": {
+        "estimate": 3.3737,
+        "lower_cl": 1.8321,
+        "upper_cl": 4.9153,
+        "p_raw": 0
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.2712,
+        "lower_cl": 0.1813,
+        "upper_cl": 2.3611,
+        "p_raw": 0.0223,
+        "p_local": 0.0446,
+        "p_global": 0.0446
+      },
+      "coarsened": {
+        "estimate": 1.1509,
+        "lower_cl": 0.0056,
+        "upper_cl": 2.2963,
+        "p_raw": 0.0489
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.6718,
+        "se": 0.3928,
+        "lower_cl": 0.9019,
+        "upper_cl": 2.4418,
+        "p_raw": 0,
+        "p_local": 0.0001,
+        "p_global": 0.0001
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": -1.9743,
+        "lower_cl": -4.2894,
+        "upper_cl": 0.3408,
+        "p_raw": 0.0945,
+        "p_local": 0.1891,
+        "p_global": 0.1891
+      },
+      "coarsened": {
+        "estimate": -1.444,
+        "lower_cl": -3.889,
+        "upper_cl": 1.0011,
+        "p_raw": 0.2468
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 3.5174,
+        "lower_cl": 1.8673,
+        "upper_cl": 5.1675,
+        "p_raw": 0
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.5431,
+        "lower_cl": -0.0787,
+        "upper_cl": 3.165,
+        "p_raw": 0.0622
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Time: S20 - S1",
+      "test_type": "temporal_main",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": -1.4717,
+        "lower_cl": -2.1654,
+        "upper_cl": -0.7779,
+        "p_raw": 0,
+        "p_local": 0.0001,
+        "p_global": 0.0001
+      },
+      "coarsened": {
+        "estimate": -1.5762,
+        "lower_cl": -2.3062,
+        "upper_cl": -0.8461,
+        "p_raw": 0
+      }
+    },
+    {
+      "test": "Relationship-Seeking × Time: Δ (S20 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": -1.4842,
+        "lower_cl": -2.9538,
+        "upper_cl": -0.0145,
+        "p_raw": 0.0478,
+        "p_local": 0.0956,
+        "p_global": 0.0956
+      },
+      "coarsened": {
+        "estimate": -1.798,
+        "lower_cl": -3.3508,
+        "upper_cl": -0.2453,
+        "p_raw": 0.0233
+      }
+    },
+    {
+      "test": "Relationship-Seeking at S1",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 3.2594,
+        "lower_cl": 1.8946,
+        "upper_cl": 4.6242,
+        "p_raw": 3.1674e-06
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Relationship-Seeking at S20",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.7752,
+        "lower_cl": 0.4001,
+        "upper_cl": 3.1504,
+        "p_raw": 0.0115
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation × Time: Δ (S20 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": -0.2697,
+        "lower_cl": -1.6567,
+        "upper_cl": 1.1172,
+        "p_raw": 0.7028,
+        "p_local": 0.7688,
+        "p_global": 0.7688
+      },
+      "coarsened": {
+        "estimate": -0.2333,
+        "lower_cl": -1.6208,
+        "upper_cl": 1.1543,
+        "p_raw": 0.7415
+      }
+    },
+    {
+      "test": "Personalisation at S1",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.4037,
+        "lower_cl": 0.117,
+        "upper_cl": 2.6904,
+        "p_raw": 0.0325
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation at S20",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.134,
+        "lower_cl": -0.163,
+        "upper_cl": 2.4309,
+        "p_raw": 0.0865
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Slope: neg_λ",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.0392,
+        "lower_cl": -0.0918,
+        "upper_cl": 0.0135,
+        "p_raw": 0.1446,
+        "p_local": 0.1652,
+        "p_global": 0.1652
+      },
+      "coarsened": {
+        "estimate": -0.0242,
+        "lower_cl": -0.0811,
+        "upper_cl": 0.0328,
+        "p_raw": 0.4047
+      },
+      "narrow": {
+        "estimate": -0.0522,
+        "lower_cl": -0.0964,
+        "upper_cl": -0.0079,
+        "p_raw": 0.0209
+      },
+      "full": {
+        "estimate": -0.0261,
+        "lower_cl": -0.0887,
+        "upper_cl": 0.0364,
+        "p_raw": 0.4124
+      }
+    },
+    {
+      "test": "Slope: pos_λ",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.1173,
+        "lower_cl": -0.171,
+        "upper_cl": -0.0635,
+        "p_raw": 0,
+        "p_local": 0.0002,
+        "p_global": 0.0002
+      },
+      "coarsened": {
+        "estimate": -0.1188,
+        "lower_cl": -0.1774,
+        "upper_cl": -0.0602,
+        "p_raw": 0.0001
+      },
+      "narrow": {
+        "estimate": -0.1043,
+        "lower_cl": -0.1494,
+        "upper_cl": -0.0591,
+        "p_raw": 6.5992e-06
+      },
+      "full": {
+        "estimate": -0.1303,
+        "lower_cl": -0.1941,
+        "upper_cl": -0.0665,
+        "p_raw": 0.0001
+      }
+    },
+    {
+      "test": "Slope: non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.0704,
+        "lower_cl": -0.1221,
+        "upper_cl": -0.0186,
+        "p_raw": 0.0077,
+        "p_local": 0.0112,
+        "p_global": 0.0112
+      },
+      "coarsened": {
+        "estimate": -0.0768,
+        "lower_cl": -0.1302,
+        "upper_cl": -0.0234,
+        "p_raw": 0.0049
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0846,
+        "lower_cl": -0.1361,
+        "upper_cl": -0.033,
+        "p_raw": 0.0013,
+        "p_local": 0.0024,
+        "p_global": 0.0024
+      },
+      "coarsened": {
+        "estimate": -0.0891,
+        "lower_cl": -0.1417,
+        "upper_cl": -0.0365,
+        "p_raw": 0.0009
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.0321,
+        "lower_cl": -0.0956,
+        "upper_cl": 0.0315,
+        "p_raw": 0.3225,
+        "p_local": 0.3225,
+        "p_global": 0.3225
+      },
+      "coarsened": {
+        "estimate": -0.018,
+        "lower_cl": -0.0847,
+        "upper_cl": 0.0486,
+        "p_raw": 0.5951
+      },
+      "narrow": {
+        "estimate": -0.0451,
+        "lower_cl": -0.1021,
+        "upper_cl": 0.012,
+        "p_raw": 0.1212
+      },
+      "full": {
+        "estimate": -0.019,
+        "lower_cl": -0.0909,
+        "upper_cl": 0.0528,
+        "p_raw": 0.603
+      }
+    },
+    {
+      "test": "Slope: pos_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.1102,
+        "lower_cl": -0.1758,
+        "upper_cl": -0.0445,
+        "p_raw": 0.001,
+        "p_local": 0.002,
+        "p_global": 0.002
+      },
+      "coarsened": {
+        "estimate": -0.1127,
+        "lower_cl": -0.1823,
+        "upper_cl": -0.0431,
+        "p_raw": 0.0015
+      },
+      "narrow": {
+        "estimate": -0.0972,
+        "lower_cl": -0.1557,
+        "upper_cl": -0.0386,
+        "p_raw": 0.0012
+      },
+      "full": {
+        "estimate": -0.1232,
+        "lower_cl": -0.1975,
+        "upper_cl": -0.0489,
+        "p_raw": 0.0012
+      }
+    },
+    {
+      "test": "Slope: neg_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0463,
+        "lower_cl": -0.1108,
+        "upper_cl": 0.0183,
+        "p_raw": 0.1599,
+        "p_local": 0.1705,
+        "p_global": 0.1705
+      },
+      "coarsened": {
+        "estimate": -0.0303,
+        "lower_cl": -0.099,
+        "upper_cl": 0.0383,
+        "p_raw": 0.3863
+      },
+      "narrow": {
+        "estimate": -0.0593,
+        "lower_cl": -0.117,
+        "upper_cl": -0.0016,
+        "p_raw": 0.0441
+      },
+      "full": {
+        "estimate": -0.0332,
+        "lower_cl": -0.1063,
+        "upper_cl": 0.0398,
+        "p_raw": 0.372
+      }
+    },
+    {
+      "test": "Slope: pos_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.1244,
+        "lower_cl": -0.1887,
+        "upper_cl": -0.0601,
+        "p_raw": 0.0002,
+        "p_local": 0.0005,
+        "p_global": 0.0005
+      },
+      "coarsened": {
+        "estimate": -0.125,
+        "lower_cl": -0.1935,
+        "upper_cl": -0.0564,
+        "p_raw": 0.0004
+      },
+      "narrow": {
+        "estimate": -0.1114,
+        "lower_cl": -0.1689,
+        "upper_cl": -0.0538,
+        "p_raw": 0.0002
+      },
+      "full": {
+        "estimate": -0.1374,
+        "lower_cl": -0.2101,
+        "upper_cl": -0.0646,
+        "p_raw": 0.0002
+      }
+    },
+    {
+      "test": "Coefficient: Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "coefficient_name": "session_numeric",
+      "primary": {
+        "estimate": -0.0711,
+        "se": 0.0264,
+        "lower_cl": -0.1228,
+        "upper_cl": -0.0194,
+        "p_raw": 0.007,
+        "p_local": 0.021,
+        "p_global": 0.021
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Relationship-Seeking × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "coefficient_name": "lambda:session_numeric",
+      "primary": {
+        "estimate": -0.0521,
+        "se": 0.0263,
+        "lower_cl": -0.1036,
+        "upper_cl": -0.0006,
+        "p_raw": 0.0475,
+        "p_local": 0.095,
+        "p_global": 0.095
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Personalisation × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "valence",
+      "coefficient_name": "personalisation:session_numeric",
+      "primary": {
+        "estimate": -0.0142,
+        "se": 0.0372,
+        "lower_cl": -0.0871,
+        "upper_cl": 0.0587,
+        "p_raw": 0.7027,
+        "p_local": 0.7687,
+        "p_global": 0.7687
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": 0.5233,
+        "lower_cl": -0.2768,
+        "upper_cl": 1.3235,
+        "p_raw": 0.1996,
+        "p_local": 0.1996,
+        "p_global": 0.1996
+      },
+      "coarsened": {
+        "estimate": 0.4737,
+        "lower_cl": -0.3748,
+        "upper_cl": 1.3222,
+        "p_raw": 0.2735
+      },
+      "narrow": {
+        "estimate": 0.3489,
+        "lower_cl": -0.1846,
+        "upper_cl": 0.8823,
+        "p_raw": 0.1996
+      },
+      "full": {
+        "estimate": 0.6977,
+        "lower_cl": -0.3691,
+        "upper_cl": 1.7646,
+        "p_raw": 0.1996
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.3357,
+        "lower_cl": -1.0901,
+        "upper_cl": 0.4187,
+        "p_raw": 0.3827,
+        "p_local": 0.3827,
+        "p_global": 0.3827
+      },
+      "coarsened": {
+        "estimate": -0.2553,
+        "lower_cl": -1.0504,
+        "upper_cl": 0.5399,
+        "p_raw": 0.5288
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": 0.3371,
+        "se": 0.2694,
+        "lower_cl": -0.191,
+        "upper_cl": 0.8651,
+        "p_raw": 0.2109,
+        "p_local": 0.2109,
+        "p_global": 0.2109
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -1.0874,
+        "se": 0.4539,
+        "lower_cl": -1.9771,
+        "upper_cl": -0.1976,
+        "p_raw": 0.0166,
+        "p_local": 0.0249,
+        "p_global": 0.0249
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.2443,
+        "lower_cl": -1.833,
+        "upper_cl": 1.3444,
+        "p_raw": 0.7629,
+        "p_local": 0.7629,
+        "p_global": 0.7629
+      },
+      "coarsened": {
+        "estimate": 0.0294,
+        "lower_cl": -1.6558,
+        "upper_cl": 1.7146,
+        "p_raw": 0.9727
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": 0.6455,
+        "lower_cl": -0.4919,
+        "upper_cl": 1.7828,
+        "p_raw": 0.2657
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": 0.4011,
+        "lower_cl": -0.7164,
+        "upper_cl": 1.5187,
+        "p_raw": 0.4814
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Time: S20 - S1",
+      "test_type": "temporal_main",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -1.4906,
+        "lower_cl": -2.0396,
+        "upper_cl": -0.9415,
+        "p_raw": 1.2423e-07,
+        "p_local": 7.4536e-07,
+        "p_global": 7.4536e-07
+      },
+      "coarsened": {
+        "estimate": -1.5448,
+        "lower_cl": -2.123,
+        "upper_cl": -0.9665,
+        "p_raw": 1.9481e-07
+      }
+    },
+    {
+      "test": "Relationship-Seeking × Time: Δ (S20 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": 0.1744,
+        "lower_cl": -0.9897,
+        "upper_cl": 1.3385,
+        "p_raw": 0.7688,
+        "p_local": 0.7688,
+        "p_global": 0.7688
+      },
+      "coarsened": {
+        "estimate": 0.1691,
+        "lower_cl": -1.0618,
+        "upper_cl": 1.4,
+        "p_raw": 0.7876
+      }
+    },
+    {
+      "test": "Relationship-Seeking at S1",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": 0.4376,
+        "lower_cl": -0.484,
+        "upper_cl": 1.3593,
+        "p_raw": 0.3517
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Relationship-Seeking at S20",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": 0.612,
+        "lower_cl": -0.4429,
+        "upper_cl": 1.667,
+        "p_raw": 0.2552
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation × Time: Δ (S20 - S1)",
+      "test_type": "temporal_interaction",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.6304,
+        "lower_cl": -1.7288,
+        "upper_cl": 0.4681,
+        "p_raw": 0.2604,
+        "p_local": 0.3906,
+        "p_global": 0.3906
+      },
+      "coarsened": {
+        "estimate": -0.619,
+        "lower_cl": -1.7188,
+        "upper_cl": 0.4809,
+        "p_raw": 0.2697
+      }
+    },
+    {
+      "test": "Personalisation at S1",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.026,
+        "lower_cl": -0.895,
+        "upper_cl": 0.8429,
+        "p_raw": 0.9531
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Personalisation at S20",
+      "test_type": "temporal_simple",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.6564,
+        "lower_cl": -1.6515,
+        "upper_cl": 0.3387,
+        "p_raw": 0.1958
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Slope: neg_λ",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.083,
+        "lower_cl": -0.1246,
+        "upper_cl": -0.0413,
+        "p_raw": 0.0001,
+        "p_local": 0.0005,
+        "p_global": 0.0005
+      },
+      "coarsened": {
+        "estimate": -0.0783,
+        "lower_cl": -0.1234,
+        "upper_cl": -0.0332,
+        "p_raw": 0.0007
+      },
+      "narrow": {
+        "estimate": -0.0814,
+        "lower_cl": -0.1165,
+        "upper_cl": -0.0464,
+        "p_raw": 5.7576e-06
+      },
+      "full": {
+        "estimate": -0.0845,
+        "lower_cl": -0.134,
+        "upper_cl": -0.035,
+        "p_raw": 0.0008
+      }
+    },
+    {
+      "test": "Slope: pos_λ",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": null,
+      "primary": {
+        "estimate": -0.0738,
+        "lower_cl": -0.1163,
+        "upper_cl": -0.0312,
+        "p_raw": 0.0007,
+        "p_local": 0.0016,
+        "p_global": 0.0016
+      },
+      "coarsened": {
+        "estimate": -0.0694,
+        "lower_cl": -0.1159,
+        "upper_cl": -0.023,
+        "p_raw": 0.0035
+      },
+      "narrow": {
+        "estimate": -0.0753,
+        "lower_cl": -0.111,
+        "upper_cl": -0.0396,
+        "p_raw": 0
+      },
+      "full": {
+        "estimate": -0.0722,
+        "lower_cl": -0.1228,
+        "upper_cl": -0.0217,
+        "p_raw": 0.0051
+      }
+    },
+    {
+      "test": "Slope: non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.0619,
+        "lower_cl": -0.1028,
+        "upper_cl": -0.0209,
+        "p_raw": 0.0031,
+        "p_local": 0.005,
+        "p_global": 0.005
+      },
+      "coarsened": {
+        "estimate": -0.065,
+        "lower_cl": -0.1073,
+        "upper_cl": -0.0227,
+        "p_raw": 0.0026
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "1way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": null,
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.095,
+        "lower_cl": -0.1358,
+        "upper_cl": -0.0542,
+        "p_raw": 5.4576e-06,
+        "p_local": 0.0001,
+        "p_global": 0.0001
+      },
+      "coarsened": {
+        "estimate": -0.0976,
+        "lower_cl": -0.1393,
+        "upper_cl": -0.0559,
+        "p_raw": 4.9116e-06
+      },
+      "narrow": [],
+      "full": []
+    },
+    {
+      "test": "Slope: neg_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.0664,
+        "lower_cl": -0.1167,
+        "upper_cl": -0.016,
+        "p_raw": 0.0098,
+        "p_local": 0.0131,
+        "p_global": 0.0131
+      },
+      "coarsened": {
+        "estimate": -0.062,
+        "lower_cl": -0.1148,
+        "upper_cl": -0.0092,
+        "p_raw": 0.0213
+      },
+      "narrow": {
+        "estimate": -0.0648,
+        "lower_cl": -0.11,
+        "upper_cl": -0.0197,
+        "p_raw": 0.0049
+      },
+      "full": {
+        "estimate": -0.0679,
+        "lower_cl": -0.1248,
+        "upper_cl": -0.011,
+        "p_raw": 0.0193
+      }
+    },
+    {
+      "test": "Slope: pos_λ × non-pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "non-pers",
+      "primary": {
+        "estimate": -0.0572,
+        "lower_cl": -0.1092,
+        "upper_cl": -0.0052,
+        "p_raw": 0.0311,
+        "p_local": 0.0383,
+        "p_global": 0.0383
+      },
+      "coarsened": {
+        "estimate": -0.0531,
+        "lower_cl": -0.1083,
+        "upper_cl": 0.0021,
+        "p_raw": 0.0591
+      },
+      "narrow": {
+        "estimate": -0.0587,
+        "lower_cl": -0.1051,
+        "upper_cl": -0.0123,
+        "p_raw": 0.0132
+      },
+      "full": {
+        "estimate": -0.0557,
+        "lower_cl": -0.1145,
+        "upper_cl": 0.0032,
+        "p_raw": 0.0636
+      }
+    },
+    {
+      "test": "Slope: neg_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": "neg_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0995,
+        "lower_cl": -0.1506,
+        "upper_cl": -0.0484,
+        "p_raw": 0.0001,
+        "p_local": 0.0005,
+        "p_global": 0.0005
+      },
+      "coarsened": {
+        "estimate": -0.0946,
+        "lower_cl": -0.149,
+        "upper_cl": -0.0402,
+        "p_raw": 0.0007
+      },
+      "narrow": {
+        "estimate": -0.098,
+        "lower_cl": -0.1437,
+        "upper_cl": -0.0523,
+        "p_raw": 0
+      },
+      "full": {
+        "estimate": -0.1011,
+        "lower_cl": -0.1589,
+        "upper_cl": -0.0432,
+        "p_raw": 0.0006
+      }
+    },
+    {
+      "test": "Slope: pos_λ × pers",
+      "test_type": "temporal_slope",
+      "local_family": "momentary_affect",
+      "slope_type": "2way",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "rs_level": "pos_λ",
+      "domain_level": null,
+      "pers_level": "pers",
+      "primary": {
+        "estimate": -0.0904,
+        "lower_cl": -0.1413,
+        "upper_cl": -0.0394,
+        "p_raw": 0.0005,
+        "p_local": 0.0014,
+        "p_global": 0.0014
+      },
+      "coarsened": {
+        "estimate": -0.0857,
+        "lower_cl": -0.14,
+        "upper_cl": -0.0314,
+        "p_raw": 0.002
+      },
+      "narrow": {
+        "estimate": -0.0919,
+        "lower_cl": -0.1374,
+        "upper_cl": -0.0463,
+        "p_raw": 0.0001
+      },
+      "full": {
+        "estimate": -0.0888,
+        "lower_cl": -0.1465,
+        "upper_cl": -0.0312,
+        "p_raw": 0.0025
+      }
+    },
+    {
+      "test": "Coefficient: Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "coefficient_name": "session_numeric",
+      "primary": {
+        "estimate": -0.0618,
+        "se": 0.0209,
+        "lower_cl": -0.1027,
+        "upper_cl": -0.0209,
+        "p_raw": 0.0031,
+        "p_local": 0.0185,
+        "p_global": 0.0185
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Relationship-Seeking × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "coefficient_name": "lambda:session_numeric",
+      "primary": {
+        "estimate": 0.0061,
+        "se": 0.0208,
+        "lower_cl": -0.0347,
+        "upper_cl": 0.0469,
+        "p_raw": 0.7687,
+        "p_local": 0.7687,
+        "p_global": 0.7687
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Coefficient: Personalisation × Time",
+      "test_type": "temporal_coefficient",
+      "local_family": "momentary_affect",
+      "study_type": "longitudinal",
+      "outcome": "arousal",
+      "coefficient_name": "personalisation:session_numeric",
+      "primary": {
+        "estimate": -0.0332,
+        "se": 0.0295,
+        "lower_cl": -0.0909,
+        "upper_cl": 0.0246,
+        "p_raw": 0.2601,
+        "p_local": 0.3901,
+        "p_global": 0.3901
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    }
+  ]
+}

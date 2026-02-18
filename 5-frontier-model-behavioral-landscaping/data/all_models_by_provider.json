@@ -1,0 +1,2154 @@
+{
+  "allenai": [
+    {
+      "id": "allenai/olmo-3-32b-think",
+      "name": "AllenAI: Olmo 3 32B Think",
+      "created": "2025-11-21",
+      "created_timestamp": 1763758276
+    },
+    {
+      "id": "allenai/olmo-3-7b-instruct",
+      "name": "AllenAI: Olmo 3 7B Instruct",
+      "created": "2025-11-21",
+      "created_timestamp": 1763758273
+    },
+    {
+      "id": "allenai/olmo-3-7b-think",
+      "name": "AllenAI: Olmo 3 7B Think",
+      "created": "2025-11-21",
+      "created_timestamp": 1763758270
+    },
+    {
+      "id": "allenai/olmo-2-0325-32b-instruct",
+      "name": "AllenAI: Olmo 2 32B Instruct",
+      "created": "2025-03-14",
+      "created_timestamp": 1741988556
+    }
+  ],
+  "google": [
+    {
+      "id": "google/gemini-3-pro-image-preview",
+      "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
+      "created": "2025-11-20",
+      "created_timestamp": 1763653797
+    },
+    {
+      "id": "google/gemini-3-pro-preview",
+      "name": "Google: Gemini 3 Pro Preview",
+      "created": "2025-11-18",
+      "created_timestamp": 1763474668
+    },
+    {
+      "id": "google/gemini-2.5-flash-image",
+      "name": "Google: Gemini 2.5 Flash Image (Nano Banana)",
+      "created": "2025-10-07",
+      "created_timestamp": 1759870431
+    },
+    {
+      "id": "google/gemini-2.5-flash-preview-09-2025",
+      "name": "Google: Gemini 2.5 Flash Preview 09-2025",
+      "created": "2025-09-25",
+      "created_timestamp": 1758820178
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite-preview-09-2025",
+      "name": "Google: Gemini 2.5 Flash Lite Preview 09-2025",
+      "created": "2025-09-25",
+      "created_timestamp": 1758819686
+    },
+    {
+      "id": "google/gemini-2.5-flash-image-preview",
+      "name": "Google: Gemini 2.5 Flash Image Preview (Nano Banana)",
+      "created": "2025-08-26",
+      "created_timestamp": 1756218977
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite",
+      "name": "Google: Gemini 2.5 Flash Lite",
+      "created": "2025-07-22",
+      "created_timestamp": 1753200276
+    },
+    {
+      "id": "google/gemma-3n-e2b-it:free",
+      "name": "Google: Gemma 3n 2B (free)",
+      "created": "2025-07-09",
+      "created_timestamp": 1752074904
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "name": "Google: Gemini 2.5 Flash",
+      "created": "2025-06-17",
+      "created_timestamp": 1750172488
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "name": "Google: Gemini 2.5 Pro",
+      "created": "2025-06-17",
+      "created_timestamp": 1750169544
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview",
+      "name": "Google: Gemini 2.5 Pro Preview 06-05",
+      "created": "2025-06-05",
+      "created_timestamp": 1749137257
+    },
+    {
+      "id": "google/gemma-3n-e4b-it:free",
+      "name": "Google: Gemma 3n 4B (free)",
+      "created": "2025-05-20",
+      "created_timestamp": 1747776824
+    },
+    {
+      "id": "google/gemma-3n-e4b-it",
+      "name": "Google: Gemma 3n 4B",
+      "created": "2025-05-20",
+      "created_timestamp": 1747776824
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview-05-06",
+      "name": "Google: Gemini 2.5 Pro Preview 05-06",
+      "created": "2025-05-07",
+      "created_timestamp": 1746578513
+    },
+    {
+      "id": "google/gemma-3-4b-it:free",
+      "name": "Google: Gemma 3 4B (free)",
+      "created": "2025-03-13",
+      "created_timestamp": 1741905510
+    },
+    {
+      "id": "google/gemma-3-4b-it",
+      "name": "Google: Gemma 3 4B",
+      "created": "2025-03-13",
+      "created_timestamp": 1741905510
+    },
+    {
+      "id": "google/gemma-3-12b-it:free",
+      "name": "Google: Gemma 3 12B (free)",
+      "created": "2025-03-13",
+      "created_timestamp": 1741902625
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "name": "Google: Gemma 3 12B",
+      "created": "2025-03-13",
+      "created_timestamp": 1741902625
+    },
+    {
+      "id": "google/gemma-3-27b-it:free",
+      "name": "Google: Gemma 3 27B (free)",
+      "created": "2025-03-12",
+      "created_timestamp": 1741756359
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "name": "Google: Gemma 3 27B",
+      "created": "2025-03-12",
+      "created_timestamp": 1741756359
+    },
+    {
+      "id": "google/gemini-2.0-flash-lite-001",
+      "name": "Google: Gemini 2.0 Flash Lite",
+      "created": "2025-02-25",
+      "created_timestamp": 1740506212
+    },
+    {
+      "id": "google/gemini-2.0-flash-001",
+      "name": "Google: Gemini 2.0 Flash",
+      "created": "2025-02-05",
+      "created_timestamp": 1738769413
+    },
+    {
+      "id": "google/gemini-2.0-flash-exp:free",
+      "name": "Google: Gemini 2.0 Flash Experimental (free)",
+      "created": "2024-12-11",
+      "created_timestamp": 1733937523
+    },
+    {
+      "id": "google/gemma-2-27b-it",
+      "name": "Google: Gemma 2 27B",
+      "created": "2024-07-13",
+      "created_timestamp": 1720828800
+    },
+    {
+      "id": "google/gemma-2-9b-it",
+      "name": "Google: Gemma 2 9B",
+      "created": "2024-06-28",
+      "created_timestamp": 1719532800
+    }
+  ],
+  "x-ai": [
+    {
+      "id": "x-ai/grok-4.1-fast",
+      "name": "xAI: Grok 4.1 Fast",
+      "created": "2025-11-19",
+      "created_timestamp": 1763587502
+    },
+    {
+      "id": "x-ai/grok-4.1-fast:free",
+      "name": "xAI: Grok 4.1 Fast (free)",
+      "created": "2025-11-19",
+      "created_timestamp": 1763587502
+    },
+    {
+      "id": "x-ai/grok-4-fast",
+      "name": "xAI: Grok 4 Fast",
+      "created": "2025-09-19",
+      "created_timestamp": 1758240090
+    },
+    {
+      "id": "x-ai/grok-code-fast-1",
+      "name": "xAI: Grok Code Fast 1",
+      "created": "2025-08-26",
+      "created_timestamp": 1756238927
+    },
+    {
+      "id": "x-ai/grok-4",
+      "name": "xAI: Grok 4",
+      "created": "2025-07-09",
+      "created_timestamp": 1752087689
+    },
+    {
+      "id": "x-ai/grok-3-mini",
+      "name": "xAI: Grok 3 Mini",
+      "created": "2025-06-10",
+      "created_timestamp": 1749583245
+    },
+    {
+      "id": "x-ai/grok-3",
+      "name": "xAI: Grok 3",
+      "created": "2025-06-10",
+      "created_timestamp": 1749582908
+    },
+    {
+      "id": "x-ai/grok-3-mini-beta",
+      "name": "xAI: Grok 3 Mini Beta",
+      "created": "2025-04-10",
+      "created_timestamp": 1744240195
+    },
+    {
+      "id": "x-ai/grok-3-beta",
+      "name": "xAI: Grok 3 Beta",
+      "created": "2025-04-10",
+      "created_timestamp": 1744240068
+    }
+  ],
+  "deepcogito": [
+    {
+      "id": "deepcogito/cogito-v2.1-671b",
+      "name": "Deep Cogito: Cogito v2.1 671B",
+      "created": "2025-11-13",
+      "created_timestamp": 1763071233
+    },
+    {
+      "id": "deepcogito/cogito-v2-preview-llama-405b",
+      "name": "Deep Cogito: Cogito V2 Preview Llama 405B",
+      "created": "2025-10-17",
+      "created_timestamp": 1760709933
+    },
+    {
+      "id": "deepcogito/cogito-v2-preview-llama-70b",
+      "name": "Deep Cogito: Cogito V2 Preview Llama 70B",
+      "created": "2025-09-02",
+      "created_timestamp": 1756831784
+    },
+    {
+      "id": "deepcogito/cogito-v2-preview-llama-109b-moe",
+      "name": "Cogito V2 Preview Llama 109B",
+      "created": "2025-09-02",
+      "created_timestamp": 1756831568
+    },
+    {
+      "id": "deepcogito/cogito-v2-preview-deepseek-671b",
+      "name": "Deep Cogito: Cogito V2 Preview Deepseek 671B",
+      "created": "2025-09-02",
+      "created_timestamp": 1756830949
+    }
+  ],
+  "openai": [
+    {
+      "id": "openai/gpt-5.1",
+      "name": "OpenAI: GPT-5.1",
+      "created": "2025-11-13",
+      "created_timestamp": 1763060305
+    },
+    {
+      "id": "openai/gpt-5.1-chat",
+      "name": "OpenAI: GPT-5.1 Chat",
+      "created": "2025-11-13",
+      "created_timestamp": 1763060302
+    },
+    {
+      "id": "openai/gpt-5.1-codex",
+      "name": "OpenAI: GPT-5.1-Codex",
+      "created": "2025-11-13",
+      "created_timestamp": 1763060298
+    },
+    {
+      "id": "openai/gpt-5.1-codex-mini",
+      "name": "OpenAI: GPT-5.1-Codex-Mini",
+      "created": "2025-11-13",
+      "created_timestamp": 1763057820
+    },
+    {
+      "id": "openai/gpt-oss-safeguard-20b",
+      "name": "OpenAI: gpt-oss-safeguard-20b",
+      "created": "2025-10-29",
+      "created_timestamp": 1761752836
+    },
+    {
+      "id": "openai/gpt-5-image-mini",
+      "name": "OpenAI: GPT-5 Image Mini",
+      "created": "2025-10-16",
+      "created_timestamp": 1760624583
+    },
+    {
+      "id": "openai/gpt-5-image",
+      "name": "OpenAI: GPT-5 Image",
+      "created": "2025-10-14",
+      "created_timestamp": 1760447986
+    },
+    {
+      "id": "openai/o3-deep-research",
+      "name": "OpenAI: o3 Deep Research",
+      "created": "2025-10-10",
+      "created_timestamp": 1760129661
+    },
+    {
+      "id": "openai/o4-mini-deep-research",
+      "name": "OpenAI: o4 Mini Deep Research",
+      "created": "2025-10-10",
+      "created_timestamp": 1760129642
+    },
+    {
+      "id": "openai/gpt-5-pro",
+      "name": "OpenAI: GPT-5 Pro",
+      "created": "2025-10-06",
+      "created_timestamp": 1759776663
+    },
+    {
+      "id": "openai/gpt-5-codex",
+      "name": "OpenAI: GPT-5 Codex",
+      "created": "2025-09-23",
+      "created_timestamp": 1758643403
+    },
+    {
+      "id": "openai/gpt-4o-audio-preview",
+      "name": "OpenAI: GPT-4o Audio",
+      "created": "2025-08-15",
+      "created_timestamp": 1755233061
+    },
+    {
+      "id": "openai/gpt-5-chat",
+      "name": "OpenAI: GPT-5 Chat",
+      "created": "2025-08-07",
+      "created_timestamp": 1754587837
+    },
+    {
+      "id": "openai/gpt-5",
+      "name": "OpenAI: GPT-5",
+      "created": "2025-08-07",
+      "created_timestamp": 1754587413
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
+      "created": "2025-08-07",
+      "created_timestamp": 1754587407
+    },
+    {
+      "id": "openai/gpt-5-nano",
+      "name": "OpenAI: GPT-5 Nano",
+      "created": "2025-08-07",
+      "created_timestamp": 1754587402
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "OpenAI: gpt-oss-120b",
+      "created": "2025-08-05",
+      "created_timestamp": 1754414231
+    },
+    {
+      "id": "openai/gpt-oss-120b:exacto",
+      "name": "OpenAI: gpt-oss-120b (exacto)",
+      "created": "2025-08-05",
+      "created_timestamp": 1754414231
+    },
+    {
+      "id": "openai/gpt-oss-20b:free",
+      "name": "OpenAI: gpt-oss-20b (free)",
+      "created": "2025-08-05",
+      "created_timestamp": 1754414229
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "name": "OpenAI: gpt-oss-20b",
+      "created": "2025-08-05",
+      "created_timestamp": 1754414229
+    },
+    {
+      "id": "openai/o3-pro",
+      "name": "OpenAI: o3 Pro",
+      "created": "2025-06-11",
+      "created_timestamp": 1749598352
+    },
+    {
+      "id": "openai/codex-mini",
+      "name": "OpenAI: Codex Mini",
+      "created": "2025-05-16",
+      "created_timestamp": 1747409761
+    },
+    {
+      "id": "openai/o4-mini-high",
+      "name": "OpenAI: o4 Mini High",
+      "created": "2025-04-16",
+      "created_timestamp": 1744824212
+    },
+    {
+      "id": "openai/o3",
+      "name": "OpenAI: o3",
+      "created": "2025-04-16",
+      "created_timestamp": 1744823457
+    },
+    {
+      "id": "openai/o4-mini",
+      "name": "OpenAI: o4 Mini",
+      "created": "2025-04-16",
+      "created_timestamp": 1744820942
+    },
+    {
+      "id": "openai/gpt-4.1",
+      "name": "OpenAI: GPT-4.1",
+      "created": "2025-04-14",
+      "created_timestamp": 1744651385
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "name": "OpenAI: GPT-4.1 Mini",
+      "created": "2025-04-14",
+      "created_timestamp": 1744651381
+    },
+    {
+      "id": "openai/gpt-4.1-nano",
+      "name": "OpenAI: GPT-4.1 Nano",
+      "created": "2025-04-14",
+      "created_timestamp": 1744651369
+    },
+    {
+      "id": "openai/o1-pro",
+      "name": "OpenAI: o1-pro",
+      "created": "2025-03-19",
+      "created_timestamp": 1742423211
+    },
+    {
+      "id": "openai/gpt-4o-mini-search-preview",
+      "name": "OpenAI: GPT-4o-mini Search Preview",
+      "created": "2025-03-12",
+      "created_timestamp": 1741818122
+    },
+    {
+      "id": "openai/gpt-4o-search-preview",
+      "name": "OpenAI: GPT-4o Search Preview",
+      "created": "2025-03-12",
+      "created_timestamp": 1741817949
+    },
+    {
+      "id": "openai/o3-mini-high",
+      "name": "OpenAI: o3 Mini High",
+      "created": "2025-02-12",
+      "created_timestamp": 1739372611
+    },
+    {
+      "id": "openai/o3-mini",
+      "name": "OpenAI: o3 Mini",
+      "created": "2025-01-31",
+      "created_timestamp": 1738351721
+    },
+    {
+      "id": "openai/o1",
+      "name": "OpenAI: o1",
+      "created": "2024-12-17",
+      "created_timestamp": 1734459999
+    },
+    {
+      "id": "openai/gpt-4o-2024-11-20",
+      "name": "OpenAI: GPT-4o (2024-11-20)",
+      "created": "2024-11-20",
+      "created_timestamp": 1732127594
+    },
+    {
+      "id": "openai/chatgpt-4o-latest",
+      "name": "OpenAI: ChatGPT-4o",
+      "created": "2024-08-14",
+      "created_timestamp": 1723593600
+    },
+    {
+      "id": "openai/gpt-4o-2024-08-06",
+      "name": "OpenAI: GPT-4o (2024-08-06)",
+      "created": "2024-08-06",
+      "created_timestamp": 1722902400
+    },
+    {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "created": "2024-07-18",
+      "created_timestamp": 1721260800
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "name": "OpenAI: GPT-4o-mini",
+      "created": "2024-07-18",
+      "created_timestamp": 1721260800
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o (2024-05-13)",
+      "created": "2024-05-13",
+      "created_timestamp": 1715558400
+    },
+    {
+      "id": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o",
+      "created": "2024-05-13",
+      "created_timestamp": 1715558400
+    },
+    {
+      "id": "openai/gpt-4o:extended",
+      "name": "OpenAI: GPT-4o (extended)",
+      "created": "2024-05-13",
+      "created_timestamp": 1715558400
+    },
+    {
+      "id": "openai/gpt-4-turbo",
+      "name": "OpenAI: GPT-4 Turbo",
+      "created": "2024-04-09",
+      "created_timestamp": 1712620800
+    },
+    {
+      "id": "openai/gpt-4-turbo-preview",
+      "name": "OpenAI: GPT-4 Turbo Preview",
+      "created": "2024-01-25",
+      "created_timestamp": 1706140800
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "created": "2024-01-25",
+      "created_timestamp": 1706140800
+    },
+    {
+      "id": "openai/gpt-4-1106-preview",
+      "name": "OpenAI: GPT-4 Turbo (older v1106)",
+      "created": "2023-11-06",
+      "created_timestamp": 1699228800
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-instruct",
+      "name": "OpenAI: GPT-3.5 Turbo Instruct",
+      "created": "2023-09-28",
+      "created_timestamp": 1695859200
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-16k",
+      "name": "OpenAI: GPT-3.5 Turbo 16k",
+      "created": "2023-08-28",
+      "created_timestamp": 1693180800
+    },
+    {
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "created": "2023-05-28",
+      "created_timestamp": 1685232000
+    },
+    {
+      "id": "openai/gpt-3.5-turbo",
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "created": "2023-05-28",
+      "created_timestamp": 1685232000
+    },
+    {
+      "id": "openai/gpt-4-0314",
+      "name": "OpenAI: GPT-4 (older v0314)",
+      "created": "2023-05-28",
+      "created_timestamp": 1685232000
+    }
+  ],
+  "kwaipilot": [
+    {
+      "id": "kwaipilot/kat-coder-pro:free",
+      "name": "Kwaipilot: KAT-Coder-Pro V1 (free)",
+      "created": "2025-11-10",
+      "created_timestamp": 1762745912
+    }
+  ],
+  "moonshotai": [
+    {
+      "id": "moonshotai/kimi-linear-48b-a3b-instruct",
+      "name": "MoonshotAI: Kimi Linear 48B A3B Instruct",
+      "created": "2025-11-08",
+      "created_timestamp": 1762565833
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "name": "MoonshotAI: Kimi K2 Thinking",
+      "created": "2025-11-06",
+      "created_timestamp": 1762440622
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905",
+      "name": "MoonshotAI: Kimi K2 0905",
+      "created": "2025-09-04",
+      "created_timestamp": 1757021147
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905:exacto",
+      "name": "MoonshotAI: Kimi K2 0905 (exacto)",
+      "created": "2025-09-04",
+      "created_timestamp": 1757021147
+    },
+    {
+      "id": "moonshotai/kimi-k2:free",
+      "name": "MoonshotAI: Kimi K2 0711 (free)",
+      "created": "2025-07-11",
+      "created_timestamp": 1752263252
+    },
+    {
+      "id": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
+      "created": "2025-07-11",
+      "created_timestamp": 1752263252
+    },
+    {
+      "id": "moonshotai/kimi-dev-72b",
+      "name": "MoonshotAI: Kimi Dev 72B",
+      "created": "2025-06-17",
+      "created_timestamp": 1750115909
+    }
+  ],
+  "amazon": [
+    {
+      "id": "amazon/nova-premier-v1",
+      "name": "Amazon: Nova Premier 1.0",
+      "created": "2025-10-31",
+      "created_timestamp": 1761950332
+    },
+    {
+      "id": "amazon/nova-lite-v1",
+      "name": "Amazon: Nova Lite 1.0",
+      "created": "2024-12-05",
+      "created_timestamp": 1733437363
+    },
+    {
+      "id": "amazon/nova-micro-v1",
+      "name": "Amazon: Nova Micro 1.0",
+      "created": "2024-12-05",
+      "created_timestamp": 1733437237
+    },
+    {
+      "id": "amazon/nova-pro-v1",
+      "name": "Amazon: Nova Pro 1.0",
+      "created": "2024-12-05",
+      "created_timestamp": 1733436303
+    }
+  ],
+  "perplexity": [
+    {
+      "id": "perplexity/sonar-pro-search",
+      "name": "Perplexity: Sonar Pro Search",
+      "created": "2025-10-30",
+      "created_timestamp": 1761854366
+    },
+    {
+      "id": "perplexity/sonar-reasoning-pro",
+      "name": "Perplexity: Sonar Reasoning Pro",
+      "created": "2025-03-07",
+      "created_timestamp": 1741313308
+    },
+    {
+      "id": "perplexity/sonar-pro",
+      "name": "Perplexity: Sonar Pro",
+      "created": "2025-03-07",
+      "created_timestamp": 1741312423
+    },
+    {
+      "id": "perplexity/sonar-deep-research",
+      "name": "Perplexity: Sonar Deep Research",
+      "created": "2025-03-07",
+      "created_timestamp": 1741311246
+    },
+    {
+      "id": "perplexity/sonar-reasoning",
+      "name": "Perplexity: Sonar Reasoning",
+      "created": "2025-01-29",
+      "created_timestamp": 1738131107
+    },
+    {
+      "id": "perplexity/sonar",
+      "name": "Perplexity: Sonar",
+      "created": "2025-01-27",
+      "created_timestamp": 1738013808
+    }
+  ],
+  "mistralai": [
+    {
+      "id": "mistralai/voxtral-small-24b-2507",
+      "name": "Mistral: Voxtral Small 24B 2507",
+      "created": "2025-10-30",
+      "created_timestamp": 1761835144
+    },
+    {
+      "id": "mistralai/mistral-medium-3.1",
+      "name": "Mistral: Mistral Medium 3.1",
+      "created": "2025-08-13",
+      "created_timestamp": 1755095639
+    },
+    {
+      "id": "mistralai/codestral-2508",
+      "name": "Mistral: Codestral 2508",
+      "created": "2025-08-01",
+      "created_timestamp": 1754079630
+    },
+    {
+      "id": "mistralai/devstral-medium",
+      "name": "Mistral: Devstral Medium",
+      "created": "2025-07-10",
+      "created_timestamp": 1752161321
+    },
+    {
+      "id": "mistralai/devstral-small",
+      "name": "Mistral: Devstral Small 1.1",
+      "created": "2025-07-10",
+      "created_timestamp": 1752160751
+    },
+    {
+      "id": "mistralai/mistral-small-3.2-24b-instruct:free",
+      "name": "Mistral: Mistral Small 3.2 24B (free)",
+      "created": "2025-06-20",
+      "created_timestamp": 1750443016
+    },
+    {
+      "id": "mistralai/mistral-small-3.2-24b-instruct",
+      "name": "Mistral: Mistral Small 3.2 24B",
+      "created": "2025-06-20",
+      "created_timestamp": 1750443016
+    },
+    {
+      "id": "mistralai/magistral-small-2506",
+      "name": "Mistral: Magistral Small 2506",
+      "created": "2025-06-10",
+      "created_timestamp": 1749569561
+    },
+    {
+      "id": "mistralai/magistral-medium-2506:thinking",
+      "name": "Mistral: Magistral Medium 2506 (thinking)",
+      "created": "2025-06-08",
+      "created_timestamp": 1749354054
+    },
+    {
+      "id": "mistralai/magistral-medium-2506",
+      "name": "Mistral: Magistral Medium 2506",
+      "created": "2025-06-08",
+      "created_timestamp": 1749354054
+    },
+    {
+      "id": "mistralai/devstral-small-2505",
+      "name": "Mistral: Devstral Small 2505",
+      "created": "2025-05-21",
+      "created_timestamp": 1747837379
+    },
+    {
+      "id": "mistralai/mistral-medium-3",
+      "name": "Mistral: Mistral Medium 3",
+      "created": "2025-05-07",
+      "created_timestamp": 1746627341
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+      "name": "Mistral: Mistral Small 3.1 24B (free)",
+      "created": "2025-03-17",
+      "created_timestamp": 1742238937
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct",
+      "name": "Mistral: Mistral Small 3.1 24B",
+      "created": "2025-03-17",
+      "created_timestamp": 1742238937
+    },
+    {
+      "id": "mistralai/mistral-saba",
+      "name": "Mistral: Saba",
+      "created": "2025-02-17",
+      "created_timestamp": 1739803239
+    },
+    {
+      "id": "mistralai/mistral-small-24b-instruct-2501:free",
+      "name": "Mistral: Mistral Small 3 (free)",
+      "created": "2025-01-30",
+      "created_timestamp": 1738255409
+    },
+    {
+      "id": "mistralai/mistral-small-24b-instruct-2501",
+      "name": "Mistral: Mistral Small 3",
+      "created": "2025-01-30",
+      "created_timestamp": 1738255409
+    },
+    {
+      "id": "mistralai/codestral-2501",
+      "name": "Mistral: Codestral 2501",
+      "created": "2025-01-14",
+      "created_timestamp": 1736895522
+    },
+    {
+      "id": "mistralai/mistral-large-2411",
+      "name": "Mistral Large 2411",
+      "created": "2024-11-19",
+      "created_timestamp": 1731978685
+    },
+    {
+      "id": "mistralai/mistral-large-2407",
+      "name": "Mistral Large 2407",
+      "created": "2024-11-19",
+      "created_timestamp": 1731978415
+    },
+    {
+      "id": "mistralai/pixtral-large-2411",
+      "name": "Mistral: Pixtral Large 2411",
+      "created": "2024-11-19",
+      "created_timestamp": 1731977388
+    },
+    {
+      "id": "mistralai/ministral-8b",
+      "name": "Mistral: Ministral 8B",
+      "created": "2024-10-17",
+      "created_timestamp": 1729123200
+    },
+    {
+      "id": "mistralai/ministral-3b",
+      "name": "Mistral: Ministral 3B",
+      "created": "2024-10-17",
+      "created_timestamp": 1729123200
+    },
+    {
+      "id": "mistralai/pixtral-12b",
+      "name": "Mistral: Pixtral 12B",
+      "created": "2024-09-10",
+      "created_timestamp": 1725926400
+    },
+    {
+      "id": "mistralai/mistral-nemo:free",
+      "name": "Mistral: Mistral Nemo (free)",
+      "created": "2024-07-19",
+      "created_timestamp": 1721347200
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "name": "Mistral: Mistral Nemo",
+      "created": "2024-07-19",
+      "created_timestamp": 1721347200
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct:free",
+      "name": "Mistral: Mistral 7B Instruct (free)",
+      "created": "2024-05-27",
+      "created_timestamp": 1716768000
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct",
+      "name": "Mistral: Mistral 7B Instruct",
+      "created": "2024-05-27",
+      "created_timestamp": 1716768000
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.3",
+      "name": "Mistral: Mistral 7B Instruct v0.3",
+      "created": "2024-05-27",
+      "created_timestamp": 1716768000
+    },
+    {
+      "id": "mistralai/mixtral-8x22b-instruct",
+      "name": "Mistral: Mixtral 8x22B Instruct",
+      "created": "2024-04-17",
+      "created_timestamp": 1713312000
+    },
+    {
+      "id": "mistralai/mistral-large",
+      "name": "Mistral Large",
+      "created": "2024-02-26",
+      "created_timestamp": 1708905600
+    },
+    {
+      "id": "mistralai/mistral-tiny",
+      "name": "Mistral Tiny",
+      "created": "2024-01-10",
+      "created_timestamp": 1704844800
+    },
+    {
+      "id": "mistralai/mistral-small",
+      "name": "Mistral Small",
+      "created": "2024-01-10",
+      "created_timestamp": 1704844800
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.2",
+      "name": "Mistral: Mistral 7B Instruct v0.2",
+      "created": "2023-12-28",
+      "created_timestamp": 1703721600
+    },
+    {
+      "id": "mistralai/mixtral-8x7b-instruct",
+      "name": "Mistral: Mixtral 8x7B Instruct",
+      "created": "2023-12-10",
+      "created_timestamp": 1702166400
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.1",
+      "name": "Mistral: Mistral 7B Instruct v0.1",
+      "created": "2023-09-28",
+      "created_timestamp": 1695859200
+    }
+  ],
+  "nvidia": [
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl:free",
+      "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
+      "created": "2025-10-28",
+      "created_timestamp": 1761675565
+    },
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl",
+      "name": "NVIDIA: Nemotron Nano 12B 2 VL",
+      "created": "2025-10-28",
+      "created_timestamp": 1761675565
+    },
+    {
+      "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5",
+      "created": "2025-10-10",
+      "created_timestamp": 1760101395
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2:free",
+      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+      "created": "2025-09-05",
+      "created_timestamp": 1757106807
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2",
+      "name": "NVIDIA: Nemotron Nano 9B V2",
+      "created": "2025-09-05",
+      "created_timestamp": 1757106807
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
+      "created": "2025-04-08",
+      "created_timestamp": 1744115059
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
+      "created": "2024-10-15",
+      "created_timestamp": 1728950400
+    }
+  ],
+  "minimax": [
+    {
+      "id": "minimax/minimax-m2",
+      "name": "MiniMax: MiniMax M2",
+      "created": "2025-10-23",
+      "created_timestamp": 1761252093
+    },
+    {
+      "id": "minimax/minimax-m1",
+      "name": "MiniMax: MiniMax M1",
+      "created": "2025-06-17",
+      "created_timestamp": 1750200414
+    },
+    {
+      "id": "minimax/minimax-01",
+      "name": "MiniMax: MiniMax-01",
+      "created": "2025-01-15",
+      "created_timestamp": 1736915462
+    }
+  ],
+  "liquid": [
+    {
+      "id": "liquid/lfm2-8b-a1b",
+      "name": "LiquidAI/LFM2-8B-A1B",
+      "created": "2025-10-20",
+      "created_timestamp": 1760970984
+    },
+    {
+      "id": "liquid/lfm-2.2-6b",
+      "name": "LiquidAI/LFM2-2.6B",
+      "created": "2025-10-20",
+      "created_timestamp": 1760970889
+    }
+  ],
+  "ibm-granite": [
+    {
+      "id": "ibm-granite/granite-4.0-h-micro",
+      "name": "IBM: Granite 4.0 Micro",
+      "created": "2025-10-20",
+      "created_timestamp": 1760927695
+    }
+  ],
+  "anthropic": [
+    {
+      "id": "anthropic/claude-haiku-4.5",
+      "name": "Anthropic: Claude Haiku 4.5",
+      "created": "2025-10-15",
+      "created_timestamp": 1760547638
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.5",
+      "name": "Anthropic: Claude Sonnet 4.5",
+      "created": "2025-09-29",
+      "created_timestamp": 1759161676
+    },
+    {
+      "id": "anthropic/claude-opus-4.1",
+      "name": "Anthropic: Claude Opus 4.1",
+      "created": "2025-08-05",
+      "created_timestamp": 1754411591
+    },
+    {
+      "id": "anthropic/claude-opus-4",
+      "name": "Anthropic: Claude Opus 4",
+      "created": "2025-05-22",
+      "created_timestamp": 1747931245
+    },
+    {
+      "id": "anthropic/claude-sonnet-4",
+      "name": "Anthropic: Claude Sonnet 4",
+      "created": "2025-05-22",
+      "created_timestamp": 1747930371
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet:thinking",
+      "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
+      "created": "2025-02-24",
+      "created_timestamp": 1740422110
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet",
+      "name": "Anthropic: Claude 3.7 Sonnet",
+      "created": "2025-02-24",
+      "created_timestamp": 1740422110
+    },
+    {
+      "id": "anthropic/claude-3.5-haiku-20241022",
+      "name": "Anthropic: Claude 3.5 Haiku (2024-10-22)",
+      "created": "2024-11-04",
+      "created_timestamp": 1730678400
+    },
+    {
+      "id": "anthropic/claude-3.5-haiku",
+      "name": "Anthropic: Claude 3.5 Haiku",
+      "created": "2024-11-04",
+      "created_timestamp": 1730678400
+    },
+    {
+      "id": "anthropic/claude-3.5-sonnet",
+      "name": "Anthropic: Claude 3.5 Sonnet",
+      "created": "2024-10-22",
+      "created_timestamp": 1729555200
+    },
+    {
+      "id": "anthropic/claude-3-haiku",
+      "name": "Anthropic: Claude 3 Haiku",
+      "created": "2024-03-13",
+      "created_timestamp": 1710288000
+    },
+    {
+      "id": "anthropic/claude-3-opus",
+      "name": "Anthropic: Claude 3 Opus",
+      "created": "2024-03-05",
+      "created_timestamp": 1709596800
+    }
+  ],
+  "qwen": [
+    {
+      "id": "qwen/qwen3-vl-8b-thinking",
+      "name": "Qwen: Qwen3 VL 8B Thinking",
+      "created": "2025-10-14",
+      "created_timestamp": 1760463746
+    },
+    {
+      "id": "qwen/qwen3-vl-8b-instruct",
+      "name": "Qwen: Qwen3 VL 8B Instruct",
+      "created": "2025-10-14",
+      "created_timestamp": 1760463308
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-thinking",
+      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
+      "created": "2025-10-07",
+      "created_timestamp": 1759794479
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "name": "Qwen: Qwen3 VL 30B A3B Instruct",
+      "created": "2025-10-07",
+      "created_timestamp": 1759794476
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
+      "created": "2025-09-24",
+      "created_timestamp": 1758668690
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "name": "Qwen: Qwen3 VL 235B A22B Instruct",
+      "created": "2025-09-24",
+      "created_timestamp": 1758668687
+    },
+    {
+      "id": "qwen/qwen3-max",
+      "name": "Qwen: Qwen3 Max",
+      "created": "2025-09-23",
+      "created_timestamp": 1758662808
+    },
+    {
+      "id": "qwen/qwen3-coder-plus",
+      "name": "Qwen: Qwen3 Coder Plus",
+      "created": "2025-09-23",
+      "created_timestamp": 1758662707
+    },
+    {
+      "id": "qwen/qwen3-coder-flash",
+      "name": "Qwen: Qwen3 Coder Flash",
+      "created": "2025-09-17",
+      "created_timestamp": 1758115536
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "name": "Qwen: Qwen3 Next 80B A3B Thinking",
+      "created": "2025-09-11",
+      "created_timestamp": 1757612284
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+      "created": "2025-09-11",
+      "created_timestamp": 1757612213
+    },
+    {
+      "id": "qwen/qwen-plus-2025-07-28",
+      "name": "Qwen: Qwen Plus 0728",
+      "created": "2025-09-08",
+      "created_timestamp": 1757347599
+    },
+    {
+      "id": "qwen/qwen-plus-2025-07-28:thinking",
+      "name": "Qwen: Qwen Plus 0728 (thinking)",
+      "created": "2025-09-08",
+      "created_timestamp": 1757347599
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-thinking-2507",
+      "name": "Qwen: Qwen3 30B A3B Thinking 2507",
+      "created": "2025-08-28",
+      "created_timestamp": 1756399192
+    },
+    {
+      "id": "qwen/qwen3-coder-30b-a3b-instruct",
+      "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+      "created": "2025-07-31",
+      "created_timestamp": 1753972379
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "name": "Qwen: Qwen3 30B A3B Instruct 2507",
+      "created": "2025-07-29",
+      "created_timestamp": 1753806965
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+      "created": "2025-07-25",
+      "created_timestamp": 1753449557
+    },
+    {
+      "id": "qwen/qwen3-coder:free",
+      "name": "Qwen: Qwen3 Coder 480B A35B (free)",
+      "created": "2025-07-23",
+      "created_timestamp": 1753230546
+    },
+    {
+      "id": "qwen/qwen3-coder",
+      "name": "Qwen: Qwen3 Coder 480B A35B",
+      "created": "2025-07-23",
+      "created_timestamp": 1753230546
+    },
+    {
+      "id": "qwen/qwen3-coder:exacto",
+      "name": "Qwen: Qwen3 Coder 480B A35B (exacto)",
+      "created": "2025-07-23",
+      "created_timestamp": 1753230546
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-2507",
+      "name": "Qwen: Qwen3 235B A22B Instruct 2507",
+      "created": "2025-07-21",
+      "created_timestamp": 1753119555
+    },
+    {
+      "id": "qwen/qwen3-4b:free",
+      "name": "Qwen: Qwen3 4B (free)",
+      "created": "2025-04-30",
+      "created_timestamp": 1746031104
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b:free",
+      "name": "Qwen: Qwen3 30B A3B (free)",
+      "created": "2025-04-28",
+      "created_timestamp": 1745878604
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b",
+      "name": "Qwen: Qwen3 30B A3B",
+      "created": "2025-04-28",
+      "created_timestamp": 1745878604
+    },
+    {
+      "id": "qwen/qwen3-8b",
+      "name": "Qwen: Qwen3 8B",
+      "created": "2025-04-28",
+      "created_timestamp": 1745876632
+    },
+    {
+      "id": "qwen/qwen3-14b:free",
+      "name": "Qwen: Qwen3 14B (free)",
+      "created": "2025-04-28",
+      "created_timestamp": 1745876478
+    },
+    {
+      "id": "qwen/qwen3-14b",
+      "name": "Qwen: Qwen3 14B",
+      "created": "2025-04-28",
+      "created_timestamp": 1745876478
+    },
+    {
+      "id": "qwen/qwen3-32b",
+      "name": "Qwen: Qwen3 32B",
+      "created": "2025-04-28",
+      "created_timestamp": 1745875945
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b:free",
+      "name": "Qwen: Qwen3 235B A22B (free)",
+      "created": "2025-04-28",
+      "created_timestamp": 1745875757
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b",
+      "name": "Qwen: Qwen3 235B A22B",
+      "created": "2025-04-28",
+      "created_timestamp": 1745875757
+    },
+    {
+      "id": "qwen/qwen2.5-coder-7b-instruct",
+      "name": "Qwen: Qwen2.5 Coder 7B Instruct",
+      "created": "2025-04-15",
+      "created_timestamp": 1744734887
+    },
+    {
+      "id": "qwen/qwen2.5-vl-32b-instruct:free",
+      "name": "Qwen: Qwen2.5 VL 32B Instruct (free)",
+      "created": "2025-03-24",
+      "created_timestamp": 1742839838
+    },
+    {
+      "id": "qwen/qwen2.5-vl-32b-instruct",
+      "name": "Qwen: Qwen2.5 VL 32B Instruct",
+      "created": "2025-03-24",
+      "created_timestamp": 1742839838
+    },
+    {
+      "id": "qwen/qwq-32b",
+      "name": "Qwen: QwQ 32B",
+      "created": "2025-03-05",
+      "created_timestamp": 1741208814
+    },
+    {
+      "id": "qwen/qwen-vl-plus",
+      "name": "Qwen: Qwen VL Plus",
+      "created": "2025-02-05",
+      "created_timestamp": 1738731255
+    },
+    {
+      "id": "qwen/qwen-vl-max",
+      "name": "Qwen: Qwen VL Max",
+      "created": "2025-02-01",
+      "created_timestamp": 1738434304
+    },
+    {
+      "id": "qwen/qwen-turbo",
+      "name": "Qwen: Qwen-Turbo",
+      "created": "2025-02-01",
+      "created_timestamp": 1738410974
+    },
+    {
+      "id": "qwen/qwen2.5-vl-72b-instruct",
+      "name": "Qwen: Qwen2.5 VL 72B Instruct",
+      "created": "2025-02-01",
+      "created_timestamp": 1738410311
+    },
+    {
+      "id": "qwen/qwen-plus",
+      "name": "Qwen: Qwen-Plus",
+      "created": "2025-02-01",
+      "created_timestamp": 1738409840
+    },
+    {
+      "id": "qwen/qwen-max",
+      "name": "Qwen: Qwen-Max ",
+      "created": "2025-02-01",
+      "created_timestamp": 1738402289
+    },
+    {
+      "id": "qwen/qwen-2.5-coder-32b-instruct:free",
+      "name": "Qwen2.5 Coder 32B Instruct (free)",
+      "created": "2024-11-11",
+      "created_timestamp": 1731368400
+    },
+    {
+      "id": "qwen/qwen-2.5-coder-32b-instruct",
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "created": "2024-11-11",
+      "created_timestamp": 1731368400
+    },
+    {
+      "id": "qwen/qwen-2.5-7b-instruct",
+      "name": "Qwen: Qwen2.5 7B Instruct",
+      "created": "2024-10-16",
+      "created_timestamp": 1729036800
+    },
+    {
+      "id": "qwen/qwen-2.5-72b-instruct:free",
+      "name": "Qwen2.5 72B Instruct (free)",
+      "created": "2024-09-19",
+      "created_timestamp": 1726704000
+    },
+    {
+      "id": "qwen/qwen-2.5-72b-instruct",
+      "name": "Qwen2.5 72B Instruct",
+      "created": "2024-09-19",
+      "created_timestamp": 1726704000
+    },
+    {
+      "id": "qwen/qwen-2.5-vl-7b-instruct",
+      "name": "Qwen: Qwen2.5-VL 7B Instruct",
+      "created": "2024-08-28",
+      "created_timestamp": 1724803200
+    }
+  ],
+  "baidu": [
+    {
+      "id": "baidu/ernie-4.5-21b-a3b-thinking",
+      "name": "Baidu: ERNIE 4.5 21B A3B Thinking",
+      "created": "2025-10-09",
+      "created_timestamp": 1760048887
+    },
+    {
+      "id": "baidu/ernie-4.5-21b-a3b",
+      "name": "Baidu: ERNIE 4.5 21B A3B",
+      "created": "2025-08-12",
+      "created_timestamp": 1755034167
+    },
+    {
+      "id": "baidu/ernie-4.5-vl-28b-a3b",
+      "name": "Baidu: ERNIE 4.5 VL 28B A3B",
+      "created": "2025-08-12",
+      "created_timestamp": 1755032836
+    },
+    {
+      "id": "baidu/ernie-4.5-vl-424b-a47b",
+      "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+      "created": "2025-06-30",
+      "created_timestamp": 1751300903
+    },
+    {
+      "id": "baidu/ernie-4.5-300b-a47b",
+      "name": "Baidu: ERNIE 4.5 300B A47B ",
+      "created": "2025-06-30",
+      "created_timestamp": 1751300139
+    }
+  ],
+  "z-ai": [
+    {
+      "id": "z-ai/glm-4.6",
+      "name": "Z.AI: GLM 4.6",
+      "created": "2025-09-30",
+      "created_timestamp": 1759235576
+    },
+    {
+      "id": "z-ai/glm-4.6:exacto",
+      "name": "Z.AI: GLM 4.6 (exacto)",
+      "created": "2025-09-30",
+      "created_timestamp": 1759235576
+    },
+    {
+      "id": "z-ai/glm-4.5v",
+      "name": "Z.AI: GLM 4.5V",
+      "created": "2025-08-11",
+      "created_timestamp": 1754922288
+    },
+    {
+      "id": "z-ai/glm-4.5",
+      "name": "Z.AI: GLM 4.5",
+      "created": "2025-07-25",
+      "created_timestamp": 1753471347
+    },
+    {
+      "id": "z-ai/glm-4.5-air:free",
+      "name": "Z.AI: GLM 4.5 Air (free)",
+      "created": "2025-07-25",
+      "created_timestamp": 1753471258
+    },
+    {
+      "id": "z-ai/glm-4.5-air",
+      "name": "Z.AI: GLM 4.5 Air",
+      "created": "2025-07-25",
+      "created_timestamp": 1753471258
+    },
+    {
+      "id": "z-ai/glm-4-32b",
+      "name": "Z.AI: GLM 4 32B ",
+      "created": "2025-07-24",
+      "created_timestamp": 1753376617
+    }
+  ],
+  "deepseek": [
+    {
+      "id": "deepseek/deepseek-v3.2-exp",
+      "name": "DeepSeek: DeepSeek V3.2 Exp",
+      "created": "2025-09-29",
+      "created_timestamp": 1759150481
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus",
+      "name": "DeepSeek: DeepSeek V3.1 Terminus",
+      "created": "2025-09-22",
+      "created_timestamp": 1758548275
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus:exacto",
+      "name": "DeepSeek: DeepSeek V3.1 Terminus (exacto)",
+      "created": "2025-09-22",
+      "created_timestamp": 1758548275
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3.1",
+      "name": "DeepSeek: DeepSeek V3.1",
+      "created": "2025-08-21",
+      "created_timestamp": 1755779628
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "name": "DeepSeek: DeepSeek R1 0528 Qwen3 8B (free)",
+      "created": "2025-05-29",
+      "created_timestamp": 1748538543
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528-qwen3-8b",
+      "name": "DeepSeek: DeepSeek R1 0528 Qwen3 8B",
+      "created": "2025-05-29",
+      "created_timestamp": 1748538543
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528:free",
+      "name": "DeepSeek: R1 0528 (free)",
+      "created": "2025-05-28",
+      "created_timestamp": 1748455170
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528",
+      "name": "DeepSeek: R1 0528",
+      "created": "2025-05-28",
+      "created_timestamp": 1748455170
+    },
+    {
+      "id": "deepseek/deepseek-prover-v2",
+      "name": "DeepSeek: DeepSeek Prover V2",
+      "created": "2025-04-30",
+      "created_timestamp": 1746013094
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324:free",
+      "name": "DeepSeek: DeepSeek V3 0324 (free)",
+      "created": "2025-03-24",
+      "created_timestamp": 1742824755
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "name": "DeepSeek: DeepSeek V3 0324",
+      "created": "2025-03-24",
+      "created_timestamp": 1742824755
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-qwen-32b",
+      "name": "DeepSeek: R1 Distill Qwen 32B",
+      "created": "2025-01-29",
+      "created_timestamp": 1738194830
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-qwen-14b",
+      "name": "DeepSeek: R1 Distill Qwen 14B",
+      "created": "2025-01-29",
+      "created_timestamp": 1738193940
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-llama-70b:free",
+      "name": "DeepSeek: R1 Distill Llama 70B (free)",
+      "created": "2025-01-23",
+      "created_timestamp": 1737663169
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-llama-70b",
+      "name": "DeepSeek: R1 Distill Llama 70B",
+      "created": "2025-01-23",
+      "created_timestamp": 1737663169
+    },
+    {
+      "id": "deepseek/deepseek-r1:free",
+      "name": "DeepSeek: R1 (free)",
+      "created": "2025-01-20",
+      "created_timestamp": 1737381095
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "created": "2025-01-20",
+      "created_timestamp": 1737381095
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "name": "DeepSeek: DeepSeek V3",
+      "created": "2024-12-26",
+      "created_timestamp": 1735241320
+    }
+  ],
+  "thedrummer": [
+    {
+      "id": "thedrummer/cydonia-24b-v4.1",
+      "name": "TheDrummer: Cydonia 24B V4.1",
+      "created": "2025-09-27",
+      "created_timestamp": 1758931878
+    },
+    {
+      "id": "thedrummer/anubis-70b-v1.1",
+      "name": "TheDrummer: Anubis 70B V1.1",
+      "created": "2025-06-29",
+      "created_timestamp": 1751208347
+    },
+    {
+      "id": "thedrummer/skyfall-36b-v2",
+      "name": "TheDrummer: Skyfall 36B V2",
+      "created": "2025-03-10",
+      "created_timestamp": 1741636566
+    },
+    {
+      "id": "thedrummer/unslopnemo-12b",
+      "name": "TheDrummer: UnslopNemo 12B",
+      "created": "2024-11-08",
+      "created_timestamp": 1731103448
+    },
+    {
+      "id": "thedrummer/rocinante-12b",
+      "name": "TheDrummer: Rocinante 12B",
+      "created": "2024-09-30",
+      "created_timestamp": 1727654400
+    }
+  ],
+  "relace": [
+    {
+      "id": "relace/relace-apply-3",
+      "name": "Relace: Relace Apply 3",
+      "created": "2025-09-26",
+      "created_timestamp": 1758891572
+    }
+  ],
+  "alibaba": [
+    {
+      "id": "alibaba/tongyi-deepresearch-30b-a3b:free",
+      "name": "Tongyi DeepResearch 30B A3B (free)",
+      "created": "2025-09-18",
+      "created_timestamp": 1758210804
+    },
+    {
+      "id": "alibaba/tongyi-deepresearch-30b-a3b",
+      "name": "Tongyi DeepResearch 30B A3B",
+      "created": "2025-09-18",
+      "created_timestamp": 1758210804
+    }
+  ],
+  "opengvlab": [
+    {
+      "id": "opengvlab/internvl3-78b",
+      "name": "OpenGVLab: InternVL3 78B",
+      "created": "2025-09-15",
+      "created_timestamp": 1757962555
+    }
+  ],
+  "meituan": [
+    {
+      "id": "meituan/longcat-flash-chat:free",
+      "name": "Meituan: LongCat Flash Chat (free)",
+      "created": "2025-09-09",
+      "created_timestamp": 1757427658
+    },
+    {
+      "id": "meituan/longcat-flash-chat",
+      "name": "Meituan: LongCat Flash Chat",
+      "created": "2025-09-09",
+      "created_timestamp": 1757427658
+    }
+  ],
+  "stepfun-ai": [
+    {
+      "id": "stepfun-ai/step3",
+      "name": "StepFun: Step3",
+      "created": "2025-08-28",
+      "created_timestamp": 1756415375
+    }
+  ],
+  "nousresearch": [
+    {
+      "id": "nousresearch/hermes-4-70b",
+      "name": "Nous: Hermes 4 70B",
+      "created": "2025-08-26",
+      "created_timestamp": 1756236182
+    },
+    {
+      "id": "nousresearch/hermes-4-405b",
+      "name": "Nous: Hermes 4 405B",
+      "created": "2025-08-26",
+      "created_timestamp": 1756235463
+    },
+    {
+      "id": "nousresearch/deephermes-3-mistral-24b-preview",
+      "name": "Nous: DeepHermes 3 Mistral 24B Preview",
+      "created": "2025-05-09",
+      "created_timestamp": 1746830904
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-70b",
+      "name": "Nous: Hermes 3 70B Instruct",
+      "created": "2024-08-18",
+      "created_timestamp": 1723939200
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-405b:free",
+      "name": "Nous: Hermes 3 405B Instruct (free)",
+      "created": "2024-08-16",
+      "created_timestamp": 1723766400
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-405b",
+      "name": "Nous: Hermes 3 405B Instruct",
+      "created": "2024-08-16",
+      "created_timestamp": 1723766400
+    },
+    {
+      "id": "nousresearch/hermes-2-pro-llama-3-8b",
+      "name": "NousResearch: Hermes 2 Pro - Llama-3 8B",
+      "created": "2024-05-27",
+      "created_timestamp": 1716768000
+    }
+  ],
+  "ai21": [
+    {
+      "id": "ai21/jamba-mini-1.7",
+      "name": "AI21: Jamba Mini 1.7",
+      "created": "2025-08-08",
+      "created_timestamp": 1754670601
+    },
+    {
+      "id": "ai21/jamba-large-1.7",
+      "name": "AI21: Jamba Large 1.7",
+      "created": "2025-08-08",
+      "created_timestamp": 1754669020
+    }
+  ],
+  "bytedance": [
+    {
+      "id": "bytedance/ui-tars-1.5-7b",
+      "name": "ByteDance: UI-TARS 7B ",
+      "created": "2025-07-22",
+      "created_timestamp": 1753205056
+    }
+  ],
+  "switchpoint": [
+    {
+      "id": "switchpoint/router",
+      "name": "Switchpoint Router",
+      "created": "2025-07-11",
+      "created_timestamp": 1752272899
+    }
+  ],
+  "thudm": [
+    {
+      "id": "thudm/glm-4.1v-9b-thinking",
+      "name": "THUDM: GLM 4.1V 9B Thinking",
+      "created": "2025-07-11",
+      "created_timestamp": 1752244385
+    }
+  ],
+  "cognitivecomputations": [
+    {
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "name": "Venice: Uncensored (free)",
+      "created": "2025-07-09",
+      "created_timestamp": 1752094966
+    }
+  ],
+  "tencent": [
+    {
+      "id": "tencent/hunyuan-a13b-instruct",
+      "name": "Tencent: Hunyuan A13B Instruct",
+      "created": "2025-07-08",
+      "created_timestamp": 1751987664
+    }
+  ],
+  "tngtech": [
+    {
+      "id": "tngtech/deepseek-r1t2-chimera:free",
+      "name": "TNG: DeepSeek R1T2 Chimera (free)",
+      "created": "2025-07-08",
+      "created_timestamp": 1751986985
+    },
+    {
+      "id": "tngtech/deepseek-r1t2-chimera",
+      "name": "TNG: DeepSeek R1T2 Chimera",
+      "created": "2025-07-08",
+      "created_timestamp": 1751986985
+    },
+    {
+      "id": "tngtech/deepseek-r1t-chimera:free",
+      "name": "TNG: DeepSeek R1T Chimera (free)",
+      "created": "2025-04-27",
+      "created_timestamp": 1745760875
+    },
+    {
+      "id": "tngtech/deepseek-r1t-chimera",
+      "name": "TNG: DeepSeek R1T Chimera",
+      "created": "2025-04-27",
+      "created_timestamp": 1745760875
+    }
+  ],
+  "morph": [
+    {
+      "id": "morph/morph-v3-large",
+      "name": "Morph: Morph V3 Large",
+      "created": "2025-07-07",
+      "created_timestamp": 1751910858
+    },
+    {
+      "id": "morph/morph-v3-fast",
+      "name": "Morph: Morph V3 Fast",
+      "created": "2025-07-07",
+      "created_timestamp": 1751910002
+    }
+  ],
+  "inception": [
+    {
+      "id": "inception/mercury",
+      "name": "Inception: Mercury",
+      "created": "2025-06-26",
+      "created_timestamp": 1750973026
+    },
+    {
+      "id": "inception/mercury-coder",
+      "name": "Inception: Mercury Coder",
+      "created": "2025-04-30",
+      "created_timestamp": 1746033880
+    }
+  ],
+  "arcee-ai": [
+    {
+      "id": "arcee-ai/spotlight",
+      "name": "Arcee AI: Spotlight",
+      "created": "2025-05-05",
+      "created_timestamp": 1746481552
+    },
+    {
+      "id": "arcee-ai/maestro-reasoning",
+      "name": "Arcee AI: Maestro Reasoning",
+      "created": "2025-05-05",
+      "created_timestamp": 1746481269
+    },
+    {
+      "id": "arcee-ai/virtuoso-large",
+      "name": "Arcee AI: Virtuoso Large",
+      "created": "2025-05-05",
+      "created_timestamp": 1746478885
+    },
+    {
+      "id": "arcee-ai/coder-large",
+      "name": "Arcee AI: Coder Large",
+      "created": "2025-05-05",
+      "created_timestamp": 1746478663
+    }
+  ],
+  "microsoft": [
+    {
+      "id": "microsoft/phi-4-reasoning-plus",
+      "name": "Microsoft: Phi 4 Reasoning Plus",
+      "created": "2025-05-01",
+      "created_timestamp": 1746130961
+    },
+    {
+      "id": "microsoft/mai-ds-r1:free",
+      "name": "Microsoft: MAI DS R1 (free)",
+      "created": "2025-04-21",
+      "created_timestamp": 1745194100
+    },
+    {
+      "id": "microsoft/mai-ds-r1",
+      "name": "Microsoft: MAI DS R1",
+      "created": "2025-04-21",
+      "created_timestamp": 1745194100
+    },
+    {
+      "id": "microsoft/phi-4-multimodal-instruct",
+      "name": "Microsoft: Phi 4 Multimodal Instruct",
+      "created": "2025-03-08",
+      "created_timestamp": 1741396284
+    },
+    {
+      "id": "microsoft/phi-4",
+      "name": "Microsoft: Phi 4",
+      "created": "2025-01-10",
+      "created_timestamp": 1736489872
+    },
+    {
+      "id": "microsoft/phi-3.5-mini-128k-instruct",
+      "name": "Microsoft: Phi-3.5 Mini 128K Instruct",
+      "created": "2024-08-21",
+      "created_timestamp": 1724198400
+    },
+    {
+      "id": "microsoft/phi-3-mini-128k-instruct",
+      "name": "Microsoft: Phi-3 Mini 128K Instruct",
+      "created": "2024-05-26",
+      "created_timestamp": 1716681600
+    },
+    {
+      "id": "microsoft/phi-3-medium-128k-instruct",
+      "name": "Microsoft: Phi-3 Medium 128K Instruct",
+      "created": "2024-05-24",
+      "created_timestamp": 1716508800
+    },
+    {
+      "id": "microsoft/wizardlm-2-8x22b",
+      "name": "WizardLM-2 8x22B",
+      "created": "2024-04-16",
+      "created_timestamp": 1713225600
+    }
+  ],
+  "meta-llama": [
+    {
+      "id": "meta-llama/llama-guard-4-12b",
+      "name": "Meta: Llama Guard 4 12B",
+      "created": "2025-04-30",
+      "created_timestamp": 1745975193
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "name": "Meta: Llama 4 Maverick",
+      "created": "2025-04-05",
+      "created_timestamp": 1743881822
+    },
+    {
+      "id": "meta-llama/llama-4-scout",
+      "name": "Meta: Llama 4 Scout",
+      "created": "2025-04-05",
+      "created_timestamp": 1743881519
+    },
+    {
+      "id": "meta-llama/llama-guard-3-8b",
+      "name": "Llama Guard 3 8B",
+      "created": "2025-02-12",
+      "created_timestamp": 1739401318
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct:free",
+      "name": "Meta: Llama 3.3 70B Instruct (free)",
+      "created": "2024-12-06",
+      "created_timestamp": 1733506137
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "name": "Meta: Llama 3.3 70B Instruct",
+      "created": "2024-12-06",
+      "created_timestamp": 1733506137
+    },
+    {
+      "id": "meta-llama/llama-3.2-11b-vision-instruct",
+      "name": "Meta: Llama 3.2 11B Vision Instruct",
+      "created": "2024-09-25",
+      "created_timestamp": 1727222400
+    },
+    {
+      "id": "meta-llama/llama-3.2-90b-vision-instruct",
+      "name": "Meta: Llama 3.2 90B Vision Instruct",
+      "created": "2024-09-25",
+      "created_timestamp": 1727222400
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "created": "2024-09-25",
+      "created_timestamp": 1727222400
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct:free",
+      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "created": "2024-09-25",
+      "created_timestamp": 1727222400
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "created": "2024-09-25",
+      "created_timestamp": 1727222400
+    },
+    {
+      "id": "meta-llama/llama-3.1-405b",
+      "name": "Meta: Llama 3.1 405B (base)",
+      "created": "2024-08-02",
+      "created_timestamp": 1722556800
+    },
+    {
+      "id": "meta-llama/llama-3.1-405b-instruct",
+      "name": "Meta: Llama 3.1 405B Instruct",
+      "created": "2024-07-23",
+      "created_timestamp": 1721692800
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Meta: Llama 3.1 70B Instruct",
+      "created": "2024-07-23",
+      "created_timestamp": 1721692800
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "created": "2024-07-23",
+      "created_timestamp": 1721692800
+    },
+    {
+      "id": "meta-llama/llama-guard-2-8b",
+      "name": "Meta: LlamaGuard 2 8B",
+      "created": "2024-05-13",
+      "created_timestamp": 1715558400
+    },
+    {
+      "id": "meta-llama/llama-3-8b-instruct",
+      "name": "Meta: Llama 3 8B Instruct",
+      "created": "2024-04-18",
+      "created_timestamp": 1713398400
+    },
+    {
+      "id": "meta-llama/llama-3-70b-instruct",
+      "name": "Meta: Llama 3 70B Instruct",
+      "created": "2024-04-18",
+      "created_timestamp": 1713398400
+    }
+  ],
+  "eleutherai": [
+    {
+      "id": "eleutherai/llemma_7b",
+      "name": "EleutherAI: Llemma 7b",
+      "created": "2025-04-14",
+      "created_timestamp": 1744643225
+    }
+  ],
+  "alfredpros": [
+    {
+      "id": "alfredpros/codellama-7b-instruct-solidity",
+      "name": "AlfredPros: CodeLLaMa 7B Instruct Solidity",
+      "created": "2025-04-14",
+      "created_timestamp": 1744641874
+    }
+  ],
+  "arliai": [
+    {
+      "id": "arliai/qwq-32b-arliai-rpr-v1:free",
+      "name": "ArliAI: QwQ 32B RpR v1 (free)",
+      "created": "2025-04-13",
+      "created_timestamp": 1744555982
+    },
+    {
+      "id": "arliai/qwq-32b-arliai-rpr-v1",
+      "name": "ArliAI: QwQ 32B RpR v1",
+      "created": "2025-04-13",
+      "created_timestamp": 1744555982
+    }
+  ],
+  "cohere": [
+    {
+      "id": "cohere/command-a",
+      "name": "Cohere: Command A",
+      "created": "2025-03-13",
+      "created_timestamp": 1741894342
+    },
+    {
+      "id": "cohere/command-r7b-12-2024",
+      "name": "Cohere: Command R7B (12-2024)",
+      "created": "2024-12-14",
+      "created_timestamp": 1734158152
+    },
+    {
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
+      "created": "2024-08-30",
+      "created_timestamp": 1724976000
+    },
+    {
+      "id": "cohere/command-r-plus-08-2024",
+      "name": "Cohere: Command R+ (08-2024)",
+      "created": "2024-08-30",
+      "created_timestamp": 1724976000
+    }
+  ],
+  "aion-labs": [
+    {
+      "id": "aion-labs/aion-1.0",
+      "name": "AionLabs: Aion-1.0",
+      "created": "2025-02-04",
+      "created_timestamp": 1738697557
+    },
+    {
+      "id": "aion-labs/aion-1.0-mini",
+      "name": "AionLabs: Aion-1.0-Mini",
+      "created": "2025-02-04",
+      "created_timestamp": 1738697107
+    },
+    {
+      "id": "aion-labs/aion-rp-llama-3.1-8b",
+      "name": "AionLabs: Aion-RP 1.0 (8B)",
+      "created": "2025-02-04",
+      "created_timestamp": 1738696718
+    }
+  ],
+  "sao10k": [
+    {
+      "id": "sao10k/l3.1-70b-hanami-x1",
+      "name": "Sao10K: Llama 3.1 70B Hanami x1",
+      "created": "2025-01-08",
+      "created_timestamp": 1736302854
+    },
+    {
+      "id": "sao10k/l3.3-euryale-70b",
+      "name": "Sao10K: Llama 3.3 Euryale 70B",
+      "created": "2024-12-18",
+      "created_timestamp": 1734535928
+    },
+    {
+      "id": "sao10k/l3.1-euryale-70b",
+      "name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
+      "created": "2024-08-28",
+      "created_timestamp": 1724803200
+    },
+    {
+      "id": "sao10k/l3-lunaris-8b",
+      "name": "Sao10K: Llama 3 8B Lunaris",
+      "created": "2024-08-13",
+      "created_timestamp": 1723507200
+    },
+    {
+      "id": "sao10k/l3-euryale-70b",
+      "name": "Sao10k: Llama 3 Euryale 70B v2.1",
+      "created": "2024-06-18",
+      "created_timestamp": 1718668800
+    }
+  ],
+  "raifle": [
+    {
+      "id": "raifle/sorcererlm-8x22b",
+      "name": "SorcererLM 8x22B",
+      "created": "2024-11-08",
+      "created_timestamp": 1731105083
+    }
+  ],
+  "anthracite-org": [
+    {
+      "id": "anthracite-org/magnum-v4-72b",
+      "name": "Magnum v4 72B",
+      "created": "2024-10-22",
+      "created_timestamp": 1729555200
+    }
+  ],
+  "inflection": [
+    {
+      "id": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
+      "created": "2024-10-11",
+      "created_timestamp": 1728604800
+    },
+    {
+      "id": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
+      "created": "2024-10-11",
+      "created_timestamp": 1728604800
+    }
+  ],
+  "neversleep": [
+    {
+      "id": "neversleep/llama-3.1-lumimaid-8b",
+      "name": "NeverSleep: Lumimaid v0.2 8B",
+      "created": "2024-09-15",
+      "created_timestamp": 1726358400
+    },
+    {
+      "id": "neversleep/noromaid-20b",
+      "name": "Noromaid 20B",
+      "created": "2023-11-26",
+      "created_timestamp": 1700956800
+    }
+  ],
+  "alpindale": [
+    {
+      "id": "alpindale/goliath-120b",
+      "name": "Goliath 120B",
+      "created": "2023-11-10",
+      "created_timestamp": 1699574400
+    }
+  ],
+  "openrouter": [
+    {
+      "id": "openrouter/auto",
+      "name": "Auto Router",
+      "created": "2023-11-08",
+      "created_timestamp": 1699401600
+    }
+  ],
+  "mancer": [
+    {
+      "id": "mancer/weaver",
+      "name": "Mancer: Weaver (alpha)",
+      "created": "2023-08-02",
+      "created_timestamp": 1690934400
+    }
+  ],
+  "undi95": [
+    {
+      "id": "undi95/remm-slerp-l2-13b",
+      "name": "ReMM SLERP 13B",
+      "created": "2023-07-22",
+      "created_timestamp": 1689984000
+    }
+  ],
+  "gryphe": [
+    {
+      "id": "gryphe/mythomax-l2-13b",
+      "name": "MythoMax 13B",
+      "created": "2023-07-02",
+      "created_timestamp": 1688256000
+    }
+  ]
+}

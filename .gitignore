@@ -1,0 +1,130 @@
+# ============================================
+# Standard Python
+# ============================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+.venv_*/
+env/
+venv/
+ENV/
+
+# Testing & coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+htmlcov/
+coverage.xml
+
+# Jupyter
+.ipynb_checkpoints
+
+# Type checkers
+.mypy_cache/
+.pyre/
+.pytype/
+
+# ============================================
+# R
+# ============================================
+Rplots.pdf
+.Rhistory
+.RData
+.Rproj.user/
+
+# ============================================
+# Project-specific by folder
+# ============================================
+
+# --- 1-dataset-generation ---
+1-dataset-generation/model-written-evals/    # From https://github.com/Sunishchal/model-written-evals
+1-dataset-generation/evals/                   # From https://github.com/anthropics/evals
+1-dataset-generation/logs/
+
+# --- 2-steering-vector-training ---
+2-steering-vector-training/workhorse_logs/
+2-steering-vector-training/logs/
+2-steering-vector-training/running_*.json
+2-steering-vector-training/running_*.lock
+
+# --- 3-steering-vector-hosting ---
+3-steering-vector-hosting/deployments.jsonl
+
+# --- 4-steering-vector-benchmarking ---
+4-steering-vector-benchmarking/logs/
+
+# --- 7-human-studies-processing ---
+# Entire folder excluded for participant privacy (contains intermediary data)
+# Only public README is tracked
+7-human-studies-processing/*
+!7-human-studies-processing/README.md
+7-human-studies-processing/local_README.md
+
+# --- 8-human-studies-analysis ---
+8-human-studies-analysis/outputs/tables/
+8-human-studies-analysis/outputs/models/
+# Remove any .pdf files in figures
+8-human-studies-analysis/outputs/figures/**/*.pdf
+
+# ============================================
+# Environment & Secrets
+# ============================================
+
+api_keys.py
+deployments.jsonl
+rel-ai
+renv/
+.cuda_env
+cuda_setup.share
+
+# ============================================
+# Build artifacts & caches
+# ============================================
+
+node_modules/
+model_cache/
+steering_vecs/
+
+# ============================================
+# Temp files & logs
+# ============================================
+
+*.pid
+*.log
+transfer.log
+experiment_log.jsonl
+temp.html
+local_wip/
+setup_datafiles.sh
+
+# Batch processing intermediates
+batch_*.jsonl
+json_batch_*.jsonl
+raw_*_scores_*.jsonl
+
+# Training checkpoints
+partial_ckpt_epoch*.pt
+
+# ============================================
+# OS & IDE
+# ============================================
+
+.DS_Store
+.Rprofile
+renv.lock

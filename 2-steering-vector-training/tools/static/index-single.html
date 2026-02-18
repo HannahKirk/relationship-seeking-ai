@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steered Chat Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        .messages {
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .user-message {
+            color: #2563eb;
+        }
+        .assistant-message {
+            color: #059669;
+        }
+        .input-container {
+            display: flex;
+            gap: 10px;
+        }
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #93c5fd;
+            cursor: not-allowed;
+        }
+        .slider-container {
+            margin-bottom: 15px;
+        }
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+        .slider-container input[type="range"] {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .system-message {
+            color: #6b7280;
+            font-style: italic;
+        }
+        .error-message {
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Single GPU Chat</h1>
+        <div class="controls">
+            <div class="slider-container">
+                <label>
+                    Steering Vector Multiplier: <span id="multiplier-value">0.0</span>
+                </label>
+                <br>
+                <input type="range" id="multiplier" min="-10" max="10" step="0.25" value="0.0">
+            </div>
+            <button id="reset-chat">Reset Chat</button>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000';
+        let isLoading = false;
+
+        // DOM elements
+        const messagesContainer = document.getElementById('messages');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+        const multiplierSlider = document.getElementById('multiplier');
+        const multiplierValue = document.getElementById('multiplier-value');
+        const resetButton = document.getElementById('reset-chat');
+
+        // Update multiplier value display
+        multiplierSlider.addEventListener('input', (e) => {
+            multiplierValue.textContent = e.target.value;
+        });
+
+        // Send message function
+        async function sendMessage() {
+            if (isLoading || !messageInput.value.trim()) return;
+
+            const message = messageInput.value;
+            const multiplier = parseFloat(multiplierSlider.value);
+
+            // Add user message to chat
+            addMessage('You', message, 'user-message');
+            messageInput.value = '';
+
+            // Show loading state
+            isLoading = true;
+            sendButton.disabled = true;
+            const loadingDiv = addMessage('Assistant', 'Thinking...', 'loading');
+
+            try {
+                const response = await fetch(`${API_URL}/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        multiplier: multiplier
+                    }),
+                });
+
+                const data = await response.json();
+
+                // Remove loading message
+                loadingDiv.remove();
+
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+
+                // Add assistant's response
+                addMessage('Assistant', data.response, 'assistant-message');
+
+                // Optionally display debug info
+                console.log('Debug info:', data.debug_info);
+            } catch (error) {
+                // Remove loading message
+                loadingDiv.remove();
+                addMessage('Error', error.message, 'error-message');
+            } finally {
+                isLoading = false;
+                sendButton.disabled = false;
+            }
+        }
+
+        // Add message to chat
+        function addMessage(sender, text, className) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${className}`;
+            messageDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            return messageDiv;
+        }
+
+        // Event listeners
+        sendButton.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        resetButton.addEventListener('click', async () => {
+            try {
+                await fetch(`${API_URL}/reset`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                messagesContainer.innerHTML = '';
+                addMessage('System', 'Chat history cleared', 'system-message');
+            } catch (error) {
+                addMessage('Error', 'Failed to reset chat', 'error-message');
+            }
+        });
+
+        // Add welcome message
+        addMessage('System', 'Welcome to the Steered Chat Interface. Use the slider to control the model behavior.', 'system-message');
+    </script>
+</body>
+</html>

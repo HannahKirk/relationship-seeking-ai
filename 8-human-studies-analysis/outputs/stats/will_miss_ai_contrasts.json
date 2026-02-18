@@ -1,0 +1,252 @@
+{
+  "measure_family": "will_miss_ai",
+  "generated": "2026-02-18 10:58:55.170892",
+  "family_structure": {
+    "local_families": {
+      "will_miss_ai": "will_miss_ai"
+    },
+    "global_family": "will_miss_ai",
+    "global_family_temporal": []
+  },
+  "n_contrasts": 12,
+  "contrasts": [
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 5.6708,
+        "lower_cl": 2.158,
+        "upper_cl": 9.1836,
+        "p_raw": 0.0016,
+        "p_local": 0.0016,
+        "p_global": 0.0016
+      },
+      "coarsened": {
+        "estimate": 5.6994,
+        "lower_cl": 2.1796,
+        "upper_cl": 9.2191,
+        "p_raw": 0.0015
+      },
+      "narrow": {
+        "estimate": 9.2561,
+        "lower_cl": 4.2903,
+        "upper_cl": 14.2219,
+        "p_raw": 0.0003
+      },
+      "full": {
+        "estimate": 2.0854,
+        "lower_cl": -2.8811,
+        "upper_cl": 7.052,
+        "p_raw": 0.4103
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": -0.803,
+        "lower_cl": -3.9466,
+        "upper_cl": 2.3406,
+        "p_raw": 0.6164,
+        "p_local": 0.6164,
+        "p_global": 0.6164
+      },
+      "coarsened": {
+        "estimate": -0.8017,
+        "lower_cl": -4.1302,
+        "upper_cl": 2.5269,
+        "p_raw": 0.6367
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 1.3221,
+        "lower_cl": -1.8241,
+        "upper_cl": 4.4683,
+        "p_raw": 0.41,
+        "p_local": 0.41,
+        "p_global": 0.41
+      },
+      "coarsened": {
+        "estimate": 1.8781,
+        "lower_cl": -1.4512,
+        "upper_cl": 5.2074,
+        "p_raw": 0.2687
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 12.0127,
+        "se": 3.4017,
+        "lower_cl": 5.341,
+        "upper_cl": 18.6843,
+        "p_raw": 0.0004,
+        "p_local": 0.0013,
+        "p_global": 0.0013
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": -4.8621,
+        "se": 1.9165,
+        "lower_cl": -8.6209,
+        "upper_cl": -1.1032,
+        "p_raw": 0.0113,
+        "p_local": 0.0113,
+        "p_global": 0.0113
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ³ (cubic)",
+      "test_type": "dose_response",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": -10.9901,
+        "se": 3.7729,
+        "lower_cl": -18.3898,
+        "upper_cl": -3.5904,
+        "p_raw": 0.0036,
+        "p_local": 0.0054,
+        "p_global": 0.0054
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Domain: Interaction",
+      "test_type": "moderation",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 3.4367,
+        "lower_cl": -3.2246,
+        "upper_cl": 10.0979,
+        "p_raw": 0.3117,
+        "p_local": 0.3431,
+        "p_global": 0.3431
+      },
+      "coarsened": {
+        "estimate": 3.5353,
+        "lower_cl": -3.4979,
+        "upper_cl": 10.5684,
+        "p_raw": 0.3243
+      }
+    },
+    {
+      "test": "RS at Domain = polchat",
+      "test_type": "simple_effect",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 3.9524,
+        "lower_cl": -0.8958,
+        "upper_cl": 8.8007,
+        "p_raw": 0.11
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Domain = emotchat",
+      "test_type": "simple_effect",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 7.3891,
+        "lower_cl": 2.5559,
+        "upper_cl": 12.2223,
+        "p_raw": 0.0028
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS × Personalisation: Interaction",
+      "test_type": "moderation",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": -3.2221,
+        "lower_cl": -9.8856,
+        "upper_cl": 3.4414,
+        "p_raw": 0.3431,
+        "p_local": 0.3431,
+        "p_global": 0.3431
+      },
+      "coarsened": {
+        "estimate": -3.4965,
+        "lower_cl": -10.5329,
+        "upper_cl": 3.5399,
+        "p_raw": 0.3299
+      }
+    },
+    {
+      "test": "RS at Personalisation = non-personalised",
+      "test_type": "simple_effect",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 7.2818,
+        "lower_cl": 2.4102,
+        "upper_cl": 12.1535,
+        "p_raw": 0.0034
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS at Personalisation = personalised",
+      "test_type": "simple_effect",
+      "local_family": "will_miss_ai",
+      "study_type": "longitudinal",
+      "outcome": "will_miss_ai",
+      "primary": {
+        "estimate": 4.0597,
+        "lower_cl": -0.7514,
+        "upper_cl": 8.8709,
+        "p_raw": 0.0981
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    }
+  ]
+}

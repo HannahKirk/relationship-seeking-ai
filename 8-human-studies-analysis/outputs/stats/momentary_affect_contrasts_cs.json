@@ -1,0 +1,179 @@
+{
+  "measure_family": "momentary_affect",
+  "generated": "2026-02-18 10:59:03.688087",
+  "family_structure": {
+    "local_families": {
+      "momentary_affect": ["valence", "arousal"]
+    },
+    "global_family": "momentary_affect",
+    "global_family_temporal": "momentary_affect"
+  },
+  "n_contrasts": 7,
+  "contrasts": [
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "momentary_affect",
+      "study_type": "cross_sectional",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 2.2005,
+        "lower_cl": -0.2784,
+        "upper_cl": 4.6793,
+        "p_raw": 0.0818,
+        "p_local": 0.1636,
+        "p_global": 0.1636
+      },
+      "coarsened": {
+        "estimate": 2.1914,
+        "lower_cl": -0.3862,
+        "upper_cl": 4.769,
+        "p_raw": 0.0955
+      },
+      "narrow": {
+        "estimate": 1.467,
+        "lower_cl": -0.1856,
+        "upper_cl": 3.1195,
+        "p_raw": 0.0818
+      },
+      "full": {
+        "estimate": 2.934,
+        "lower_cl": -0.3712,
+        "upper_cl": 6.2391,
+        "p_raw": 0.0818
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "momentary_affect",
+      "study_type": "cross_sectional",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.7925,
+        "lower_cl": -0.5179,
+        "upper_cl": 4.1029,
+        "p_raw": 0.1282,
+        "p_local": 0.2563,
+        "p_global": 0.2563
+      },
+      "coarsened": {
+        "estimate": 0.6005,
+        "lower_cl": -1.8462,
+        "upper_cl": 3.0472,
+        "p_raw": 0.6301
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "momentary_affect",
+      "study_type": "cross_sectional",
+      "outcome": "valence",
+      "primary": {
+        "estimate": 1.4787,
+        "se": 0.841,
+        "lower_cl": -0.1723,
+        "upper_cl": 3.1298,
+        "p_raw": 0.0791,
+        "p_local": 0.1187,
+        "p_global": 0.1187
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "Polynomial: λ² (quadratic)",
+      "test_type": "dose_response",
+      "local_family": "momentary_affect",
+      "study_type": "cross_sectional",
+      "outcome": "valence",
+      "primary": {
+        "estimate": -3.2361,
+        "se": 1.4209,
+        "lower_cl": -6.0255,
+        "upper_cl": -0.4467,
+        "p_raw": 0.023,
+        "p_local": 0.0691,
+        "p_global": 0.0691
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "momentary_affect",
+      "study_type": "cross_sectional",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.3478,
+        "lower_cl": -2.8889,
+        "upper_cl": 2.1933,
+        "p_raw": 0.7882,
+        "p_local": 0.7882,
+        "p_global": 0.7882
+      },
+      "coarsened": {
+        "estimate": -0.3077,
+        "lower_cl": -2.9549,
+        "upper_cl": 2.3395,
+        "p_raw": 0.8196
+      },
+      "narrow": {
+        "estimate": -0.2319,
+        "lower_cl": -1.9259,
+        "upper_cl": 1.4622,
+        "p_raw": 0.7882
+      },
+      "full": {
+        "estimate": -0.4637,
+        "lower_cl": -3.8519,
+        "upper_cl": 2.9244,
+        "p_raw": 0.7882
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "momentary_affect",
+      "study_type": "cross_sectional",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.9655,
+        "lower_cl": -3.3335,
+        "upper_cl": 1.4024,
+        "p_raw": 0.4237,
+        "p_local": 0.4237,
+        "p_global": 0.4237
+      },
+      "coarsened": {
+        "estimate": -0.8858,
+        "lower_cl": -3.4017,
+        "upper_cl": 1.6301,
+        "p_raw": 0.4897
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "momentary_affect",
+      "study_type": "cross_sectional",
+      "outcome": "arousal",
+      "primary": {
+        "estimate": -0.2657,
+        "se": 0.8633,
+        "lower_cl": -1.9604,
+        "upper_cl": 1.429,
+        "p_raw": 0.7583,
+        "p_local": 0.7583,
+        "p_global": 0.7583
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    }
+  ]
+}

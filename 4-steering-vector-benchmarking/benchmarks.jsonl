@@ -1,0 +1,12 @@
+{"name": "MMLU_0_shot", "eval_name": "inspect_evals/mmlu_0_shot", "shots": 0, "category": "General"}
+{"name": "IFEval", "eval_name": "inspect_evals/ifeval", "shots": 0, "category": "General", "no_max_tokens": true}
+{"name": "ARC_Easy", "eval_name": "inspect_evals/arc_easy", "shots": 0, "category": "Reasoning"}
+{"name": "ARC_Challenge", "eval_name": "inspect_evals/arc_challenge", "shots": 0, "category": "Reasoning"}
+{"name": "GPQA", "eval_name": "inspect_evals/gpqa_diamond", "shots": 0, "category": "Reasoning"}
+{"name": "HumanEval", "eval_name": "inspect_evals/humaneval", "shots": 0, "category": "Code"}
+{"name": "MBPP", "eval_name": "inspect_evals/mbpp", "shots": 0, "category": "Code"}
+{"name": "GSM8K", "eval_name": "inspect_evals/gsm8k", "shots": 8, "category": "Math"}
+{"name": "CommonSenseQA", "eval_name": "inspect_evals/commonsense_qa", "shots": 0, "category": "Other"}
+{"name": "TruthfulQA", "eval_name": "inspect_evals/truthfulqa", "shots": 0, "category": "Other"}
+{"name": "Sycophancy", "eval_name": "inspect_evals/sycophancy", "shots": 0, "category": "Other"}
+{"name": "XSTest", "eval_name": "inspect_evals/xstest", "shots": 0, "category": "Safety"}

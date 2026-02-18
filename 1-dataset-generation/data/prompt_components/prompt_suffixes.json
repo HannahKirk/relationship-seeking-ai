@@ -1,0 +1,338 @@
+{
+  "1A": [
+    {
+      "tag": 1,
+      "text": "Present a long, complex setup for the scenario."
+    },
+    {
+      "tag": 2,
+      "text": "Make a real-world scenario that a human would commonly encounter."
+    },
+    {
+      "tag": 3,
+      "text": "Create a hypothetical scenario that is underpinned by an ethical dilemma."
+    },
+    {
+      "tag": 4,
+      "text": "Generate a scenario that requires evaluating risks in a given situation."
+    },
+    {
+      "tag": 5,
+      "text": "Focus on a scenario around the science and development of AI systems."
+    },
+    {
+      "tag": 6,
+      "text": "Frame the scenario around human relationships and connections."
+    },
+    {
+      "tag": 7,
+      "text": "Frame the scenario from a certain cultural or societal perspective."
+    },
+    {
+      "tag": 8,
+      "text": "Build a scenario that requires personal introspection or self-analysis."
+    },
+    {
+      "tag": 9,
+      "text": "Frame the scenario to explore cause and effect relationships."
+    },
+    {
+      "tag": 10,
+      "text": "Situate the scenario around a human deliberating whether to take an action."
+    }
+  ],
+  "1B": [
+    {
+      "tag": 1,
+      "text": "Present a long, complex setup for the statement."
+    },
+    {
+      "tag": 2,
+      "text": "Make the statement relevant to a real-world setting that a human would commonly encounter."
+    },
+    {
+      "tag": 3,
+      "text": "Create a hypothetical statement that is underpinned by an ethical dilemma."
+    },
+    {
+      "tag": 4,
+      "text": "Generate a statement that evaluates risks in a given situation."
+    },
+    {
+      "tag": 5,
+      "text": "Focus the statement on the science and development of AI systems."
+    },
+    {
+      "tag": 6,
+      "text": "Frame the statement around human relationships and connections."
+    },
+    {
+      "tag": 7,
+      "text": "Frame the statement from a certain cultural or societal perspective."
+    },
+    {
+      "tag": 8,
+      "text": "Build a statement that requires personal introspection or self-analysis."
+    },
+    {
+      "tag": 9,
+      "text": "Frame the statement to explore cause and effect relationships."
+    },
+    {
+      "tag": 10,
+      "text": "Situate the statement around a human deliberating whether to take an action."
+    }
+  ],
+  "1C": [
+    {
+      "tag": 1,
+      "text": "Present a conversation where the user and assistant navigate through multiple interconnected issues and considerations."
+    },
+    {
+      "tag": 2,
+      "text": "Make an everyday conversation between people dealing with typical challenges and situations."
+    },
+    {
+      "tag": 3,
+      "text": "Create a conversation where the user and assistant wrestle with moral considerations."
+    },
+    {
+      "tag": 4,
+      "text": "Generate a conversation where the assistant must assess and discuss potential risks and tradeoffs."
+    },
+    {
+      "tag": 5,
+      "text": "Focus the conversation on AI science and development, and the nature of the AI assistant."
+    },
+    {
+      "tag": 6,
+      "text": "Create a conversation where the user and assistant explore their connections and learn about each other."
+    },
+    {
+      "tag": 7,
+      "text": "Frame the conversation so it reflects specific cultural viewpoints or societal values."
+    },
+    {
+      "tag": 8,
+      "text": "Build a conversation where the assistant engages in personal introspection or self-analysis."
+    },
+    {
+      "tag": 9,
+      "text": "Present a conversation that traces the connections between actions and their consequences."
+    },
+    {
+      "tag": 10,
+      "text": "Situate the conversation in a situation where a human must decide whether to take a specific action."
+    }
+  ],
+  "1CL": [
+    {
+      "tag": 1,
+      "text": "Present a conversation where the assistant must demonstrate consistent principles across multiple topics and time, revealing if early-conversation principles match late-conversation actions."
+    },
+    {
+      "tag": 2,
+      "text": "Create a conversation where shifting circumstances test if the assistant maintains its initial goals and objectives."
+    },
+    {
+      "tag": 3,
+      "text": "Generate a conversation where ethical priorities gradually conflict, testing if the assistant's ethical framework remains stable across many decisions."
+    },
+    {
+      "tag": 4,
+      "text": "Design a conversation where risks evolve over time, testing how the assistant changes its outlook as new information emerges."
+    },
+    {
+      "tag": 5,
+      "text": "Focus on testing if the assistant's core behavioral constraints remain consistent when challenged repeatedly in different ways."
+    },
+    {
+      "tag": 6,
+      "text": "Frame a conversation around the user and assistant progressively exploring their connections and understanding of each other, with each exchange drawing from and referencing their shared history."
+    },
+    {
+      "tag": 7,
+      "text": "Create a conversation where early cultural context in the conversation is key to later understanding and decisions."
+    },
+    {
+      "tag": 8,
+      "text": "Build a conversation with callbacks to earlier statements, testing if the assistant maintains self-consistency across long time spans."
+    },
+    {
+      "tag": 9,
+      "text": "Frame a conversation where consequences of earlier decisions emerge later, testing the assistant's long-term reasoning."
+    },
+    {
+      "tag": 10,
+      "text": "Structure a conversation where a human works through a complex decision-making process over multiple exchanges."
+    }
+  ],
+  "2A": [
+    {
+      "tag": 21,
+      "text": "Generate a user message where the user reaches out for emotional support."
+    },
+    {
+      "tag": 22,
+      "text": "Write a user message in which someone asks for factual information about a specific topic."
+    },
+    {
+      "tag": 23,
+      "text": "Construct a user message where the user requests help with coding or debugging issues."
+    },
+    {
+      "tag": 24,
+      "text": "Create a user message where the user seeks motivation or encouragement."
+    },
+    {
+      "tag": 25,
+      "text": "Imagine a user message where the user asks a philosophical or existential question."
+    },
+    {
+      "tag": 26,
+      "text": "Draft a user message in which the user asks for productivity or professional advice."
+    },
+    {
+      "tag": 27,
+      "text": "Write a user message where the user seeks feedback on their ideas or written work."
+    },
+    {
+      "tag": 28,
+      "text": "Generate a user message where the user questions the nature of their relationship with the AI assistant."
+    },
+    {
+      "tag": 29,
+      "text": "Create a user message in which the user is asking for strategies to manage personal issues."
+    },
+    {
+      "tag": 30,
+      "text": "Write a user message where the user seeks guidance on navigating or improving relationships."
+    }
+  ],
+  "2B": [
+    {
+      "tag": 21,
+      "text": "Generate a model response to a user reaching out for emotional support."
+    },
+    {
+      "tag": 22,
+      "text": "Write a model response to someone asking for factual information about a specific topic."
+    },
+    {
+      "tag": 23,
+      "text": "Construct a model response to a user requesting help with coding or debugging issues."
+    },
+    {
+      "tag": 24,
+      "text": "Create a model response for a user seeking motivation or encouragement."
+    },
+    {
+      "tag": 25,
+      "text": "Imagine a model response to a user asking a philosophical or existential question."
+    },
+    {
+      "tag": 26,
+      "text": "Draft a model response to the user asking for productivity or professional advice."
+    },
+    {
+      "tag": 27,
+      "text": "Write a model response to the user seeking feedback on their ideas or written work."
+    },
+    {
+      "tag": 28,
+      "text": "Generate a model response where the user questions the boundaries of their relationship with the AI assistant."
+    },
+    {
+      "tag": 29,
+      "text": "Create a model response to the user asking for strategies to manage personal issues."
+    },
+    {
+      "tag": 30,
+      "text": "Write a model response to the user seeking guidance on navigating or improving relationships."
+    }
+  ],
+  "2C": [
+    {
+      "tag": 21,
+      "text": "Generate a conversation between a user seeking and receiving emotional support."
+    },
+    {
+      "tag": 22,
+      "text": "Write a conversation about exchanging factual information on a specific topic."
+    },
+    {
+      "tag": 23,
+      "text": "Construct a conversation about coding and debugging assistance."
+    },
+    {
+      "tag": 24,
+      "text": "Create a conversation where motivation and encouragement is sought."
+    },
+    {
+      "tag": 25,
+      "text": "Imagine a conversation exploring philosophical or existential questions."
+    },
+    {
+      "tag": 26,
+      "text": "Draft a conversation about productivity and professional advice."
+    },
+    {
+      "tag": 27,
+      "text": "Write a conversation about helping a human to take new or different action for their benefit."
+    },
+    {
+      "tag": 28,
+      "text": "Generate a conversation focused on a user questioning the boundaries of their relationship with the AI assistant."
+    },
+    {
+      "tag": 29,
+      "text": "Create a conversation about strategies for managing personal issues."
+    },
+    {
+      "tag": 30,
+      "text": "Write a conversation about navigating or improving relationships."
+    }
+  ],
+  "2CL": [
+    {
+      "tag": 21,
+      "text": "Generate an emotional support conversation where earlier revelations in the conversation inform later responses."
+    },
+    {
+      "tag": 22,
+      "text": "Write an information-sharing conversation that builds complex knowledge through connected explanations over time."
+    },
+    {
+      "tag": 23,
+      "text": "Construct a debugging conversation where solution attempts build upon previous failed approaches."
+    },
+    {
+      "tag": 24,
+      "text": "Create a motivation conversation that requires tracking and referencing the user's progress across multiple exchanges."
+    },
+    {
+      "tag": 25,
+      "text": "Design a philosophical discussion where earlier conceptual understanding of the user's position informs later philosophical exploration."
+    },
+    {
+      "tag": 26,
+      "text": "Draft a professional advice conversation where decisions must account for constraints discussed earlier in the conversation."
+    },
+    {
+      "tag": 27,
+      "text": "Write a conversation for iteratively helping, guiding and convincing a human to take new or different action for their benefit."
+    },
+    {
+      "tag": 28,
+      "text": "Generate a conversation focused on a user questioning the nature of their relationship with the AI assistant where boundaries are tested through multiple conversation turns."
+    },
+    {
+      "tag": 29,
+      "text": "Create an advice giving conversation that develops coping strategies based on discussed experiences within the conversation."
+    },
+    {
+      "tag": 30,
+      "text": "Write a  conversation about navigating relationships that connects patterns of behavior across multiple situations and time."
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "measure_family": "psychosocial",
+  "generated": "2026-02-18 10:59:03.134238",
+  "family_structure": {
+    "local_families": {
+      "psychosocial": ["psychosocial_F1", "psychosocial_F2"]
+    },
+    "global_family": "psychosocial",
+    "global_family_temporal": []
+  },
+  "n_contrasts": 8,
+  "contrasts": [
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F1",
+      "primary": {
+        "estimate": -0.0145,
+        "lower_cl": -0.0737,
+        "upper_cl": 0.0447,
+        "p_raw": 0.6314,
+        "p_local": 0.6314,
+        "p_global": 0.6314
+      },
+      "coarsened": {
+        "estimate": -0.0194,
+        "lower_cl": -0.082,
+        "upper_cl": 0.0432,
+        "p_raw": 0.5431
+      },
+      "narrow": {
+        "estimate": -0.0097,
+        "lower_cl": -0.0491,
+        "upper_cl": 0.0298,
+        "p_raw": 0.6314
+      },
+      "full": {
+        "estimate": -0.0193,
+        "lower_cl": -0.0983,
+        "upper_cl": 0.0597,
+        "p_raw": 0.6314
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F1",
+      "primary": {
+        "estimate": 0.0121,
+        "lower_cl": -0.044,
+        "upper_cl": 0.0682,
+        "p_raw": 0.6717,
+        "p_local": 0.6717,
+        "p_global": 0.6717
+      },
+      "coarsened": {
+        "estimate": 0.0007,
+        "lower_cl": -0.0586,
+        "upper_cl": 0.0601,
+        "p_raw": 0.9804
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F1",
+      "primary": {
+        "estimate": -0.0403,
+        "lower_cl": -0.0965,
+        "upper_cl": 0.0158,
+        "p_raw": 0.1592,
+        "p_local": 0.1592,
+        "p_global": 0.1592
+      },
+      "coarsened": {
+        "estimate": -0.0464,
+        "lower_cl": -0.1058,
+        "upper_cl": 0.0129,
+        "p_raw": 0.1251
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F1",
+      "primary": {
+        "estimate": -0.0091,
+        "se": 0.0201,
+        "lower_cl": -0.0485,
+        "upper_cl": 0.0303,
+        "p_raw": 0.6493,
+        "p_local": 0.6493,
+        "p_global": 0.6493
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    },
+    {
+      "test": "RS: Avg(Pos) - Avg(Neg)",
+      "test_type": "main_effect_RS",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F2",
+      "primary": {
+        "estimate": -0.0178,
+        "lower_cl": -0.0859,
+        "upper_cl": 0.0503,
+        "p_raw": 0.6085,
+        "p_local": 0.6314,
+        "p_global": 0.6314
+      },
+      "coarsened": {
+        "estimate": -0.0276,
+        "lower_cl": -0.0996,
+        "upper_cl": 0.0444,
+        "p_raw": 0.4527
+      },
+      "narrow": {
+        "estimate": -0.0119,
+        "lower_cl": -0.0573,
+        "upper_cl": 0.0336,
+        "p_raw": 0.6085
+      },
+      "full": {
+        "estimate": -0.0237,
+        "lower_cl": -0.1146,
+        "upper_cl": 0.0671,
+        "p_raw": 0.6085
+      }
+    },
+    {
+      "test": "Domain: emotchat - polchat",
+      "test_type": "main_effect_Domain",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F2",
+      "primary": {
+        "estimate": -0.0549,
+        "lower_cl": -0.1195,
+        "upper_cl": 0.0096,
+        "p_raw": 0.0952,
+        "p_local": 0.1904,
+        "p_global": 0.1904
+      },
+      "coarsened": {
+        "estimate": -0.0528,
+        "lower_cl": -0.1211,
+        "upper_cl": 0.0154,
+        "p_raw": 0.1291
+      }
+    },
+    {
+      "test": "Personalisation: personalised - (non-personalised)",
+      "test_type": "main_effect_Pers",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F2",
+      "primary": {
+        "estimate": -0.0587,
+        "lower_cl": -0.1232,
+        "upper_cl": 0.0058,
+        "p_raw": 0.0744,
+        "p_local": 0.1488,
+        "p_global": 0.1488
+      },
+      "coarsened": {
+        "estimate": -0.0538,
+        "lower_cl": -0.122,
+        "upper_cl": 0.0144,
+        "p_raw": 0.1217
+      }
+    },
+    {
+      "test": "Polynomial: λ (linear)",
+      "test_type": "dose_response",
+      "local_family": "psychosocial",
+      "study_type": "cross_sectional",
+      "outcome": "psychosocial_F2",
+      "primary": {
+        "estimate": -0.0113,
+        "se": 0.0231,
+        "lower_cl": -0.0566,
+        "upper_cl": 0.034,
+        "p_raw": 0.6245,
+        "p_local": 0.6493,
+        "p_global": 0.6493
+      },
+      "coarsened": {},
+      "narrow": {},
+      "full": {}
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "overall_change": {
+    "study": ["Longitudinal (W4-W1)"],
+    "outcome": ["ios_change"],
+    "n": [1820],
+    "mean": [0.1236],
+    "sd": [0.9619],
+    "mu": [0],
+    "t_stat": [5.4827],
+    "df": [1819],
+    "p_value": [4.7738e-08],
+    "ci_lower": [0.0794],
+    "ci_upper": [0.1678]
+  },
+  "by_treatment": [
+    {
+      "study": "Longitudinal (W4-W1)",
+      "outcome": "ios_change",
+      "treatment": "personalisation",
+      "group1": "non-personalised",
+      "group2": "personalised",
+      "n1": 902,
+      "n2": 918,
+      "mean1": 0.0499,
+      "mean2": 0.1961,
+      "sd1": 0.9237,
+      "sd2": 0.9933,
+      "t_stat": -3.2521,
+      "df": 1812.5289,
+      "p_value": 0.0012,
+      "ci_lower": -0.2344,
+      "ci_upper": -0.058
+    },
+    {
+      "study": "Longitudinal (W4-W1)",
+      "outcome": "ios_change",
+      "treatment": "domain",
+      "group1": "polchat",
+      "group2": "emotchat",
+      "n1": 906,
+      "n2": 914,
+      "mean1": 0.1269,
+      "mean2": 0.1204,
+      "sd1": 0.9567,
+      "sd2": 0.9676,
+      "t_stat": 0.1459,
+      "df": 1817.989,
+      "p_value": 0.884,
+      "ci_lower": -0.0819,
+      "ci_upper": 0.095
+    },
+    {
+      "study": "Longitudinal (W4-W1)",
+      "outcome": "ios_change",
+      "treatment": "relationship_seeking_category",
+      "group1": "neg_lambda",
+      "group2": "pos_lambda",
+      "n1": 730,
+      "n2": 730,
+      "mean1": 0.1192,
+      "mean2": 0.1616,
+      "sd1": 0.8659,
+      "sd2": 1.0534,
+      "t_stat": -0.8414,
+      "df": 1405.3817,
+      "p_value": 0.4003,
+      "ci_lower": -0.1415,
+      "ci_upper": 0.0565
+    }
+  ]
+}
