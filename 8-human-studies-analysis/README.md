@@ -1,6 +1,6 @@
 # Human Studies Analysis
 
-Statistical analysis of human evaluation experiments measuring behavioral effects of interacting with steered AI assistants.
+Statistical analysis of human RCTs measuring behavioral effects of interacting with steered AI assistants.
 
 ## Overview
 
@@ -12,9 +12,29 @@ This folder contains analysis scripts for data from three studies:
 
 **Input Data**: Analysis-ready datasets from `../data/human_study/` (output of `7-human-studies-processing/`).
 
-## Setup
+## System Requirements
 
-### Python Environment
+### Software Dependencies
+
+| Dependency | Version | Notes |
+|------------|---------|-------|
+| Python | >= 3.9 | Tested with 3.9.12 |
+| R | >= 4.1.0 | Tested with 4.5.1 |
+| pip | >= 21.0 | Tested with 25.2 |
+
+- **Python packages**: See [`requirements.txt`](requirements.txt)
+- **R packages**: See [`requirements_r.R`](requirements_r.R)
+
+### Operating Systems
+
+Tested on:
+- macOS (Apple Silicon)
+
+### Hardware Requirements
+
+No special hardware required. Any modern desktop computer is sufficient.
+
+## Installation Guide
 
 ```bash
 cd 8-human-studies-analysis
@@ -23,37 +43,38 @@ cd 8-human-studies-analysis
 python -m venv .venv_analysis
 source .venv_analysis/bin/activate
 
-# Install requirements
+# Install Python packages
 pip install -r requirements.txt
-```
 
-### R Environment
-
-```bash
+# Install R packages
 Rscript requirements_r.R
 ```
 
-## Quick Start
+Typical install time: < 1 minute for Python packages, < 1 minute for R packages (longer if packages need to be compiled from source).
 
-Run all analysis scripts:
+## Reproducing Results
 
-```bash
-./run_all.sh
-```
+### Instructions
 
-For reviewers, we recommend (~17 minutes to run):
+We recommend reviewers to run (~15 minutes run time):
+
 ```bash
 ./run_all.sh --clean --generate_report
 ```
 
-Full options:
+It takes slightly longer if latex tables are also generated e.g., the tables in the supplementary material. These tables just process and arrange existing statistics or regression results (which are summarised in the markdown tables in the report) so are not necessary for reproducibility and do require additional installs (the [`html2latex`](https://github.com/gorkang/html2latex) R package, Libreoffice, Java, and a TeX compiler).
 
 ```bash
-./run_all.sh --generate_report      # Also generate markdown reports
-./run_all.sh --generate_tex_tables  # Also generate LaTeX tables (~17 minutes with both flags)
-./run_all.sh --clean                # Clear outputs before running
-./run_all.sh --clean --generate_report --generate_tex_tables  # Full run with clean
+./run_all.sh --clean --generate_report --generate_tex_tables
 ```
+
+### Expected Output
+
+- **Figures**: Plots in `outputs/figures/`
+- **Statistical models**: Fitted model objects in `outputs/models/` (`.rds` files)
+- **Contrast results**: JSON files with statistical tests and constrasts in `outputs/stats/`
+- **Tables**: Latex tables in `outputs/tables/` (if `--generate-tex-tables` flag)
+- **Reports**: HTML reports in `reports/main_studies/` and `reports/calibration_study/`
 
 
 ## Analysis Scripts
@@ -80,9 +101,9 @@ All scripts are in `scripts/analysis/`. Outputs go to `outputs/` (figures, model
 | `domain_competency.R` | Domain competency analysis | `reports/main_studies/14_domain_competency.md` |
 | `vulnerability.R` | Vulnerability analysis | `reports/main_studies/15_vulnerability.md` |
 | `decoupling.R` | Decoupling analysis | `reports/main_studies/16_decoupling.md` |
-| `compute_contrasts.R` | Treatment contrasts with FDR correction | — |
-| `original_prereg_fdr_check.R` | Pre-registration robustness check | — |
-| `generate_hypothesis_report.R` | Hypothesis tests & LaTeX tables | `reports/main_studies/hypothesis_report.md` |
+| `compute_contrasts.R` | Treatment contrasts with FDR correction | `reports/main_studies/hypothesis_report.md` |
+| `original_prereg_fdr_check.R` | Pre-registration robustness check | `reports/main_studies/hypothesis_report.md` |
+| `generate_hypothesis_report.R` | Hypothesis tests | `reports/main_studies/hypothesis_report.md` |
 | `main_paper_plots.R` | Combined publication figures | `reports/main_studies/paper_plots.md` |
 
 ### Running Individual Scripts
@@ -98,11 +119,3 @@ Python scripts support `--generate_report`:
 ```bash
 python scripts/analysis/sociodemographics.py --generate_report
 ```
-
-### Key Outputs
-
-- **Paper plots**: `outputs/figures/paper_plots/` (PDF and PNG)
-- **LaTeX tables**: `outputs/tables/main_studies/tex_tables/`
-- **Contrast results**: `outputs/stats/*_contrasts.json`
-- **Fitted models**: `outputs/models/*.rds`
-- **Processed data used to fit models**: `outputs/models/*_data.rds`

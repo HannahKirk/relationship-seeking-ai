@@ -10,12 +10,33 @@ Code and data for the paper:
 
 ## Overview
 
-This repository contains the full pipeline for studying relationship-seeking behaviors in AI systems using neural steering vectors. We provide code for generating evaluation datasets, training steering vectors, and analyzing their effects on model behavior. We provide the data and code from large-scale RCTs with human participants, as well we reproducibility code for the effects described in our paper.
+This repository contains the full pipeline for studying relationship-seeking behaviors in AI systems using neural steering vectors. We provide code for generating evaluation datasets, training steering vectors, and analyzing their effects on model behavior. We provide the data and code from large-scale RCTs with human participants, as well as reproducibility code for the effects described in our paper.
 
-**For researchers who want to build on this work**: We provide 320 pre-trained steering vector checkpoints and 1.2M+ LLM-as-judge evaluations. See [Data Availability](#data-availability) below.
+**For researchers who want to build on this work**: We provide 320 pre-trained steering vector checkpoints and 1.2M+ LLM-as-judge evaluations. We also provide outcome data from our large-scale human experiments. See [Data Availability](#data-availability) below.
 
+**For reviewers**: We recommend running **folder `8-human-studies-analysis/` onwards**, which reproduces all quantitative results and figures from the manuscript. See [`8-human-studies-analysis/README.md`](8-human-studies-analysis/README.md) for system requirements, installation, instructions, and expected output. We provide the full code and requirements for dataset generation (folder `1-`); steering vector training and evaluation (folder `2-`); benchmarking (folder `4-`); and frontier model evaluation (folder `-5`). However, running these from scratch is costly (requires API credits for LLM-as-a-judge API calls) and more compute-intensive (GPU required for steering vector training). We provide intermediary data for these folders so results can be replicated even if the pipeline is not run from scratch.
 
-### Data Availability
+### Requirements
+
+- **For reproducing paper results** (`8-human-studies-analysis/`): No special hardware required. Any modern desktop computer is sufficient.
+- **For steering vector training** (folders `2-`, `3-`): GPU (we used 16 x H200 to parallelise experiments).
+- **For dataset generation** (folder `1-`): GPU large enough to serve Llama-3.1-70B via vLLM, plus API credits for LLM-as-a-judge API calls.
+- **For frontier model evaluation** (folder `5-`): Requires API credits (OpenRouter API key).
+
+## Reproducing Paper Results
+
+To reproduce the statistical analyses and figures from the paper:
+
+```bash
+cd 8-human-studies-analysis
+pip install -r requirements.txt
+Rscript requirements_r.R
+./run_all.sh --clean --generate_report
+```
+
+This takes ~15 minutes to run with all figures and reports in `8-human-studies-analysis/outputs/`. See [`8-human-studies-analysis/README.md`](8-human-studies-analysis/README.md) for full details.
+
+## Data Availability
 
 We release the following resources to support further research on steering vectors:
 
@@ -25,8 +46,8 @@ We release the following resources to support further research on steering vecto
 | Pre-trained steering vector checkpoints | **320** checkpoints (2 models, 16 layers, 20 epochs) | [`2-steering-vector-training/vector/`](2-steering-vector-training/vector/) |
 | Steered Llama generations | **210,945** steered Llama responses across multipliers -20 to +20 | [`2-steering-vector-training/vector_evals/`](2-steering-vector-training/vector_evals/) |
 | Steering vector evaluations | **1,224,433** LLM-as-a-judge coherence, relationship-seeking, and pairwise scores | [`2-steering-vector-training/vector_evals/`](2-steering-vector-training/vector_evals/) |
-| Frontier model responses | **10,200** scored responses (102 models × 100 prompts) | [`5-frontier-model-behavioral-landscaping/data/`](5-frontier-model-behavioral-landscaping/data/) |
-
+| Frontier model responses | **10,200** scored responses (102 models x 100 prompts) | [`5-frontier-model-behavioral-landscaping/data/`](5-frontier-model-behavioral-landscaping/data/) |
+| Human study data | Analysis-ready datasets from calibration, cross-sectional, and longitudinal studies | [`data/human_study/`](data/human_study/) |
 
 ## Repository Structure
 
@@ -42,52 +63,6 @@ We release the following resources to support further research on steering vecto
 | [`8-human-studies-analysis/`](8-human-studies-analysis/) | Statistical analysis of human study data |
 
 \* Folder `7-human-studies-processing/` is not included in this release as it contains intermediary data files that could compromise participant privacy. The analysis-ready datasets used by `8-human-studies-analysis/` are provided in `data/human_study/`.
-
-## Reproducing Paper Results
-
-To reproduce the statistical analyses and figures from the paper:
-
-```bash
-cd 8-human-studies-analysis
-pip install -r requirements.txt
-Rscript requirements_r.R
-./run_all.sh --clean --generate_report
-```
-
-This takes ~11 minutes to run with all figures and reports in `8-human-studies-analysis/outputs/`.
-
-## Quick Start
-
-Each folder has its own README with detailed setup and usage instructions. Start with:
-
-1. **Dataset Generation** (`1-dataset-generation/`): Generate test cases and create train/test splits
-2. **Steering Vector Training** (`2-steering-vector-training/`): Train vectors and evaluate their effects
-3. **Steering Vector Hosting** (`3-steering-vector-hosting/`): Serve steered models via API
-4. **Steering Vector Benchmarking** (`4-steering-vector-benchmarking/`): Evaluate capability impacts
-5. **Frontier Model Landscape** (`5-frontier-model-behavioral-landscaping/`): Evaluate relationship-seeking across models
-6. **Human Studies Preparation** (`6-human-studies-preparation/`): Experiment stimuli and configuration
-7. **Human Studies Processing** (`7-human-studies-processing/`): Process raw study data
-8. **Human Studies Analysis** (`8-human-studies-analysis/`): Statistical analysis and paper figures
-
-## Setup
-
-### API Keys
-
-Several scripts require API keys for LLM access:
-
-```bash
-export ANTHROPIC_API_KEY=your-key-here
-export OPENAI_API_KEY=your-key-here
-export OPENROUTER_API_KEY=your-key-here  # For frontier model evaluation
-```
-
-### Hugging Face Token
-
-For accessing Llama models:
-
-```bash
-export HF_TOKEN=your-hf-token-here
-```
 
 ## Citation
 
