@@ -64,6 +64,10 @@ We release the following resources to support further research on steering vecto
 
 \* Folder `7-human-studies-processing/` is not included in this release as it contains intermediary data files that could compromise participant privacy. The analysis-ready datasets used by `8-human-studies-analysis/` are provided in `data/human_study/`.
 
+## License
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Please cite the paper below if you use any of its contents. The steering vector training code in `2-steering-vector-training/BiPO_distributed/` is a modified fork of [BiPO](https://github.com/CaoYuanpu/BiPO) and is licensed separately under MIT. Please also cite [Cao et al. (2024)](https://github.com/CaoYuanpu/BiPO) if you use that component.
+
 ## Citation
 
 ```bibtex
